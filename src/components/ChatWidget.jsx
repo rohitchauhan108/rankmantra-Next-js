@@ -88,17 +88,17 @@ const ChatWidget = () => {
   return (
     <>
       <div
-        className="fixed bottom-8 right-8 z-50"
+        className="fixed bottom-6 right-8 z-50"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
         <div
-          className={`relative flex items-center justify-center w-16 h-16 rounded-full bg-red-600 text-white cursor-pointer shadow-lg transition-transform duration-300 hover:scale-110 ${
+          className={`relative flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-full bg-red-600 text-white cursor-pointer shadow-lg transition-transform duration-300 hover:scale-110 ${
             isOpen ? "hidden" : ""
           }`}
           onClick={toggleChat}
         >
-          <FaComment className="text-2xl" />
+          <FaComment className="text-xl" />
           {/* {isHovered && (
             <div className="absolute right-full mr-2 px-3 py-2 bg-white text-gray-800 text-sm rounded-md shadow-md whitespace-nowrap">
               Any query? Connect with me!

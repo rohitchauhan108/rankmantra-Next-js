@@ -46,9 +46,17 @@ const Footer = () => {
 
           <p className="font-medium mt-2">
             Phone:
-            <a href="tel:+918979249912" className="ml-1 font-normal hover:text-red-600">
-              +91 8979249912
-            </a>
+            <div className="flex flex-col gap-1 mt-1">
+              <a href="tel:+918979249912" className="font-normal hover:text-red-600">
+                +91 8979249912
+              </a>
+              <a href="tel:+917500744458" className="font-normal hover:text-red-600">
+                +91 7500744458
+              </a>
+              <a href="tel:+917055596464" className="font-normal hover:text-red-600">
+                +91 7055596464
+              </a>
+            </div>
           </p>
 
           <p className="font-medium">

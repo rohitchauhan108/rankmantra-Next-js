@@ -76,7 +76,11 @@ const Contact = () => {
               </div>
               <div>
                 <h2 className="lg:text-xl text-[#7A6960] font-semibold">Call Us</h2>
-                <a href="tel:+918979249912" className="text-sm text-slate-800 hover:text-red-600">+91 8979249912</a>
+                <div className="flex flex-col">
+                  <a href="tel:+918979249912" className="text-sm text-slate-800 hover:text-red-600">+91 8979249912</a>
+                  <a href="tel:+917500744458" className="text-sm text-slate-800 hover:text-red-600">+91 7500744458</a>
+                  <a href="tel:+917055596464" className="text-sm text-slate-800 hover:text-red-600">+91 7055596464</a>
+                </div>
               </div>
             </div>
 

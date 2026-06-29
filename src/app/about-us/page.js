@@ -208,7 +208,11 @@ const AboutUsPage = () => {
                 <div className="bg-red-50 p-5 rounded-2xl text-red-600 group-hover:bg-red-600 group-hover:text-white transition-all duration-500 shadow-sm"><IoCallOutline size={30} /></div>
                 <div>
                   <h4 className="font-black text-gray-900 uppercase tracking-widest text-xs mb-1">Call Us</h4>
-                  <a href="tel:+918979249912" className="text-gray-600 font-black hover:text-red-600 transition-colors">+91 8979249912</a>
+                  <div className="flex flex-col gap-1">
+                    <a href="tel:+918979249912" className="text-gray-600 font-black hover:text-red-600 transition-colors text-sm lg:text-base">+91 8979249912</a>
+                    <a href="tel:+917500744458" className="text-gray-600 font-black hover:text-red-600 transition-colors text-sm lg:text-base">+91 7500744458</a>
+                    <a href="tel:+917055596464" className="text-gray-600 font-black hover:text-red-600 transition-colors text-sm lg:text-base">+91 7055596464</a>
+                  </div>
                 </div>
               </div>
               <div className="flex items-center gap-6 group">

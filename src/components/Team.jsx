@@ -37,7 +37,7 @@ const Team = () => {
   return (
     <div className="text-[#7A6960]">
       <h1 data-aos="fade-right" className="text-3xl font-semibold text-center uppercase">
-        Leadership
+       Our Leadership
       </h1>
       <div className="flex justify-center items-center mt-2">
         <div className="bg-red-600 h-1 w-28 rounded"></div>

@@ -35,12 +35,12 @@ function NavBar() {
               <DesktopMenu menu={menu} key={menu.name} />
             ))}
           </ul>
-          <div className="hidden flex-center gap-x-5">
+          <div className="flex-center gap-x-5">
             <Link href="/contact-us">
             <button
               aria-label="contact-us"
               suppressHydrationWarning
-              className="bg-red-600 text-sm text-white z-[999] relative lg:px-5 lg:py-3 py-2 px-1 lg:left-0 left-2 shadow rounded-xl flex-center"
+              className="bg-red-600 text-sm text-white z-[999] relative lg:px-5 lg:py-3 py-2 px-3 lg:left-0 shadow rounded-xl flex-center"
             >
               Contact Us
             </button>

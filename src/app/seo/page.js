@@ -1,6 +1,7 @@
 'use client'
 
-import React, { useEffect } from "react";
+import React, { useEffect,useRef} from "react";
+import emailjs from "@emailjs/browser"
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import Image from "next/image";
@@ -16,6 +17,26 @@ const SEOPage = () => {
       once: true,
     });
   }, []);
+
+    // email send part
+    const form = useRef();
+    const sendEmail = (e) => {
+      e.preventDefault();
+      emailjs
+        .sendForm(
+          process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+          form.current,
+          process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
+        )
+        .then(() => {
+          alert("Message Send");
+          e.preventDefault(false);
+        })
+        .catch((error) => {
+          alert("message not send");
+        });
+    };
 
   return (
     <div className="secondary-font overflow-x-hidden bg-white selection:bg-red-50 selection:text-red-600 relative">
@@ -170,9 +191,11 @@ const SEOPage = () => {
                   </li>
                 ))}
               </ul>
+              <a href="/contact-us">
               <button className={`w-full py-5 rounded-2xl font-black uppercase text-[10px] tracking-[0.3em] transition-all duration-500 shadow-lg ${plan.highlight ? 'bg-red-600 text-white hover:bg-gray-900 shadow-red-600/20' : 'bg-gray-900 text-white hover:bg-red-600'}`}>
                 Get Started Now
               </button>
+              </a>
             </div>
           ))}
         </div>
@@ -260,23 +283,40 @@ const SEOPage = () => {
             </div>
 
             <div className="lg:w-2/3 bg-white p-8 md:p-14 rounded-[3rem] shadow-[0_30px_60px_rgba(0,0,0,0.05)] border border-gray-50">
-              <form className="space-y-8">
+              <form className="space-y-8" ref={form} onSubmit={sendEmail}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="relative group">
-                    <input type="text" placeholder="Name" className="w-full pb-4 pt-2 bg-transparent border-b border-gray-200 outline-none focus:border-red-600 transition-all font-medium text-gray-900 placeholder:text-gray-300" />
+                    <input type="text" name="name" placeholder="Name" className="w-full pb-4 pt-2 bg-transparent border-b border-gray-200 outline-none focus:border-red-600 transition-all font-medium text-gray-900 placeholder:text-gray-300" />
                     <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-red-600 transition-all duration-500 group-focus-within:w-full"></span>
                   </div>
                   <div className="relative group">
-                    <input type="email" placeholder="Email" className="w-full pb-4 pt-2 bg-transparent border-b border-gray-200 outline-none focus:border-red-600 transition-all font-medium text-gray-900 placeholder:text-gray-300" />
+                    <input type="email" name="email" placeholder="Email" className="w-full pb-4 pt-2 bg-transparent border-b border-gray-200 outline-none focus:border-red-600 transition-all font-medium text-gray-900 placeholder:text-gray-300" />
                     <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-red-600 transition-all duration-500 group-focus-within:w-full"></span>
                   </div>
                 </div>
                 <div className="relative group">
-                  <input type="text" placeholder="Subject" className="w-full pb-4 pt-2 bg-transparent border-b border-gray-200 outline-none focus:border-red-600 transition-all font-medium text-gray-900 placeholder:text-gray-300" />
+                  <select
+                    name="service"
+                    defaultValue=""
+                    className="w-full pb-4 pt-2 bg-transparent border-b border-gray-200 outline-none focus:border-red-600 transition-all font-medium text-gray-900 placeholder:text-gray-300"
+                  >
+                    <option value="" disabled className="text-gray-300">
+                      Select Service
+                    </option>
+                    <option value="web-development">Website Development And Hosting</option>
+                    <option value="seo">Search Engin Optimization (SEO)</option>
+                    <option value="digital-marketing">Social Media Marketing (SMM)</option>
+                    <option value="ui-ux-design">Meta Ads/Google Ads</option>
+                  </select>
+
                   <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-red-600 transition-all duration-500 group-focus-within:w-full"></span>
                 </div>
                 <div className="relative group">
-                  <textarea placeholder="Message" rows="4" className="w-full pb-4 pt-2 bg-transparent border-b border-gray-200 outline-none focus:border-red-600 transition-all font-medium text-gray-900 placeholder:text-gray-300 resize-none"></textarea>
+                  <input type="text" name="subject" placeholder="Subject" className="w-full pb-4 pt-2 bg-transparent border-b border-gray-200 outline-none focus:border-red-600 transition-all font-medium text-gray-900 placeholder:text-gray-300" />
+                  <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-red-600 transition-all duration-500 group-focus-within:w-full"></span>
+                </div>
+                <div className="relative group">
+                  <textarea placeholder="Message" name="message" rows="4" className="w-full pb-4 pt-2 bg-transparent border-b border-gray-200 outline-none focus:border-red-600 transition-all font-medium text-gray-900 placeholder:text-gray-300 resize-none"></textarea>
                   <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-red-600 transition-all duration-500 group-focus-within:w-full"></span>
                 </div>
                 <div className="pt-4">

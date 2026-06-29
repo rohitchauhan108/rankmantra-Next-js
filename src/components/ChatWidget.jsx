@@ -99,11 +99,11 @@ const ChatWidget = () => {
           onClick={toggleChat}
         >
           <FaComment className="text-2xl" />
-          {isHovered && (
+          {/* {isHovered && (
             <div className="absolute right-full mr-2 px-3 py-2 bg-white text-gray-800 text-sm rounded-md shadow-md whitespace-nowrap">
               Any query? Connect with me!
             </div>
-          )}
+          )} */}
         </div>
       </div>
 

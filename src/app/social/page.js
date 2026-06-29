@@ -1,6 +1,7 @@
 'use client'
 
-import React, { useEffect } from "react";
+import React, { useEffect ,useRef } from "react";
+import emailjs from "@emailjs/browser"
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import Contact from '@/components/Contact'
@@ -17,6 +18,26 @@ const SocialMediaPage = () => {
       once: true,
     });
   }, []);
+
+    // email send part
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        form.current,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
+      )
+      .then(() => {
+        alert("Message Send");
+        e.preventDefault(false);
+      })
+      .catch((error) => {
+        alert("message not send");
+      });
+  };
 
   const handleScrollToContact = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
@@ -372,23 +393,40 @@ const SocialMediaPage = () => {
             {/* Form Column */}
             <div className="lg:w-2/3">
               <div className="bg-white p-10 md:p-16 rounded-[3.5rem] shadow-[0_50px_100px_rgba(0,0,0,0.06)] border border-gray-50">
-                <form className="space-y-10">
+                <form className="space-y-10" ref={form} onSubmit={sendEmail}>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                     <div className="relative group">
-                      <input type="text" placeholder="Name" className="w-full pb-5 pt-2 bg-transparent border-b-2 border-gray-100 outline-none focus:border-red-600 transition-all font-bold text-gray-900 placeholder:text-gray-300 text-lg" />
+                      <input type="text" name="name" placeholder="Name" className="w-full pb-5 pt-2 bg-transparent border-b-2 border-gray-100 outline-none focus:border-red-600 transition-all font-bold text-gray-900 placeholder:text-gray-300 text-lg" />
                       <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-red-600 transition-all duration-700 group-focus-within:w-full"></span>
                     </div>
                     <div className="relative group">
-                      <input type="email" placeholder="Email" className="w-full pb-5 pt-2 bg-transparent border-b-2 border-gray-100 outline-none focus:border-red-600 transition-all font-bold text-gray-900 placeholder:text-gray-300 text-lg" />
+                      <input type="email" name="email" placeholder="Email" className="w-full pb-5 pt-2 bg-transparent border-b-2 border-gray-100 outline-none focus:border-red-600 transition-all font-bold text-gray-900 placeholder:text-gray-300 text-lg" />
                       <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-red-600 transition-all duration-700 group-focus-within:w-full"></span>
                     </div>
                   </div>
                   <div className="relative group">
-                    <input type="text" placeholder="Subject" className="w-full pb-5 pt-2 bg-transparent border-b-2 border-gray-100 outline-none focus:border-red-600 transition-all font-bold text-gray-900 placeholder:text-gray-300 text-lg" />
+                  <select
+                    name="service"
+                    defaultValue=""
+                    className="w-full pb-4 pt-2 bg-transparent border-b border-gray-200 outline-none focus:border-red-600 transition-all font-medium text-gray-900 placeholder:text-gray-300"
+                  >
+                    <option value="" disabled className="text-gray-300">
+                      Select Service
+                    </option>
+                    <option value="web-development">Website Development And Hosting</option>
+                    <option value="seo">Search Engin Optimization (SEO)</option>
+                    <option value="digital-marketing">Social Media Marketing (SMM)</option>
+                    <option value="ui-ux-design">Meta Ads/Google Ads</option>
+                  </select>
+
+                  <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-red-600 transition-all duration-500 group-focus-within:w-full"></span>
+                </div>
+                  <div className="relative group">
+                    <input type="text" name="subject" placeholder="Subject" className="w-full pb-5 pt-2 bg-transparent border-b-2 border-gray-100 outline-none focus:border-red-600 transition-all font-bold text-gray-900 placeholder:text-gray-300 text-lg" />
                     <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-red-600 transition-all duration-700 group-focus-within:w-full"></span>
                   </div>
                   <div className="relative group">
-                    <textarea placeholder="Message" rows="4" className="w-full pb-5 pt-2 bg-transparent border-b-2 border-gray-100 outline-none focus:border-red-600 transition-all font-bold text-gray-900 placeholder:text-gray-300 resize-none text-lg"></textarea>
+                    <textarea placeholder="Message" name="message" rows="4" className="w-full pb-5 pt-2 bg-transparent border-b-2 border-gray-100 outline-none focus:border-red-600 transition-all font-bold text-gray-900 placeholder:text-gray-300 resize-none text-lg"></textarea>
                     <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-red-600 transition-all duration-700 group-focus-within:w-full"></span>
                   </div>
                   <div className="pt-6">

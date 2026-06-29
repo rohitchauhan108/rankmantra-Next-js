@@ -1,7 +1,8 @@
 'use client'
 
-import React, { useEffect } from "react";
+import React, { useEffect,useRef } from "react";
 import NavBar from '@/components/NavBar'
+import emailjs from "@emailjs/browser"
 import Footer from '@/components/Footer'
 import Image from "next/image";
 import AOS from "aos";
@@ -17,6 +18,26 @@ const AboutUsPage = () => {
       once: true,
     });
   }, []);
+
+    // email send part
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        form.current,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
+      )
+      .then(() => {
+        alert("Message Send");
+        e.preventDefault(false);
+      })
+      .catch((error) => {
+        alert("message not send");
+      });
+  };
 
   return (
     <div className="secondary-font overflow-x-hidden bg-white selection:bg-red-50 selection:text-red-600 relative">
@@ -200,24 +221,24 @@ const AboutUsPage = () => {
             </div>
             
             <div className="lg:col-span-2">
-              <form className="bg-gray-50/50 p-8 lg:p-12 rounded-[3rem] border border-gray-100 shadow-inner">
+              <form className="bg-gray-50/50 p-8 lg:p-12 rounded-[3rem] border border-gray-100 shadow-inner" ref={form} onSubmit={sendEmail}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-6 lg:mb-8">
                   <div className="space-y-2">
                     <label className="text-xs font-black uppercase tracking-widest text-gray-400 ml-2">Name</label>
-                    <input type="text" placeholder="Your Name" className="w-full p-4 lg:p-5 bg-white border border-gray-100 rounded-2xl outline-none focus:border-red-600 transition-all font-bold text-gray-900 shadow-sm" />
+                    <input type="text" name="name" placeholder="Your Name" className="w-full p-4 lg:p-5 bg-white border border-gray-100 rounded-2xl outline-none focus:border-red-600 transition-all font-bold text-gray-900 shadow-sm" />
                   </div>
                   <div className="space-y-2">
                     <label className="text-xs font-black uppercase tracking-widest text-gray-400 ml-2">Email</label>
-                    <input type="email" placeholder="Your Email" className="w-full p-4 lg:p-5 bg-white border border-gray-100 rounded-2xl outline-none focus:border-red-600 transition-all font-bold text-gray-900 shadow-sm" />
+                    <input type="email" name="email" placeholder="Your Email" className="w-full p-4 lg:p-5 bg-white border border-gray-100 rounded-2xl outline-none focus:border-red-600 transition-all font-bold text-gray-900 shadow-sm" />
                   </div>
                 </div>
                 <div className="space-y-2 mb-6 lg:mb-8">
                   <label className="text-xs font-black uppercase tracking-widest text-gray-400 ml-2">Subject</label>
-                  <input type="text" placeholder="Subject" className="w-full p-4 lg:p-5 bg-white border border-gray-100 rounded-2xl outline-none focus:border-red-600 transition-all font-bold text-gray-900 shadow-sm" />
+                  <input type="text" name="subject" placeholder="Subject" className="w-full p-4 lg:p-5 bg-white border border-gray-100 rounded-2xl outline-none focus:border-red-600 transition-all font-bold text-gray-900 shadow-sm" />
                 </div>
                 <div className="space-y-2 mb-10 lg:mb-12">
                   <label className="text-xs font-black uppercase tracking-widest text-gray-400 ml-2">Message</label>
-                  <textarea placeholder="Your Message" rows="5" className="w-full p-4 lg:p-5 bg-white border border-gray-100 rounded-2xl outline-none focus:border-red-600 transition-all font-bold text-gray-900 shadow-sm resize-none"></textarea>
+                  <textarea placeholder="Your Message" name="message" rows="5" className="w-full p-4 lg:p-5 bg-white border border-gray-100 rounded-2xl outline-none focus:border-red-600 transition-all font-bold text-gray-900 shadow-sm resize-none"></textarea>
                 </div>
                 <button type="submit" className="bg-red-600 text-white font-black py-4 lg:py-5 px-12 lg:px-16 rounded-full hover:bg-gray-900 transition-all uppercase tracking-[0.3em] text-xs shadow-xl shadow-red-600/20 w-full md:w-fit">Send Message</button>
               </form>

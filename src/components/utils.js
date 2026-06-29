@@ -2,6 +2,7 @@ import { Circle, Link, OrigamiIcon, Search, WebhookIcon, Server, Cloud, Layout, 
 import { DraftingCompass } from "lucide-react";
 import { MdDesignServices, MdDeveloperBoard, MdEco, MdLogoDev } from "react-icons/md";
 import { SiErpnext, SiShopify, SiWebstorm, SiWix, SiWordpress } from "react-icons/si";
+import { FaCode, FaSearch, FaShareAlt } from "react-icons/fa";
 
 export const Menus = [
   
@@ -149,7 +150,7 @@ export const Menus = [
       {
         name: "WEB Hosting packages",
         icon: WebhookIcon,
-        link:"/web-hosting-package"
+        link:"https://rankmantra.com/hosting/"
       },
     ],
     gridCols: 1,
@@ -157,6 +158,26 @@ export const Menus = [
   {
     name: "SOCIAL MEDIA",
     link:"/social"
+  },
+  {
+    name:"OUR WORK",
+    subMenu:[
+      {
+        name:"Web Development",
+        icon: FaCode,
+        link:"/"
+      },
+      {
+        name:"SEO",
+        icon: FaSearch,
+        link:"/"
+      },
+      {
+        name:"Social Media Marketing",
+        icon: FaShareAlt,
+        link:"/"
+      }
+    ]
   },
   {
     name: "ABOUT US",

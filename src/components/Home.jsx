@@ -14,6 +14,7 @@ import Footer from '@/components/Footer'
 import FreqAskedQues from '@/components/FreqAskedQues'
 import ChatWidget from '@/components/ChatWidget'
 import Newsletter from '@/components/Newsletter'
+import FlotingIcons from './FlotingIcons';
 
 const Home = () => {
   return (
@@ -54,6 +55,7 @@ const Home = () => {
       </section>
 
       <Newsletter />
+      <FlotingIcons/>
       <Footer />
     </div>
   )

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@emotion/styled": "^11.14.0",
     "@heroicons/react": "^2.2.0",
     "@mui/material": "^6.4.2",

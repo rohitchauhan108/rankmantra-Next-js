@@ -37,16 +37,16 @@ const Team = () => {
   return (
     <div className="text-[#7A6960]">
       <h1 data-aos="fade-right" className="text-3xl font-semibold text-center uppercase">
-        Team
+        Leadership
       </h1>
       <div className="flex justify-center items-center mt-2">
-        <div className="bg-red-600 h-1 w-16 rounded"></div>
+        <div className="bg-red-600 h-1 w-28 rounded"></div>
       </div>
       <p className="text-gray-700 text-center mt-7 mb-10 text-lg">
         Custom Web Development Services to Elevate Your Digital Presence with RankMantra
       </p>
 
-      <div className="flex flex-wrap justify-center items-center gap-6 p-5 lg:p-0">
+      <div className="flex flex-wrap justify-center items-center gap-28 p-5 lg:p-0">
         {teamMembers.map((member, index) => (
           <div key={index} className="relative w-full sm:w-[250px]">
             <Image

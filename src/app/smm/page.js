@@ -1,6 +1,7 @@
 'use client'
 
-import React, { useEffect } from "react";
+import React, { useEffect ,useRef } from "react";
+import emailjs from "@emailjs/browser"
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import Image from "next/image";
@@ -16,6 +17,26 @@ const SMMPage = () => {
       once: true,
     });
   }, []);
+
+    // email send part
+    const form = useRef();
+    const sendEmail = (e) => {
+      e.preventDefault();
+      emailjs
+        .sendForm(
+          process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+          form.current,
+          process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
+        )
+        .then(() => {
+          alert("Message Send");
+          e.preventDefault(false);
+        })
+        .catch((error) => {
+          alert("message not send");
+        });
+    };
 
   return (
     <div className="secondary-font overflow-x-hidden bg-white selection:bg-red-50 selection:text-red-600 relative">
@@ -212,9 +233,11 @@ const SMMPage = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-4 uppercase tracking-tight">{step.title}</h3>
                 <p className="text-gray-400 text-sm mb-10 flex-grow leading-relaxed font-light italic">{step.desc}</p>
+                <a href="/contact-us">
                 <button className="bg-transparent border border-white/20 text-white font-semibold py-3 px-8 rounded-full transition-all duration-500 w-full uppercase text-[10px] tracking-[0.2em] group-hover:bg-red-600 group-hover:border-red-600">
                   {step.btn}
                 </button>
+                </a>
               </div>
             ))}
           </div>
@@ -262,7 +285,7 @@ const SMMPage = () => {
             </div>
 
             <div className="lg:w-2/3 bg-white p-8 md:p-14 rounded-[3rem] shadow-[0_30px_60px_rgba(0,0,0,0.05)] border border-gray-50">
-              <form className="space-y-8">
+              <form className="space-y-8" ref={form} onSubmit={sendEmail}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="relative group">
                     <input type="text" placeholder="Name" className="w-full pb-4 pt-2 bg-transparent border-b border-gray-200 outline-none focus:border-red-600 transition-all font-medium text-gray-900 placeholder:text-gray-300" />
@@ -272,6 +295,23 @@ const SMMPage = () => {
                     <input type="email" placeholder="Email" className="w-full pb-4 pt-2 bg-transparent border-b border-gray-200 outline-none focus:border-red-600 transition-all font-medium text-gray-900 placeholder:text-gray-300" />
                     <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-red-600 transition-all duration-500 group-focus-within:w-full"></span>
                   </div>
+                </div>
+                <div className="relative group">
+                  <select
+                    name="service"
+                    defaultValue=""
+                    className="w-full pb-4 pt-2 bg-transparent border-b border-gray-200 outline-none focus:border-red-600 transition-all font-medium text-gray-900 placeholder:text-gray-300"
+                  >
+                    <option value="" disabled className="text-gray-300">
+                      Select Service
+                    </option>
+                    <option value="web-development">Website Development And Hosting</option>
+                    <option value="seo">Search Engin Optimization (SEO)</option>
+                    <option value="digital-marketing">Social Media Marketing (SMM)</option>
+                    <option value="ui-ux-design">Meta Ads/Google Ads</option>
+                  </select>
+
+                  <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-red-600 transition-all duration-500 group-focus-within:w-full"></span>
                 </div>
                 <div className="relative group">
                   <input type="text" placeholder="Subject" className="w-full pb-4 pt-2 bg-transparent border-b border-gray-200 outline-none focus:border-red-600 transition-all font-medium text-gray-900 placeholder:text-gray-300" />

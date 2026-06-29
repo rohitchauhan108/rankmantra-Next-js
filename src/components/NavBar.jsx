@@ -35,7 +35,7 @@ function NavBar() {
               <DesktopMenu menu={menu} key={menu.name} />
             ))}
           </ul>
-          <div className="flex-center gap-x-5">
+          <div className="hidden flex-center gap-x-5">
             <Link href="/contact-us">
             <button
               aria-label="contact-us"

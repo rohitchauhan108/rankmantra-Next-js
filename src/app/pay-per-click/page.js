@@ -1,6 +1,7 @@
 'use client'
 
-import React, { useEffect } from "react";
+import React, { useEffect,useRef } from "react";
+import emailjs from "@emailjs/browser"
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import Image from "next/image";
@@ -16,6 +17,26 @@ const PayPerClickPage = () => {
       once: true,
     });
   }, []);
+
+    // email send part
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        form.current,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
+      )
+      .then(() => {
+        alert("Message Send");
+        e.preventDefault(false);
+      })
+      .catch((error) => {
+        alert("message not send");
+      });
+  };
 
   return (
     <div className="secondary-font overflow-x-hidden bg-white selection:bg-red-50 selection:text-red-600 relative">
@@ -53,12 +74,19 @@ const PayPerClickPage = () => {
           </p>
           <div className="flex flex-wrap gap-6 justify-center">
             <button 
-              suppressHydrationWarning
+              suppressHydrationWarning  
+              onClick={() =>
+                document
+                  .getElementById("contact")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
               className="bg-red-600 hover:bg-white hover:text-red-600 text-white font-bold py-5 px-14 rounded-full transition-all duration-500 uppercase tracking-[0.2em] text-[11px] hover:shadow-[0_25px_50px_rgba(220,38,38,0.4)] active:scale-95"
             >
               SCHEDULE A CALL
             </button>
-            <button className="bg-white/10 backdrop-blur-md border-2 border-white text-white font-bold py-5 px-14 rounded-full transition-all duration-500 uppercase tracking-[0.2em] text-[11px] hover:bg-white hover:text-black active:scale-95">
+            <button
+            onClick={() => document.getElementById("packages")?.scrollIntoView({ behavior: "smooth" })}
+            className="bg-white/10 backdrop-blur-md border-2 border-white text-white font-bold py-5 px-14 rounded-full transition-all duration-500 uppercase tracking-[0.2em] text-[11px] hover:bg-white hover:text-black active:scale-95">
               VIEW PACKAGES
             </button>
           </div>
@@ -75,7 +103,7 @@ const PayPerClickPage = () => {
         </div>
 
         {/* Google PPC */}
-        <div className="max-w-7xl mx-auto mb-32 relative z-10" data-aos="fade-up">
+        <div className="max-w-7xl mx-auto mb-32 relative z-10" data-aos="fade-up" id="packages">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-0 rounded-[3rem] overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.05)] border border-gray-100">
             {/* Label Column */}
             <div className="bg-gray-950 p-12 flex flex-col justify-center text-white">
@@ -115,7 +143,7 @@ const PayPerClickPage = () => {
                 <li>YES</li>
               </ul>
               <button className="w-full py-4 bg-gray-900 text-white font-black rounded-2xl hover:bg-red-600 transition-all uppercase text-[10px] tracking-[0.3em] shadow-lg">
-                Get Started
+                <a href="/contact-us">Get Started</a>
               </button>
             </div>
 
@@ -136,7 +164,7 @@ const PayPerClickPage = () => {
                 <li>YES</li>
               </ul>
               <button className="w-full py-4 bg-red-600 text-white font-black rounded-2xl hover:bg-gray-900 transition-all uppercase text-[10px] tracking-[0.3em] shadow-xl shadow-red-600/20">
-                Get Started
+                <a href="/contact-us">Get Started</a>
               </button>
             </div>
 
@@ -156,7 +184,7 @@ const PayPerClickPage = () => {
                 <li>YES</li>
               </ul>
               <button className="w-full py-4 bg-gray-900 text-white font-black rounded-2xl hover:bg-red-600 transition-all uppercase text-[10px] tracking-[0.3em] shadow-lg">
-                Get Started
+                <a href="/contact-us">Get Started</a>
               </button>
             </div>
           </div>
@@ -203,7 +231,7 @@ const PayPerClickPage = () => {
                 <li>YES</li>
               </ul>
               <button className="w-full py-4 bg-gray-900 text-white font-black rounded-2xl hover:bg-red-600 transition-all uppercase text-[10px] tracking-[0.3em] shadow-lg">
-                Get Started
+                <a href="/contact-us">Get Started</a>
               </button>
             </div>
 
@@ -224,7 +252,7 @@ const PayPerClickPage = () => {
                 <li>YES</li>
               </ul>
               <button className="w-full py-4 bg-red-600 text-white font-black rounded-2xl hover:bg-gray-900 transition-all uppercase text-[10px] tracking-[0.3em] shadow-xl shadow-red-600/20">
-                Get Started
+                <a href="/contact-us">Get Started</a>
               </button>
             </div>
 
@@ -244,7 +272,7 @@ const PayPerClickPage = () => {
                 <li>YES</li>
               </ul>
               <button className="w-full py-4 bg-gray-900 text-white font-black rounded-2xl hover:bg-red-600 transition-all uppercase text-[10px] tracking-[0.3em] shadow-lg">
-                Get Started
+                <a href="/contact-us">Get Started</a>
               </button>
             </div>
           </div>
@@ -283,9 +311,11 @@ const PayPerClickPage = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-4 uppercase tracking-tight">{step.title}</h3>
                 <p className="text-gray-400 text-sm mb-10 flex-grow leading-relaxed font-light italic">{step.desc}</p>
+                <a href="/contact-us">
                 <button className="bg-transparent border border-white/20 text-white font-semibold py-3 px-8 rounded-full transition-all duration-500 w-full uppercase text-[10px] tracking-[0.2em] group-hover:bg-red-600 group-hover:border-red-600">
                   {step.btn}
                 </button>
+                </a>
               </div>
             ))}
           </div>
@@ -333,23 +363,40 @@ const PayPerClickPage = () => {
             </div>
 
             <div className="lg:w-2/3 bg-white p-8 md:p-14 rounded-[3rem] shadow-[0_30px_60px_rgba(0,0,0,0.05)] border border-gray-50">
-              <form className="space-y-8">
+              <form className="space-y-8" ref={form} onSubmit={sendEmail}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="relative group">
-                    <input type="text" placeholder="Name" className="w-full pb-4 pt-2 bg-transparent border-b border-gray-200 outline-none focus:border-red-600 transition-all font-medium text-gray-900 placeholder:text-gray-300" />
+                    <input type="text"name="name" placeholder="Name" className="w-full pb-4 pt-2 bg-transparent border-b border-gray-200 outline-none focus:border-red-600 transition-all font-medium text-gray-900 placeholder:text-gray-300" />
                     <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-red-600 transition-all duration-500 group-focus-within:w-full"></span>
                   </div>
                   <div className="relative group">
-                    <input type="email" placeholder="Email" className="w-full pb-4 pt-2 bg-transparent border-b border-gray-200 outline-none focus:border-red-600 transition-all font-medium text-gray-900 placeholder:text-gray-300" />
+                    <input type="email" name="email" placeholder="Email" className="w-full pb-4 pt-2 bg-transparent border-b border-gray-200 outline-none focus:border-red-600 transition-all font-medium text-gray-900 placeholder:text-gray-300" />
                     <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-red-600 transition-all duration-500 group-focus-within:w-full"></span>
                   </div>
                 </div>
                 <div className="relative group">
-                  <input type="text" placeholder="Subject" className="w-full pb-4 pt-2 bg-transparent border-b border-gray-200 outline-none focus:border-red-600 transition-all font-medium text-gray-900 placeholder:text-gray-300" />
+                  <select
+                    name="service"
+                    defaultValue=""
+                    className="w-full pb-4 pt-2 bg-transparent border-b border-gray-200 outline-none focus:border-red-600 transition-all font-medium text-gray-900 placeholder:text-gray-300"
+                  >
+                    <option value="" disabled className="text-gray-300">
+                      Select Service
+                    </option>
+                    <option value="web-development">Website Development And Hosting</option>
+                    <option value="seo">Search Engin Optimization (SEO)</option>
+                    <option value="digital-marketing">Social Media Marketing (SMM)</option>
+                    <option value="ui-ux-design">Meta Ads/Google Ads</option>
+                  </select>
+
                   <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-red-600 transition-all duration-500 group-focus-within:w-full"></span>
                 </div>
                 <div className="relative group">
-                  <textarea placeholder="Message" rows="4" className="w-full pb-4 pt-2 bg-transparent border-b border-gray-200 outline-none focus:border-red-600 transition-all font-medium text-gray-900 placeholder:text-gray-300 resize-none"></textarea>
+                  <input type="text" name="subject" placeholder="Subject" className="w-full pb-4 pt-2 bg-transparent border-b border-gray-200 outline-none focus:border-red-600 transition-all font-medium text-gray-900 placeholder:text-gray-300" />
+                  <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-red-600 transition-all duration-500 group-focus-within:w-full"></span>
+                </div>
+                <div className="relative group">
+                  <textarea placeholder="Message" name="message" rows="4" className="w-full pb-4 pt-2 bg-transparent border-b border-gray-200 outline-none focus:border-red-600 transition-all font-medium text-gray-900 placeholder:text-gray-300 resize-none"></textarea>
                   <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-red-600 transition-all duration-500 group-focus-within:w-full"></span>
                 </div>
                 <div className="pt-4">

@@ -1,9 +1,29 @@
 'use client'
-
+import {useRef} from 'react'
+import emailjs from "@emailjs/browser"
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 
 export default function ContactUsPage() {
+    // email send part
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        form.current,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
+      )
+      .then(() => {
+        alert("Message Send");
+        e.preventDefault(false);
+      })
+      .catch((error) => {
+        alert("message not send");
+      });
+  };
   return (
     <>
       <NavBar />
@@ -23,7 +43,7 @@ export default function ContactUsPage() {
               </div>
             </div>
             <div>
-              <form className="space-y-4">
+              <form className="space-y-4" ref={form} onSubmit={sendEmail}>
                 <input type="text" placeholder="Your Name" className="w-full border p-3 rounded" />
                 <input type="email" placeholder="Your Email" className="w-full border p-3 rounded" />
                 <textarea placeholder="Message" rows="5" className="w-full border p-3 rounded"></textarea>

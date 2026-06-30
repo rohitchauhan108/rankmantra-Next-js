@@ -165,17 +165,18 @@ export const Menus = [
       {
         name:"Web Development",
         icon: FaCode,
-        link:"/"
+        target:"_blank",
+        link:"/our-work/web-development.pdf"
       },
       {
         name:"SEO",
         icon: FaSearch,
-        link:"/"
+        link:"/our-work/seo.pdf"
       },
       {
         name:"Social Media Marketing",
         icon: FaShareAlt,
-        link:"/"
+        link:"/our-work/social-media-marketing.pdf"
       }
     ]
   },

@@ -5,7 +5,7 @@ function FlotingIcons() {
   const phoneNumber = "918979249912"; // Primary support number
 
   return (
-    <div className="fixed bottom-24 right-8 flex flex-col gap-3 z-50">
+    <div className="fixed bottom-24 right-8 flex flex-col gap-3 z-10">
       {/* WhatsApp */}
       <div className="relative group flex justify-end">
         <a

@@ -50,6 +50,7 @@ const Footer = () => {
               <a href="tel:+918979249912" className="font-normal hover:text-red-600">
                 +91 8979249912
               </a>
+              <p className="font-medium mt-2 mb-2"> Support Numbers:</p>
               <a href="tel:+917500744458" className="font-normal hover:text-red-600">
                 +91 7500744458
               </a>

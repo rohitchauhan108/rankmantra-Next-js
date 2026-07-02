@@ -15,7 +15,6 @@ import FreqAskedQues from '@/components/FreqAskedQues'
 import ChatWidget from '@/components/ChatWidget'
 import Newsletter from '@/components/Newsletter'
 import FlotingIcons from './FlotingIcons';
-
 const Home = () => {
   return (
     <div className="container min-w-full min-h-lvh secondary-font">

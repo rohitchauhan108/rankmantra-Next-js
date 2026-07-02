@@ -29,8 +29,7 @@ const Services = () => {
         <div className="bg-red-600 h-1 w-16 rounded"></div>
       </div>
       <p className="text-gray-700 text-start mt-7 mb-10 text-lg p-2">
-        Boost Sales and Efficiency with Professional Web Development and Design.
-        Our web design services enhance your online visibility, driving increased sales, profitability, and cost efficiency for your business.
+        We offer Digital Marketing Services in Dehradun that empower businesses with a strong online presence, reaching target audiences, and efficiently generating maximum returns from their online endeavors. From innovative campaign ideas to cutting-edge technology, and data analysis, our custom-made approaches are designed to enhance your brand presence and reach, boost the quality of leads you bring in and ensure your business maintains a steady, graduate growth curve.
       </p>
       <div
         className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 p-2"
@@ -41,7 +40,7 @@ const Services = () => {
             img={<HiOutlineChartPie />}
             title={"Apps Development"}
             desc={
-              "We provide expert app development services, creating custom, scalable, and user-friendly apps for iOS, Android, and cross-platform solutions."
+              "We develop customised, scalable and secure user-friendly mobile applications for Android, iOS and cross platform."
             }
           />
         </div>
@@ -51,7 +50,7 @@ const Services = () => {
             img={<CgWebsite />}
             title={"Web Development"}
             desc={
-              "We specialize in web development, offering custom websites, Ecommerce solutions, responsive designs, and seamless integrations user experience."
+              "We build responsive web sites, eCommerce solutions and custom web solutions for performance and user experience."
             }
           />
         </div>
@@ -59,9 +58,9 @@ const Services = () => {
         <div>
           <Card
             img={<MdContentPasteSearch />}
-            title={"Search Engine Optimization"}
+            title={"Optimization for Search Engines (SEO)"}
             desc={
-              "Enhance your website's visibility, improve search rankings, and drive organic traffic with our effective, customized, results-driven SEO strategies."
+              "Get your website noticed online, improve where your website shows up and have long term success, on the internet with our great Search Engine Optimization strategies."
             }
           />
         </div>
@@ -71,7 +70,7 @@ const Services = () => {
             img={<MdCampaign />}
             title={"Campaign-Creation"}
             desc={
-              "We specialize in campaign-creation, designing targeted-strategies to drive engagement, conversions, and maximize results."
+              "Specialists in the creation of campaigns, target-oriented strategy development, engagement, conversions and results maximisation."
             }
           />
         </div>
@@ -81,7 +80,7 @@ const Services = () => {
             img={<FaAmazonPay />}
             title={"PPC Packages"}
             desc={
-              "Our PPC packages provide custom strategies to optimize ad spend, boost traffic, and increase conversions, delivering measurable, high-impact results for your business."
+              "Targeted ads, optimized bidding strategies and ROI with effective paid campaigns are the main aspects our PPC services cater on."
             }
           />
         </div>
@@ -90,7 +89,7 @@ const Services = () => {
             img={<IoShareSocialSharp />}
             title={"SMM Packages"}
             desc={
-              "Our SMM packages provide customized social media strategies to enhance brand visibility, engage your audience, drive targeted traffic, and increase conversions various platforms."
+              "We handle social media with interesting content strategies, and we increase the number of followers, the visibility of the brand and get conversions."
             }
           />
         </div>
@@ -99,7 +98,7 @@ const Services = () => {
             img={<RiBaseStationLine />}
             title={"ORM Packages"}
             desc={
-              "Our ORM packages help manage and improve your online reputation by addressing negative content, enhancing brand perception, and boosting positive reviews to build customer trust."
+              "We safeguard and improve your online records, eliminate negativity and construct reliability."
             }
           />
         </div>
@@ -108,7 +107,7 @@ const Services = () => {
             img={<SiHostinger />}
             title={"Web Hosting Packages"}
             desc={
-              "Our web hosting packages provide secure, fast, and reliable hosting solutions, ensuring excellent uptime, support, and scalability for your website."
+              "We offer high quality secure, fast and reliable hosting solutions which come with consistent uptime, scalability and technical support."
             }
           />
         </div>

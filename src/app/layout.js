@@ -15,8 +15,12 @@ const poppins = Poppins({
 })
 
 export const metadata = {
-  title: 'Rankmantra - Digital Marketing & Development',
-  description: 'Professional digital marketing, web development, and software solutions',
+  title: 'Digital Marketing Services in Dehradun | RankMantra',
+  description: 'RankMantra is the best digital marketing agency in Dehradun – provides professional digital marketing services to strengthen your business entity in the form of SEO, PPC, SMM and web development.',
+  icons: {
+    icon: '/favicon.png',
+    apple: '/img/apple-touch-icon.png',
+  },
 }
 
 export default function RootLayout({ children }) {

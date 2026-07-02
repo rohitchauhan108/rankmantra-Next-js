@@ -9,18 +9,18 @@ const Faquestions = () => {
       <div className="md:flex w-full md:gap-5 mb-5">
         <div className="md:w-1/2 mb-2 md:mb-0">
           <Accordian
-            question={"What is typically included in an SEO package"}
+            question={"So what do SEO packages entail?"}
             answer={
-              "An SEO package usually includes keyword research, on-page optimization (such as meta tags and content improvement), link building, technical SEO (like site speed and mobile optimization), regular performance reports, and continuous monitoring to improve search engine rankings."
+              "Our SEO services also include keyword research, on page optimization, web optimizing, backlinking and performance tracking. They complement each other in the aim of optimizing the search ranking of the web page, further boosting the organic traffic, and facilitating the development of the company."
             }
           />
         </div>
 
         <div className="md:w-1/2">
           <Accordian
-            question={"What does an SMM package includes"}
+            question={"What will be included in SMM packages?"}
             answer={
-              " An SMM package typically includes social media account setup or optimization, content creation, scheduling and posting, community management, paid ad campaigns, analytics and reporting, audience engagement, and strategy development to increase brand visibility, traffic, and conversions across platforms like Facebook, Instagram, Twitter, and LinkedIn."
+              "Our SMM packages include content creation, Content posting methodology, Targeting the viewer, Engagement Measure, and Campaigns! We develop social media strategies and marketing tactics that you can use to grow the visibility of your brand, attract customers and boost quality website traffic on various platforms."
             }
           />
         </div>
@@ -29,18 +29,18 @@ const Faquestions = () => {
       <div className="md:flex w-full md:gap-5 mb-5">
         <div className="md:w-1/2 mb-2 md:mb-0">
           <Accordian
-            question={"What is included in a PPC (Pay-Per-Click) package"}
+            question={"What things do PPC packages include?"}
             answer={
-              "A PPC package generally includes keyword research, ad copywriting, campaign setup, bid management, landing page optimization, audience targeting, budget management, and ongoing monitoring. It also provides detailed analytics and performance reporting to optimize ad campaigns, improve ROI, and drive targeted traffic to your website."
+              "Our PPC packages include ad creation, bid strategy, PPC optimization, and conversion tracking. All campaigns are continuously monitored to optimize results, to lower ad spend and to maximize ROI on your ad dollars."
             }
           />
         </div>
 
         <div className="md:w-1/2">
           <Accordian
-            question={"What does an ORM package includes"}
+            question={"What do ORM packages contain?"}
             answer={
-              "An ORM package typically includes monitoring and analyzing your brand's online presence, addressing negative reviews or comments, improving positive content, and managing public relations. It may also involve content creation (like blog posts or social media updates) to enhance your brand image, along with strategies to promote positive reviews and maintain a good reputation across search engines and social platforms."
+              "Talk about reputation management, monitoring and strategies. If you're looking to keep a steady eye on how your brand is being perceived online, improve customers' feedback, respond to negative comments and reinforce your brand's image to gain your audience's trust, our ORM services are for you."
             }
           />
         </div>
@@ -49,18 +49,18 @@ const Faquestions = () => {
       <div className="md:flex w-full md:gap-5 mb-5">
         <div className="md:w-1/2 mb-2 md:mb-0 ">
           <Accordian
-            question={" What is included in a web hosting package"}
+            question={"What does Web Hosting entail?"}
             answer={
-              "A web hosting package generally includes server space to store your website's files, domain name registration or linking, email hosting, security features like SSL certificates, regular backups, and technical support. Some packages also offer features like website builders, content management system (CMS) support, bandwidth, and storage options, depending on the hosting plan selected (shared, VPS, dedicated, or cloud hosting)."
+              "We provide space on the server, security, web backups, database, support and uptime monitoring with our web hosting packages. With 24/5 technical support, we provide your website the greatest degree of security, speed, reliability and accessibility that is possible."
             }
           />
         </div>
 
         <div className="md:w-1/2">
           <Accordian
-            question={"What is included in a web development package"}
+            question={"What elements are involved in Web Development?"}
             answer={
-              "A web development package typically includes website design and layout creation, front-end and back-end development, mobile responsiveness, user experience (UX) optimization, content management system (CMS) integration, and custom functionality development. It may also cover website testing, SEO optimization, security measures (SSL, firewalls), and post-launch maintenance, along with ongoing support for updates and improvements."
+              "All web design, development, testing, deployment and integration are included in our web design services. We create responsive, high functioning web pages that provide a fantastic user experience and will support your business goals."
             }
           />
         </div>

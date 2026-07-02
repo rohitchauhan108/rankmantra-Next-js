@@ -32,10 +32,10 @@ const Hero = () => {
 
       <div data-aos="fade-up" className="relative z-10 text-center px-6 max-w-5xl pt-16">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg leading-tight">
-          Elevate Your Digital Presence
+          Elevate Your Digital Presence with Digital Marketing Services in Dehradun
         </h1>
         <p className="text-lg md:text-xl lg:text-2xl text-gray-200 mb-10 max-w-3xl mx-auto drop-shadow-md">
-          Expert digital marketing, web development, and software solutions tailored to your business needs
+          Professional digital marketing, web development and software services customised for your business requirements.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a href="#contact" className="w-full sm:w-auto">

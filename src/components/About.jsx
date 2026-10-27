@@ -55,7 +55,7 @@ const About = () => {
             alt="About Rankmantra" 
             width={800} 
             height={600} 
-            className="w-full h-auto rounded-2xl shadow-2xl" 
+            className="w-full h-[1000px] rounded-2xl shadow-2xl" 
           />
         </div>
         <div className="lg:w-1/2 w-full md:w-3/4 px-6 md:p-0">

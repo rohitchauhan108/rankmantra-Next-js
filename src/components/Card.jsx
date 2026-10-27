@@ -7,7 +7,7 @@ const Card = ({ title, desc, img }) => {
 
       <div className="relative z-20 transition-colors duration-300">
         <div className="text-4xl group-hover:text-white">{img}</div>
-        <h1 className="lg:text-2xl text-lg font-semibold mt-3 mb-5 group-hover:text-white">{title}</h1>
+        <h2 className="lg:text-2xl text-lg font-semibold mt-3 mb-5 group-hover:text-white">{title}</h2>
         <p className="lg:text-base text-sm text-zinc-700 group-hover:text-white">{desc}</p>
       </div>
     </div>

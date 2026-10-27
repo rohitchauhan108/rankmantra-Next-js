@@ -7,11 +7,9 @@ import About from '@/components/About'
 import Services from '@/components/Services'
 // import Portfolio from '@/components/Portfolio'
 import Clients from '@/components/Clients'
-import Faquestions from '@/components/Faquestions'
 import Team from '@/components/Team'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
-import FreqAskedQues from '@/components/FreqAskedQues'
 import ChatWidget from '@/components/ChatWidget'
 import Newsletter from '@/components/Newsletter'
 import FlotingIcons from './FlotingIcons';
@@ -36,10 +34,6 @@ const Home = () => {
       {/* <section id="portfolio" className="w-full max-h-fit py-20 lg:px-10 overflow-hidden border-b border-orange-100">
         <Portfolio />
       </section> */}
-
-      <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden bg-[#FEFAF8] border-b border-orange-100">
-        <FreqAskedQues />
-      </section>
 
       <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden border-b border-orange-100">
         <Team />

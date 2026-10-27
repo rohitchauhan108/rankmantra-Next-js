@@ -35,12 +35,12 @@ const About = () => {
 
   return (
     <div className="relative lg:mx-30">
-      <h1
+      <h2
         data-aos="fade-down"
         className="text-3xl font-semibold text-center text-[#7A6960]"
       >
         ABOUT US.
-      </h1>
+      </h2>
       <div className="flex justify-center items-center mt-2 mb-10">
         <div className="bg-red-600 h-1 w-16 rounded"></div>
       </div>

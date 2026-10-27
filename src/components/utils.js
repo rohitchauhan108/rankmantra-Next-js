@@ -8,7 +8,7 @@ export const Menus = [
   
   {
     name: "SEO",
-    link:"/search"
+    link:"/seo"
   },
   /*
   {
@@ -130,7 +130,7 @@ export const Menus = [
       {
         name: "SEO Packages",
         icon: Search,
-        link:"/seo"
+        link:"/seo-package"
       },
       {
         name: "SMM Packages",

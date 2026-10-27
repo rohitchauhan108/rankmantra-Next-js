@@ -22,9 +22,9 @@ const Services = () => {
 
   return (
     <div className="text-[#7A6960]">
-      <h1 data-aos="fade-down" className="text-3xl font-semibold text-center uppercase">
+      <h2 data-aos="fade-down" className="text-3xl font-semibold text-center uppercase">
         Services
-      </h1>
+      </h2>
       <div className="flex justify-center items-center mt-2">
         <div className="bg-red-600 h-1 w-16 rounded"></div>
       </div>

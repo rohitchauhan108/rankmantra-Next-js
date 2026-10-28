@@ -30,7 +30,7 @@ const SEOPage = () => {
     };
 
   return (
-    <div className="secondary-font overflow-x-hidden bg-white selection:bg-red-50 selection:text-red-600 relative">
+    <div className="font-sans overflow-x-hidden bg-[#FEFAF8] selection:bg-red-50 selection:text-red-600 relative">
       <NavBar />
       
       {/* Decorative Blobs */}
@@ -41,33 +41,33 @@ const SEOPage = () => {
       </div>
       
       {/* Hero Section */}
-      <section className="relative w-full h-[90vh] flex items-center justify-center overflow-hidden">
+      <section className="relative w-full h-[85vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0 scale-105">
           <Image 
             src="https://images.unsplash.com/photo-1562577309-4932fdd64cd1?q=80&w=1000" 
             alt="SEO Packages Hero" 
             fill
-            className="object-cover animate-slow-zoom"
+            className="object-cover opacity-60 grayscale-[20%] animate-slow-zoom"
             priority
           />
-          <div className="absolute inset-0 bg-black/60"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-[#FEFAF8]"></div>
         </div>
         
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-20 text-center">
           <div className="inline-block px-6 py-2 mb-8 rounded-full bg-red-600/10 border border-red-600/20 backdrop-blur-md">
             <span className="text-red-600 text-xs font-bold tracking-[0.4em] uppercase">Results Driven SEO</span>
           </div>
-          <h1 className="text-5xl md:text-8xl lg:text-9xl font-bold text-white tracking-tighter mb-8 leading-[1]">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold text-gray-900 tracking-tight mb-8 leading-[1.1]">
             SEO <span className="text-red-600 font-light italic">Packages</span>
           </h1>
-          <p className="text-lg md:text-2xl text-gray-200 max-w-4xl leading-relaxed font-medium mb-12 mx-auto drop-shadow-2xl italic">
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl leading-relaxed font-medium mb-10 mx-auto">
             Elevate your digital footprint with data-backed search engine optimization strategies that deliver measurable growth.
           </p>
           <div className="flex flex-wrap gap-6 justify-center">
             <button 
               suppressHydrationWarning
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-red-600 hover:bg-white hover:text-red-600 text-white font-bold py-5 px-14 rounded-full transition-all duration-500 uppercase tracking-[0.2em] text-[11px] hover:shadow-[0_25px_50px_rgba(220,38,38,0.4)] active:scale-95"
+              className="bg-gray-900 hover:bg-red-600 text-white font-medium py-4 px-10 rounded-full transition-all duration-500 uppercase tracking-[0.2em] text-xs hover:shadow-2xl active:scale-95"
             >
               SCHEDULE A CALL
             </button>
@@ -76,13 +76,13 @@ const SEOPage = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="relative py-32 px-6 lg:px-20 bg-white overflow-hidden">
+      <section className="relative py-24 px-6 lg:px-20 bg-white border-b border-gray-50 overflow-hidden">
         {/* Background Blobs */}
         <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/3 w-[600px] h-[600px] bg-red-50 rounded-full blur-[120px] opacity-50"></div>
         <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/3 w-[600px] h-[600px] bg-red-50 rounded-full blur-[120px] opacity-50"></div>
 
-        <div className="max-w-7xl mx-auto text-center mb-24 relative z-10">
-          <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 uppercase tracking-tight">
+        <div className="max-w-7xl mx-auto text-center mb-16 relative z-10">
+          <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
             Proven <span className="text-red-600 italic font-light">Results</span>
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto text-lg leading-relaxed font-medium italic">
@@ -128,9 +128,9 @@ const SEOPage = () => {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-32 px-6 lg:px-20 bg-gray-50 relative overflow-hidden">
-        <div className="max-w-7xl mx-auto text-center mb-24">
-          <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 uppercase tracking-tight">
+      <section className="py-24 px-6 lg:px-20 bg-gray-50/50 border-b border-gray-100 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto text-center mb-16">
+          <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
             Transparent <span className="text-red-600 italic font-light">Pricing</span>
           </h2>
           <div className="w-24 h-1 bg-red-600 mx-auto mt-10"></div>

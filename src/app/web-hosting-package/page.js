@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
@@ -9,39 +9,39 @@ import { TfiEmail } from "react-icons/tfi";
 
 const WebHostingPage = () => {
   return (
-    <div className="secondary-font overflow-x-hidden bg-white selection:bg-red-50 selection:text-red-600 relative">
+    <div className="font-sans overflow-x-hidden bg-[#FEFAF8] selection:bg-red-50 selection:text-red-600 relative">
       <NavBar />
 
       {/* Page Title Section */}
-      <section className="py-20 bg-white">
+      <section className="py-24 px-6 bg-white border-b border-gray-50">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-700 mb-4 uppercase tracking-wider">
+          <h1 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
             WEB HOSTING PACKAGES PRICES
           </h1>
-          <div className="w-24 h-1 bg-red-600 mx-auto"></div>
+          <div className="w-16 h-1 bg-red-600 mx-auto"></div>
         </div>
       </section>
 
       {/* Table Section */}
-      <section className="pb-32 px-4 md:px-6 lg:px-20 bg-white overflow-x-auto">
+      <section className="py-24 px-4 md:px-6 lg:px-20 bg-gray-50/50 overflow-x-auto">
         <div className="max-w-7xl mx-auto">
-          <div className="min-w-[1000px] bg-[#FADADD]/60 rounded-3xl overflow-hidden border border-[#FADADD] shadow-sm">
+          <div className="min-w-[1000px] bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
             <table className="w-full text-left border-collapse">
               <thead>
-                <tr className="text-gray-700">
-                  <th className="p-6 font-bold text-lg border-b border-white/50">
+                <tr className="bg-gray-900 text-white">
+                  <th className="p-6 font-semibold text-lg border-b border-gray-800">
                     Web Hosting Packages
                   </th>
-                  <th className="p-6 font-bold text-lg border-b border-white/50 text-center">
+                  <th className="p-6 font-semibold text-lg border-b border-gray-800 text-center">
                     Bronze Plan
                   </th>
-                  <th className="p-6 font-bold text-lg border-b border-white/50 text-center">
+                  <th className="p-6 font-semibold text-lg border-b border-gray-800 text-center">
                     Silver Plan
                   </th>
-                  <th className="p-6 font-bold text-lg border-b border-white/50 text-center">
+                  <th className="p-6 font-semibold text-lg border-b border-gray-800 text-center">
                     Gold Plan
                   </th>
-                  <th className="p-6 font-bold text-lg border-b border-white/50 text-center">
+                  <th className="p-6 font-semibold text-lg border-b border-gray-800 text-center">
                     Diamond Plan
                   </th>
                 </tr>
@@ -231,7 +231,7 @@ const WebHostingPage = () => {
                     vals: ["Yes", "Yes", "Yes", "Yes"],
                   },
                 ].map((row, rIdx) => (
-                  <tr key={rIdx} className="border-b border-white/50">
+                  <tr key={rIdx} className="border-b border-gray-100 hover:bg-red-50/30 transition-colors">
                     <td className="p-4 pl-8 text-sm font-semibold">
                       {row.label}
                     </td>

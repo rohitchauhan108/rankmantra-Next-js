@@ -30,7 +30,7 @@ const PayPerClickPage = () => {
   };
 
   return (
-    <div className="secondary-font overflow-x-hidden bg-white selection:bg-red-50 selection:text-red-600 relative">
+    <div className="font-sans overflow-x-hidden bg-[#FEFAF8] selection:bg-red-50 selection:text-red-600 relative">
       <NavBar />
       
       {/* Decorative Blobs */}
@@ -41,26 +41,26 @@ const PayPerClickPage = () => {
       </div>
       
       {/* Hero Section */}
-      <section className="relative w-full h-[90vh] flex items-center justify-center overflow-hidden">
+      <section className="relative w-full h-[85vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0 scale-105">
           <Image 
             src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000" 
             alt="PPC Packages Hero" 
             fill
-            className="object-cover animate-slow-zoom"
+            className="object-cover opacity-60 grayscale-[20%] animate-slow-zoom"
             priority
           />
-          <div className="absolute inset-0 bg-black/60"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-[#FEFAF8]"></div>
         </div>
         
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-20 text-center">
           <div className="inline-block px-6 py-2 mb-8 rounded-full bg-red-600/10 border border-red-600/20 backdrop-blur-md">
             <span className="text-red-600 text-xs font-bold tracking-[0.4em] uppercase">High ROI Advertising</span>
           </div>
-          <h1 className="text-5xl md:text-8xl lg:text-9xl font-bold text-white tracking-tighter mb-8 leading-[1]">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold text-gray-900 tracking-tight mb-8 leading-[1.1]">
             PPC <span className="text-red-600 font-light italic">Packages</span>
           </h1>
-          <p className="text-lg md:text-2xl text-gray-200 max-w-4xl leading-relaxed font-medium mb-12 mx-auto drop-shadow-2xl italic">
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl leading-relaxed font-medium mb-10 mx-auto">
             Precision-targeted advertising that puts your brand in front of the right audience at the perfect moment.
           </p>
           <div className="flex flex-wrap gap-6 justify-center">
@@ -71,13 +71,13 @@ const PayPerClickPage = () => {
                   .getElementById("contact")
                   ?.scrollIntoView({ behavior: "smooth" })
               }
-              className="bg-red-600 hover:bg-white hover:text-red-600 text-white font-bold py-5 px-14 rounded-full transition-all duration-500 uppercase tracking-[0.2em] text-[11px] hover:shadow-[0_25px_50px_rgba(220,38,38,0.4)] active:scale-95"
+              className="bg-gray-900 hover:bg-red-600 text-white font-medium py-4 px-10 rounded-full transition-all duration-500 uppercase tracking-[0.2em] text-xs hover:shadow-2xl active:scale-95"
             >
               SCHEDULE A CALL
             </button>
             <button
             onClick={() => document.getElementById("packages")?.scrollIntoView({ behavior: "smooth" })}
-            className="bg-white/10 backdrop-blur-md border-2 border-white text-white font-bold py-5 px-14 rounded-full transition-all duration-500 uppercase tracking-[0.2em] text-[11px] hover:bg-white hover:text-black active:scale-95">
+            className="border-2 border-gray-900 text-gray-900 font-medium py-4 px-10 rounded-full transition-all duration-500 uppercase tracking-[0.2em] text-xs hover:bg-gray-900 hover:text-white active:scale-95">
               VIEW PACKAGES
             </button>
           </div>
@@ -85,9 +85,9 @@ const PayPerClickPage = () => {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-32 px-6 lg:px-20 bg-white relative overflow-hidden">
-        <div className="max-w-7xl mx-auto text-center mb-24 relative z-10">
-          <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 uppercase tracking-tight">
+      <section className="py-24 px-6 lg:px-20 bg-white border-b border-gray-50 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto text-center mb-16 relative z-10">
+          <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
             Performance <span className="text-red-600 italic font-light">Driven</span> Ad Spend
           </h2>
           <div className="w-24 h-1 bg-red-600 mx-auto mt-10"></div>

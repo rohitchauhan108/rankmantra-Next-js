@@ -6,7 +6,7 @@ export default function FaqsPage() {
   return (
     <>
       <NavBar />
-      <main className="relative w-full min-h-screen overflow-hidden bg-[#fffaf8] border-b border-orange-100">
+      <main className="relative w-full min-h-screen overflow-hidden bg-white border-b border-orange-100">
         <div className="pointer-events-none absolute -top-32 -right-32 h-96 w-96 rounded-full bg-red-100/50 blur-3xl" />
         <div className="pointer-events-none absolute top-[32rem] -left-40 h-80 w-80 rounded-full bg-orange-100/60 blur-3xl" />
         <div className="pointer-events-none absolute inset-0 opacity-60 [background-image:linear-gradient(rgba(228,50,50,0.045)_1px,transparent_1px),linear-gradient(90deg,rgba(228,50,50,0.045)_1px,transparent_1px)] [background-size:38px_38px]" />

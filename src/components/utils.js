@@ -193,4 +193,8 @@ export const Menus = [
     name: "GALLERY",
     link:"/gallery"
   },
+  {
+    name: "FAQS",
+    link:"/faqs"
+  },
 ];

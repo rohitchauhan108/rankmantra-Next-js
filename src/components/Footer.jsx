@@ -96,7 +96,6 @@ const Footer = () => {
             <li><Link href="/smm" onClick={scrollToTop} className="hover:text-red-600">Social Media Marketing</Link></li>
             <li><Link href="/web-hosting-package" onClick={scrollToTop} className="hover:text-red-600">Web Hosting</Link></li>
             <li><Link href="/seo" onClick={scrollToTop} className="hover:text-red-600">SEO Development</Link></li>
-            <li><Link href="/faqs" onClick={scrollToTop} className="hover:text-red-600">FAQs</Link></li>
           </ul>
         </div>
 

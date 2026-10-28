@@ -16,7 +16,7 @@ function NavBar() {
       <header className="h-16 text-[15px] fixed inset-0 flex-center bg-[#ffffff]"
       style={{zIndex:"9999"}}
       >
-        <nav className="px-3.5 flex-center-between w-full max-w-7xl mx-auto">
+        <nav className="px-1.5 flex-center-between w-full max-w-7xl mx-auto">
           <div className="flex-center gap-x-3 z-[999] relative">
             <Link href="/">
               <Image 

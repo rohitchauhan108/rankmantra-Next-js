@@ -4,8 +4,6 @@ import React, { useEffect, useState, useRef } from "react";
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Play, Pause, ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -33,13 +31,6 @@ export default function GalleryPage() {
   const [selectedImageIndex, setSelectedImageIndex] = useState(null);
   const [playingVideo, setPlayingVideo] = useState(null);
   const videoRefs = useRef({});
-
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  }, []);
 
   const handleVideoPlayPause = (index) => {
     const videoElement = videoRefs.current[index];
@@ -90,7 +81,7 @@ export default function GalleryPage() {
 
       {/* Hero Section */}
       <section className="w-full bg-[#0b0d17] flex items-center justify-center pt-24 pb-16 md:pt-32 md:pb-24">
-        <div className="w-full max-w-4xl mx-auto px-6 text-center text-white" data-aos="fade-up">
+        <div className="w-full max-w-4xl mx-auto px-6 text-center text-white">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-wide mb-4">
             Our <span className="text-[#e22626]">Gallery</span>
           </h1>
@@ -123,8 +114,8 @@ export default function GalleryPage() {
                 <div
                   key={idx}
                   className={`group relative rounded-2xl overflow-hidden cursor-pointer shadow-md hover:shadow-xl transition-all duration-300 ${bentoClass}`}
-                  data-aos="fade-up"
-                  data-aos-delay={(idx % 4) * 100}
+                 
+                 
                   onClick={() => setSelectedImageIndex(idx)}
                 >
                   <Image
@@ -155,8 +146,8 @@ export default function GalleryPage() {
               <div
                 key={idx}
                 className="relative rounded-[2.5rem] overflow-hidden shadow-2xl group bg-black w-[280px] h-[500px] lg:w-[320px] lg:h-[570px] flex-shrink-0"
-                data-aos="fade-up"
-                data-aos-delay={idx * 150}
+               
+               
               >
                 <video
                   ref={(el) => {

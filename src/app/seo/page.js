@@ -5,19 +5,10 @@ import emailjs from "@emailjs/browser";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { IoLocationOutline, IoCallOutline } from "react-icons/io5";
 import { TfiEmail } from "react-icons/tfi";
 
 const SearchPage = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  }, []);
-
   // email send part
   const form = useRef();
   const sendEmail = (e) => {
@@ -57,7 +48,7 @@ const SearchPage = () => {
 
         <div
           className="relative z-10 text-center px-6 max-w-5xl mx-auto"
-          data-aos="fade-up"
+         
         >
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold text-gray-900 tracking-tight mb-8 leading-[1.1]">
             Search Engine Optimization &{" "}
@@ -83,7 +74,7 @@ const SearchPage = () => {
 
       {/* Super Visibility Section */}
       <section className="py-24 px-6 lg:px-20 bg-white border-b border-gray-50">
-        <div className="max-w-4xl mx-auto text-center" data-aos="fade-up">
+        <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-8 uppercase tracking-tight">
             Super Visibility in Rankings
           </h2>
@@ -106,7 +97,7 @@ const SearchPage = () => {
       {/* Rank on 1st Page Section */}
       <section className="py-24 px-6 lg:px-20 bg-gray-50/50">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 md:gap-24">
-          <div className="lg:w-1/2" data-aos="fade-right">
+          <div className="lg:w-1/2">
             <div className="relative aspect-video rounded-3xl overflow-hidden shadow-sm border-[12px] border-white">
               <Image
                 src="https://images.unsplash.com/photo-1562577308-2c31685ad4e7?q=80&w=1074"
@@ -116,7 +107,7 @@ const SearchPage = () => {
               />
             </div>
           </div>
-          <div className="lg:w-1/2" data-aos="fade-left">
+          <div className="lg:w-1/2">
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               Rank on the 1st Page of SERPs
             </h2>
@@ -151,7 +142,7 @@ const SearchPage = () => {
       {/* Improve Ability Section */}
       <section className="py-24 px-6 lg:px-20 bg-white">
         <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-16 md:gap-24">
-          <div className="lg:w-1/2" data-aos="fade-right">
+          <div className="lg:w-1/2">
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               Improve the Performance of Your Web Pages
             </h2>
@@ -180,7 +171,7 @@ const SearchPage = () => {
               </div>
             </div>
           </div>
-          <div className="lg:w-1/2" data-aos="fade-left">
+          <div className="lg:w-1/2">
             <div className="relative aspect-video rounded-3xl overflow-hidden shadow-sm border-[12px] border-gray-50">
               <Image
                 src="https://images.unsplash.com/photo-1678690832311-bb6e361989ca?q=80&w=1224"
@@ -196,7 +187,7 @@ const SearchPage = () => {
       {/* Track your keyword Section */}
       <section className="py-24 px-6 lg:px-20 bg-gray-50/50">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 md:gap-24">
-          <div className="lg:w-1/2" data-aos="fade-right">
+          <div className="lg:w-1/2">
             <div className="relative aspect-video rounded-3xl overflow-hidden shadow-sm border-[12px] border-white">
               <Image
                 src="https://images.unsplash.com/photo-1597392582469-a697322d5c16?q=80&w=1170"
@@ -206,7 +197,7 @@ const SearchPage = () => {
               />
             </div>
           </div>
-          <div className="lg:w-1/2" data-aos="fade-left">
+          <div className="lg:w-1/2">
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               Track Your Keywords
             </h2>
@@ -238,7 +229,7 @@ const SearchPage = () => {
       {/* Importance of APIs Section */}
       <section className="py-24 px-6 lg:px-20 bg-white">
         <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-16 md:gap-24">
-          <div className="lg:w-1/2" data-aos="fade-right">
+          <div className="lg:w-1/2">
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               Importance of APIs
             </h2>
@@ -264,7 +255,7 @@ const SearchPage = () => {
               </div>
             </div>
           </div>
-          <div className="lg:w-1/2" data-aos="fade-left">
+          <div className="lg:w-1/2">
             <div className="relative aspect-video rounded-3xl overflow-hidden shadow-sm border-[12px] border-gray-50">
               <Image
                 src="https://images.unsplash.com/photo-1623282033815-40b05d96c903?q=80&w=1170"
@@ -279,7 +270,7 @@ const SearchPage = () => {
 
       {/* Testimonials Section */}
       <section className="py-24 bg-gray-50 text-center">
-        <div className="max-w-5xl mx-auto px-6" data-aos="fade-up">
+        <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-sm font-bold text-red-600 uppercase tracking-[0.4em] mb-12">
             What Our Clients Say
           </h2>
@@ -321,7 +312,7 @@ const SearchPage = () => {
 
         <div
           className="relative z-10 max-w-7xl mx-auto text-center"
-          data-aos="fade-up"
+         
         >
           <h2 className="text-3xl md:text-5xl font-semibold text-white mb-6 uppercase tracking-tight">
             3-STEPS TO MAKE YOUR BUSINESS AN ONLINE POWERHOUSE
@@ -384,7 +375,7 @@ const SearchPage = () => {
 
       {/* Contact Section - REIMAGINED */}
       <section className="py-32 px-6 lg:px-20 bg-white relative" id="contact">
-        <div className="max-w-7xl mx-auto" data-aos="fade-up">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center mb-24">
             <h2 className="text-4xl md:text-6xl font-semibold text-gray-900 mb-6 uppercase tracking-tight">
               Contact

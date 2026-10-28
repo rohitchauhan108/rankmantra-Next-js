@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Frequently Asked Questions | RankMantra',
-  description: 'Find answers about RankMantra SEO, PPC, social media marketing, web development, hosting, and online reputation management services.',
+  title: 'FAQs | RankMantra Digital Marketing Agency, Dehradun',
+  description: 'Answers to common questions about SEO, PPC, social media marketing, web development and hosting from RankMantra, a digital marketing agency in Dehradun.',
   alternates: {
     canonical: 'https://rankmantra.com/faqs/',
   },

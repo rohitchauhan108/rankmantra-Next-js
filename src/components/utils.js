@@ -160,22 +160,27 @@ export const Menus = [
     link:"/social"
   },
   {
-    name:"OUR WORK",
+    name:"OUR PORTFOLIO",
     subMenu:[
       {
         name:"Web Development",
         icon: FaCode,
         target:"_blank",
+        rel:"noopener noreferrer",
         link:"/our-work/web-development.pdf"
       },
       {
         name:"SEO",
         icon: FaSearch,
+        target:"_blank",
+        rel:"noopener noreferrer",
         link:"/our-work/seo.pdf"
       },
       {
         name:"Social Media Marketing",
         icon: FaShareAlt,
+        target:"_blank",
+        rel:"noopener noreferrer",
         link:"/our-work/social-media-marketing.pdf"
       }
     ]

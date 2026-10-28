@@ -5,19 +5,10 @@ import React, { useEffect } from "react";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { IoLocationOutline, IoCallOutline } from "react-icons/io5";
 import { TfiEmail } from "react-icons/tfi";
 
 const WordPressDevelopmentPage = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  }, []);
-
   // form submit part
   const form = useRef();
   const sendEmail = (e) => {
@@ -63,7 +54,7 @@ const WordPressDevelopmentPage = () => {
 
         <div
           className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-20 text-center"
-          data-aos="fade-up"
+         
         >
           <div className="inline-block px-6 py-2 mb-8 rounded-full bg-red-600/10 border border-red-600/20 backdrop-blur-md">
             <span className="text-red-600 text-xs font-bold tracking-[0.4em] uppercase">
@@ -96,7 +87,7 @@ const WordPressDevelopmentPage = () => {
 
       {/* Intro Section */}
       <section className="py-32 px-6 lg:px-20 bg-white relative overflow-hidden">
-        <div className="max-w-7xl mx-auto relative z-10" data-aos="fade-up">
+        <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8 uppercase tracking-tight leading-tight">
@@ -141,7 +132,7 @@ const WordPressDevelopmentPage = () => {
       {/* Discovery & Planning Section */}
       <section className="py-32 px-6 lg:px-20 bg-gray-50/50">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-20">
-          <div className="lg:w-1/2" data-aos="fade-right">
+          <div className="lg:w-1/2">
             <div className="relative aspect-[4/3] rounded-[3rem] overflow-hidden shadow-2xl group">
               <Image
                 src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=1000"
@@ -152,7 +143,7 @@ const WordPressDevelopmentPage = () => {
               <div className="absolute inset-0 bg-red-600/10 group-hover:bg-transparent transition-colors duration-700"></div>
             </div>
           </div>
-          <div className="lg:w-1/2" data-aos="fade-left">
+          <div className="lg:w-1/2">
             <span className="text-red-600 font-black text-[10px] tracking-[0.4em] uppercase mb-4 block">
               Phase 01
             </span>
@@ -188,7 +179,7 @@ const WordPressDevelopmentPage = () => {
       {/* Custom Theme Design Section */}
       <section className="py-24 px-6 lg:px-20 bg-white">
         <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-16 md:gap-24">
-          <div className="lg:w-1/2" data-aos="fade-right">
+          <div className="lg:w-1/2">
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               Custom Theme Design
             </h2>
@@ -214,7 +205,7 @@ const WordPressDevelopmentPage = () => {
               </div>
             </div>
           </div>
-          <div className="lg:w-1/2" data-aos="fade-left">
+          <div className="lg:w-1/2">
             <div className="relative aspect-video rounded-3xl overflow-hidden shadow-sm border-[12px] border-gray-50">
               <Image
                 src="https://images.unsplash.com/photo-1522542550221-31fd19255a7a?q=80&w=1000"
@@ -230,7 +221,7 @@ const WordPressDevelopmentPage = () => {
       {/* Content Management Setup Section */}
       <section className="py-24 px-6 lg:px-20 bg-gray-50/50">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 md:gap-24">
-          <div className="lg:w-1/2" data-aos="fade-right">
+          <div className="lg:w-1/2">
             <div className="relative aspect-video rounded-3xl overflow-hidden shadow-sm border-[12px] border-white">
               <Image
                 src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=1000"
@@ -240,7 +231,7 @@ const WordPressDevelopmentPage = () => {
               />
             </div>
           </div>
-          <div className="lg:w-1/2" data-aos="fade-left">
+          <div className="lg:w-1/2">
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               Content Management Setup
             </h2>
@@ -272,7 +263,7 @@ const WordPressDevelopmentPage = () => {
       {/* Plugin Integration Section */}
       <section className="py-24 px-6 lg:px-20 bg-white">
         <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-16 md:gap-24">
-          <div className="lg:w-1/2" data-aos="fade-right">
+          <div className="lg:w-1/2">
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               Plugin Integration
             </h2>
@@ -300,7 +291,7 @@ const WordPressDevelopmentPage = () => {
               </div>
             </div>
           </div>
-          <div className="lg:w-1/2" data-aos="fade-left">
+          <div className="lg:w-1/2">
             <div className="relative aspect-video rounded-3xl overflow-hidden shadow-sm border-[12px] border-gray-50">
               <Image
                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000"
@@ -316,7 +307,7 @@ const WordPressDevelopmentPage = () => {
       {/* E-Commerce Integration Section */}
       <section className="py-24 px-6 lg:px-20 bg-gray-50/50">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 md:gap-24">
-          <div className="lg:w-1/2" data-aos="fade-right">
+          <div className="lg:w-1/2">
             <div className="relative aspect-video rounded-3xl overflow-hidden shadow-sm border-[12px] border-white">
               <Image
                 src="https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1000"
@@ -326,7 +317,7 @@ const WordPressDevelopmentPage = () => {
               />
             </div>
           </div>
-          <div className="lg:w-1/2" data-aos="fade-left">
+          <div className="lg:w-1/2">
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               E-Commerce Integration
             </h2>
@@ -359,7 +350,7 @@ const WordPressDevelopmentPage = () => {
       {/* SEO Optimization & Launch Section */}
       <section className="py-24 px-6 lg:px-20 bg-white mb-12">
         <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-16 md:gap-24">
-          <div className="lg:w-1/2" data-aos="fade-right">
+          <div className="lg:w-1/2">
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               SEO Optimization & Launch
             </h2>
@@ -387,7 +378,7 @@ const WordPressDevelopmentPage = () => {
               </div>
             </div>
           </div>
-          <div className="lg:w-1/2" data-aos="fade-left">
+          <div className="lg:w-1/2">
             <div className="relative aspect-video rounded-3xl overflow-hidden shadow-sm border-[12px] border-gray-50">
               <Image
                 src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000"
@@ -413,7 +404,7 @@ const WordPressDevelopmentPage = () => {
 
         <div
           className="relative z-10 max-w-7xl mx-auto text-center"
-          data-aos="fade-up"
+         
         >
           <h2 className="text-3xl md:text-5xl font-semibold text-white mb-6 uppercase tracking-tight">
             3-STEPS TO MAKE YOUR BUSINESS AN ONLINE POWERHOUSE
@@ -481,7 +472,7 @@ const WordPressDevelopmentPage = () => {
 
       {/* Contact Section - REIMAGINED */}
       <section className="py-32 px-6 lg:px-20 bg-white relative" id="contact">
-        <div className="max-w-7xl mx-auto" data-aos="fade-up">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center mb-24">
             <h2 className="text-4xl md:text-6xl font-semibold text-gray-900 mb-6 uppercase tracking-tight">
               Contact

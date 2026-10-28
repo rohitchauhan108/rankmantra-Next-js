@@ -4,19 +4,10 @@ import React, { useEffect, useRef } from "react";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { IoLocationOutline, IoCallOutline } from "react-icons/io5";
 import { TfiEmail } from "react-icons/tfi";
 
 const EcommerceDevelopPage = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  }, []);
-
   // form submittion part
   const form = useRef();
   const sendEmail = (e) => {
@@ -55,7 +46,7 @@ const EcommerceDevelopPage = () => {
 
         <div
           className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-20 text-center"
-          data-aos="fade-up"
+         
         >
           <div className="inline-block px-6 py-2 mb-8 rounded-full bg-red-600/10 border border-red-600/20 backdrop-blur-md">
             <span className="text-red-600 text-xs font-bold tracking-[0.4em] uppercase">
@@ -89,7 +80,7 @@ const EcommerceDevelopPage = () => {
 
       {/* Intro Section */}
       <section className="py-24 px-6 lg:px-20 bg-white border-b border-gray-50">
-        <div className="max-w-4xl mx-auto text-center" data-aos="fade-up">
+        <div className="max-w-4xl mx-auto text-center">
           <div className="space-y-8 text-gray-500 text-base md:text-lg max-w-6xl mx-auto leading-relaxed font-normal">
             <p>
               RankMantra specializes in crafting custom web applications that
@@ -112,7 +103,7 @@ const EcommerceDevelopPage = () => {
 
       {/* Services We Provide Section */}
       <section className="py-24 px-6 lg:px-20 bg-white">
-        <div className="max-w-7xl mx-auto" data-aos="fade-up">
+        <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12">
             Services we provide
           </h2>
@@ -142,7 +133,7 @@ const EcommerceDevelopPage = () => {
       <section className="py-24 px-6 lg:px-20 bg-white relative overflow-hidden">
         <div
           className="max-w-4xl mx-auto text-center relative z-10"
-          data-aos="fade-up"
+         
         >
           <div className="flex flex-wrap justify-center gap-8 mb-12">
             {[
@@ -179,7 +170,7 @@ const EcommerceDevelopPage = () => {
       {/* Transform Your Business Section */}
       <section className="py-24 px-6 lg:px-20 bg-white">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 md:gap-24">
-          <div className="lg:w-1/2" data-aos="fade-right">
+          <div className="lg:w-1/2">
             <div className="relative aspect-video rounded-3xl overflow-hidden shadow-sm border-[12px] border-white">
               <Image
                 src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000"
@@ -189,7 +180,7 @@ const EcommerceDevelopPage = () => {
               />
             </div>
           </div>
-          <div className="lg:w-1/2" data-aos="fade-left">
+          <div className="lg:w-1/2">
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               How Our Web Application Services Transform Your Business
             </h2>
@@ -222,7 +213,7 @@ const EcommerceDevelopPage = () => {
       {/* Responsive Web Design Section */}
       <section className="py-24 px-6 lg:px-20 bg-gray-50/50">
         <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-16 md:gap-24">
-          <div className="lg:w-1/2" data-aos="fade-right">
+          <div className="lg:w-1/2">
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               Responsive Web Design
             </h2>
@@ -251,7 +242,7 @@ const EcommerceDevelopPage = () => {
               </div>
             </div>
           </div>
-          <div className="lg:w-1/2" data-aos="fade-left">
+          <div className="lg:w-1/2">
             <div className="relative aspect-video rounded-3xl overflow-hidden shadow-sm border-[12px] border-gray-50">
               <Image
                 src="https://images.unsplash.com/photo-1556742111-a301076d9d18?q=80&w=1000"
@@ -266,7 +257,7 @@ const EcommerceDevelopPage = () => {
 
       {/* Testimonials Section */}
       <section className="py-24 bg-gray-50 text-center">
-        <div className="max-w-5xl mx-auto px-6" data-aos="fade-up">
+        <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-sm font-bold text-red-600 uppercase tracking-[0.4em] mb-12">
             What Our Clients Say
           </h2>
@@ -308,7 +299,7 @@ const EcommerceDevelopPage = () => {
 
         <div
           className="relative z-10 max-w-7xl mx-auto text-center"
-          data-aos="fade-up"
+         
         >
           <h2 className="text-3xl md:text-5xl font-semibold text-white mb-6 uppercase tracking-tight">
             3-STEPS TO MAKE YOUR BUSINESS AN ONLINE POWERHOUSE
@@ -371,7 +362,7 @@ const EcommerceDevelopPage = () => {
 
       {/* Contact Section */}
       <section className="py-32 px-6 lg:px-20 bg-white relative" id="contact">
-        <div className="max-w-7xl mx-auto" data-aos="fade-up">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center mb-24">
             <h2 className="text-4xl md:text-6xl font-semibold text-gray-900 mb-6 uppercase tracking-tight">
               Contact

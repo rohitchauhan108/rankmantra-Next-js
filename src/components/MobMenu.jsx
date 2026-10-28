@@ -61,13 +61,13 @@ export default function MobMenu({ Menus }) {
                     variants={subMenuDrawer}
                     className="ml-5"
                   >
-                    {subMenu.map(({ name, icon: Icon, link: subLink }) => (
+                    {subMenu.map(({ name, icon: Icon, link: subLink, target, rel }) => (
                       <li
                         key={name}
                         className="p-2 flex-center hover:bg-white/5 rounded-md gap-x-2 cursor-pointer"
                       >
                         {Icon && <Icon size={17} />}
-                        <Link href={subLink} className="flex-1">
+                        <Link href={subLink} target={target} rel={rel} className="flex-1">
                           {name}
                         </Link>
                       </li>

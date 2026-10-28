@@ -5,20 +5,11 @@ import emailjs from "@emailjs/browser"
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { IoLocationOutline, IoCallOutline, IoLogoFacebook, IoLogoTwitter, IoLogoInstagram, IoLogoLinkedin } from "react-icons/io5";
 import { TfiEmail } from "react-icons/tfi";
 
 const SMMPage = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  }, []);
-
-    // email send part
+  // email send part
     const form = useRef();
     const sendEmail = (e) => {
       e.preventDefault();
@@ -62,7 +53,7 @@ const SMMPage = () => {
           <div className="absolute inset-0 bg-black/60"></div>
         </div>
         
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-20 text-center" data-aos="fade-up">
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-20 text-center">
           <div className="inline-block px-6 py-2 mb-8 rounded-full bg-red-600/10 border border-red-600/20 backdrop-blur-md">
             <span className="text-red-600 text-xs font-bold tracking-[0.4em] uppercase">Social Growth Strategy</span>
           </div>
@@ -89,7 +80,7 @@ const SMMPage = () => {
         {/* Background Blobs */}
         <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/3 w-[600px] h-[600px] bg-red-50 rounded-full blur-[120px] opacity-50"></div>
         
-        <div className="max-w-7xl mx-auto text-center mb-24 relative z-10" data-aos="fade-up">
+        <div className="max-w-7xl mx-auto text-center mb-24 relative z-10">
           <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 uppercase tracking-tight">
             Strategic <span className="text-red-600 italic font-light">Growth</span> Plans
           </h2>
@@ -98,7 +89,7 @@ const SMMPage = () => {
 
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 relative z-10">
           {/* Silver Plan */}
-          <div className="bg-white p-12 rounded-[3rem] shadow-[0_20px_60px_rgba(0,0,0,0.03)] border border-gray-50 flex flex-col hover:shadow-[0_30px_80px_rgba(0,0,0,0.08)] transition-all duration-700" data-aos="fade-up">
+          <div className="bg-white p-12 rounded-[3rem] shadow-[0_20px_60px_rgba(0,0,0,0.03)] border border-gray-50 flex flex-col hover:shadow-[0_30px_80px_rgba(0,0,0,0.08)] transition-all duration-700">
             <h3 className="text-xs font-black text-gray-400 mb-8 uppercase tracking-[0.3em]">SILVER</h3>
             <div className="flex gap-5 mb-10">
               <IoLogoFacebook size={20} className="text-gray-400 hover:text-blue-600 transition-all cursor-pointer" />
@@ -134,7 +125,7 @@ const SMMPage = () => {
           </div>
 
           {/* Gold Plan */}
-          <div className="relative bg-white p-12 rounded-[3.5rem] shadow-2xl border-2 border-red-600 flex flex-col scale-105 z-10 transition-all duration-700" data-aos="fade-up" data-aos-delay="100">
+          <div className="relative bg-white p-12 rounded-[3.5rem] shadow-2xl border-2 border-red-600 flex flex-col scale-105 z-10 transition-all duration-700">
             <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-red-600 text-white text-[10px] font-black py-2 px-8 rounded-full tracking-[0.2em] shadow-xl uppercase whitespace-nowrap">
               Most Popular
             </div>
@@ -175,7 +166,7 @@ const SMMPage = () => {
           </div>
 
           {/* Platinum Plan */}
-          <div className="bg-white p-12 rounded-[3rem] shadow-[0_20px_60px_rgba(0,0,0,0.03)] border border-gray-50 flex flex-col hover:shadow-[0_30px_80px_rgba(0,0,0,0.08)] transition-all duration-700" data-aos="fade-up" data-aos-delay="200">
+          <div className="bg-white p-12 rounded-[3rem] shadow-[0_20px_60px_rgba(0,0,0,0.03)] border border-gray-50 flex flex-col hover:shadow-[0_30px_80px_rgba(0,0,0,0.08)] transition-all duration-700">
             <h3 className="text-xs font-black text-gray-400 mb-8 uppercase tracking-[0.3em]">PLATINUM</h3>
             <div className="flex gap-5 mb-10">
               <IoLogoFacebook size={20} className="text-gray-400 hover:text-blue-600 transition-all cursor-pointer" />
@@ -212,7 +203,7 @@ const SMMPage = () => {
           />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto text-center" data-aos="fade-up">
+        <div className="relative z-10 max-w-7xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-semibold text-white mb-6 uppercase tracking-tight">
             3-STEPS TO MAKE YOUR BUSINESS AN ONLINE POWERHOUSE
           </h2>
@@ -246,7 +237,7 @@ const SMMPage = () => {
 
       {/* Contact Section - REIMAGINED */}
       <section className="py-32 px-6 lg:px-20 bg-white relative" id="contact">
-        <div className="max-w-7xl mx-auto" data-aos="fade-up">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center mb-24">
             <h2 className="text-4xl md:text-6xl font-semibold text-gray-900 mb-6 uppercase tracking-tight">Contact</h2>
             <div className="w-16 h-1 bg-red-600 mx-auto mb-10"></div>

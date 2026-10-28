@@ -5,20 +5,11 @@ import emailjs from "@emailjs/browser"
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { IoLocationOutline, IoCallOutline } from "react-icons/io5";
 import { TfiEmail } from "react-icons/tfi";
 
 const PayPerClickPage = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  }, []);
-
-    // email send part
+  // email send part
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -62,7 +53,7 @@ const PayPerClickPage = () => {
           <div className="absolute inset-0 bg-black/60"></div>
         </div>
         
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-20 text-center" data-aos="fade-up">
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-20 text-center">
           <div className="inline-block px-6 py-2 mb-8 rounded-full bg-red-600/10 border border-red-600/20 backdrop-blur-md">
             <span className="text-red-600 text-xs font-bold tracking-[0.4em] uppercase">High ROI Advertising</span>
           </div>
@@ -95,7 +86,7 @@ const PayPerClickPage = () => {
 
       {/* Pricing Section */}
       <section className="py-32 px-6 lg:px-20 bg-white relative overflow-hidden">
-        <div className="max-w-7xl mx-auto text-center mb-24 relative z-10" data-aos="fade-up">
+        <div className="max-w-7xl mx-auto text-center mb-24 relative z-10">
           <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 uppercase tracking-tight">
             Performance <span className="text-red-600 italic font-light">Driven</span> Ad Spend
           </h2>
@@ -103,7 +94,7 @@ const PayPerClickPage = () => {
         </div>
 
         {/* Google PPC */}
-        <div className="max-w-7xl mx-auto mb-32 relative z-10" data-aos="fade-up" id="packages">
+        <div className="max-w-7xl mx-auto mb-32 relative z-10" id="packages">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-0 rounded-[3rem] overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.05)] border border-gray-100">
             {/* Label Column */}
             <div className="bg-gray-950 p-12 flex flex-col justify-center text-white">
@@ -191,7 +182,7 @@ const PayPerClickPage = () => {
         </div>
 
         {/* Facebook PPC */}
-        <div className="max-w-7xl mx-auto relative z-10" data-aos="fade-up">
+        <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-0 rounded-[3rem] overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.05)] border border-gray-100">
             {/* Label Column */}
             <div className="bg-gray-950 p-12 flex flex-col justify-center text-white">
@@ -290,7 +281,7 @@ const PayPerClickPage = () => {
           />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto text-center" data-aos="fade-up">
+        <div className="relative z-10 max-w-7xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-semibold text-white mb-6 uppercase tracking-tight">
             3-STEPS TO MAKE YOUR BUSINESS AN ONLINE POWERHOUSE
           </h2>
@@ -324,7 +315,7 @@ const PayPerClickPage = () => {
 
       {/* Contact Section - REIMAGINED */}
       <section className="py-32 px-6 lg:px-20 bg-white relative" id="contact">
-        <div className="max-w-7xl mx-auto" data-aos="fade-up">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center mb-24">
             <h2 className="text-4xl md:text-6xl font-semibold text-gray-900 mb-6 uppercase tracking-tight">Contact</h2>
             <div className="w-16 h-1 bg-red-600 mx-auto mb-10"></div>

@@ -1,10 +1,8 @@
 'use client'
 
-import React, { useEffect } from "react";
+import React from "react";
 import { IoLogoFacebook, IoLogoInstagram } from "react-icons/io5";
 import { IoLogoLinkedin } from "react-icons/io";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -13,18 +11,14 @@ const Footer = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  useEffect(() => {
-    AOS.init({ duration: 1200 });
-  }, []);
-
   return (
-    <footer className=" ">
+    <footer className="bg-[#FEFAF8]">
 
       {/* Main Container */}
       <div className="max-w-7xl mx-auto px-6 py-12 grid gap-10 md:grid-cols-2 lg:grid-cols-4 ">
 
         {/* Column 1 */}
-        <div data-aos="fade-up">
+        <div>
           <Image 
             src="/images/logo.png" 
             alt="logo" 
@@ -69,7 +63,7 @@ const Footer = () => {
         </div>
 
         {/* Column 2 */}
-        <div data-aos="fade-up" data-aos-delay="200">
+        <div>
           <h3 className="text-[#7A6960] font-semibold text-lg mb-4">
             Google Reviews
           </h3>
@@ -87,7 +81,7 @@ const Footer = () => {
         </div>
 
         {/* Column 3 */}
-        <div data-aos="fade-up" data-aos-delay="400">
+        <div>
           <h3 className="text-[#7A6960] font-semibold text-lg mb-4">
             Our Services
           </h3>
@@ -107,7 +101,7 @@ const Footer = () => {
         </div>
 
         {/* Column 4 */}
-        <div data-aos="fade-up" data-aos-delay="600">
+        <div>
           <h3 className="text-[#7A6960] font-semibold text-lg mb-4">
             Follow Us
           </h3>

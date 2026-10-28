@@ -5,21 +5,12 @@ import NavBar from '@/components/NavBar'
 import emailjs from "@emailjs/browser"
 import Footer from '@/components/Footer'
 import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { MdDeveloperMode, MdOutlineDesignServices, MdSettingsSuggest } from "react-icons/md";
 import { IoLocationOutline, IoCallOutline } from "react-icons/io5";
 import { TfiEmail } from "react-icons/tfi";
 
 const AboutUsPage = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  }, []);
-
-    // email send part
+  // email send part
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -56,7 +47,7 @@ const AboutUsPage = () => {
           <div className="absolute inset-0 bg-black/70"></div>
         </div>
         
-        <div className="relative z-10 w-full max-w-4xl mx-auto px-6 text-center text-white py-12 lg:py-24" data-aos="fade-up">
+        <div className="relative z-10 w-full max-w-4xl mx-auto px-6 text-center text-white py-12 lg:py-24">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 lg:mb-8 tracking-tight">
             About <span className="text-red-600">Us</span>
           </h1>
@@ -92,7 +83,7 @@ const AboutUsPage = () => {
               icon: <MdSettingsSuggest className="text-white text-3xl" /> 
             }
           ].map((card, idx) => (
-            <div key={idx} className="bg-white p-8 lg:p-12 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow text-center flex flex-col items-center border border-gray-100" data-aos="fade-up" data-aos-delay={idx * 100}>
+            <div key={idx} className="bg-white p-8 lg:p-12 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow text-center flex flex-col items-center border border-gray-100">
               <div className="w-16 h-16 bg-red-600 rounded-2xl rotate-3 flex items-center justify-center mb-8 shadow-lg shadow-red-600/20">
                 <div className="-rotate-3">{card.icon}</div>
               </div>
@@ -108,7 +99,7 @@ const AboutUsPage = () => {
       {/* Frontline Solutions Section - Fully Responsive */}
       <section className="py-12 lg:py-24 px-4 lg:px-20 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
-          <div className="w-full lg:w-1/2" data-aos="fade-right">
+          <div className="w-full lg:w-1/2">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <Image 
                 src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070" 
@@ -120,7 +111,7 @@ const AboutUsPage = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
             </div>
           </div>
-          <div className="w-full lg:w-1/2" data-aos="fade-left">
+          <div className="w-full lg:w-1/2">
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
               The Frontline Web Design And <span className="text-red-600">Development Solutions</span>
             </h2>
@@ -151,7 +142,7 @@ const AboutUsPage = () => {
           />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto" data-aos="fade-up">
+        <div className="relative z-10 max-w-7xl mx-auto">
           <h2 className="text-2xl md:text-5xl font-bold text-white mb-6 uppercase tracking-tight px-4">
             3-STEPS TO MAKE YOUR BUSINESS AN <span className="text-red-600">ONLINE POWERHOUSE</span>
           </h2>
@@ -186,7 +177,7 @@ const AboutUsPage = () => {
 
       {/* Contact Section - Fully Responsive */}
       <section className="py-20 lg:py-32 px-4 lg:px-20 bg-white" id="contact">
-        <div className="max-w-7xl mx-auto" data-aos="fade-up">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 lg:mb-24">
             <h2 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 uppercase tracking-tighter">Contact <span className="text-red-600">Us</span></h2>
             <div className="w-16 h-1.5 bg-red-600 mx-auto rounded-full"></div>

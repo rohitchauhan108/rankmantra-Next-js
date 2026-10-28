@@ -4,8 +4,6 @@ import React, { useEffect } from "react";
 import { IoLocationOutline, IoCallOutline } from "react-icons/io5";
 import { TfiEmail } from "react-icons/tfi";
 import CtaButton from "./CtaButton";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { useForm } from "react-hook-form";
 import toast, { Toaster } from 'react-hot-toast';
 
@@ -35,17 +33,11 @@ const Contact = () => {
     }
   };
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1200,
-    });
-  }, []);
-
   return (
     <>
       <Toaster />
       <div className="text-[#7A6960]">
-        <h2 data-aos="fade-right" className="text-3xl font-semibold text-center uppercase">
+        <h2 className="text-3xl font-semibold text-center uppercase">
           Contact
         </h2>
         <div className="flex justify-center items-center mt-2 mb-10">
@@ -57,7 +49,7 @@ const Contact = () => {
 
         <div className="lg:flex gap-6">
           <div
-            data-aos="fade-up"
+           
             className="lg:w-[40%] px-10 py-5 shadow-xl border-t-[3px] border-b-[3px] border-orange-600 mb-7 lg:mb-0"
           >
             <div className="flex gap-3 mt-3 mb-12">
@@ -96,7 +88,7 @@ const Contact = () => {
           </div>
 
           <form
-            data-aos="fade-up"
+           
             className="lg:w-[60%] px-10 py-8 shadow-lg bg-white rounded"
             onSubmit={handleSubmit(onSubmit)}
           >

@@ -3,14 +3,7 @@
 import React, { useEffect } from "react";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-import AOS from "aos";
-import "aos/dist/aos.css";
-
 const TermsAndConditions = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
-
   return (
     <div>
       <NavBar />
@@ -40,7 +33,7 @@ const TermsAndConditions = () => {
       <section className="bg-[#FEFAF8] py-16 lg:px-32 px-6">
         <div className="max-w-5xl mx-auto bg-white shadow-xl rounded-xl p-8 lg:p-12 border-t-4 border-red-600">
 
-          <div data-aos="fade-up" className="space-y-10">
+          <div className="space-y-10">
 
             <div>
               <h2 className="text-2xl font-semibold text-[#7a6960]">

@@ -5,20 +5,11 @@ import emailjs from "@emailjs/browser"
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { IoLocationOutline, IoCallOutline, IoCheckmarkCircleOutline, IoCloseCircleOutline, IoDocumentTextOutline, IoHeadsetOutline } from "react-icons/io5";
 import { TfiEmail } from "react-icons/tfi";
 
 const SEOPage = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  }, []);
-
-    // email send part
+  // email send part
     const form = useRef();
     const sendEmail = (e) => {
       e.preventDefault();
@@ -62,7 +53,7 @@ const SEOPage = () => {
           <div className="absolute inset-0 bg-black/60"></div>
         </div>
         
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-20 text-center" data-aos="fade-up">
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-20 text-center">
           <div className="inline-block px-6 py-2 mb-8 rounded-full bg-red-600/10 border border-red-600/20 backdrop-blur-md">
             <span className="text-red-600 text-xs font-bold tracking-[0.4em] uppercase">Results Driven SEO</span>
           </div>
@@ -90,7 +81,7 @@ const SEOPage = () => {
         <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/3 w-[600px] h-[600px] bg-red-50 rounded-full blur-[120px] opacity-50"></div>
         <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/3 w-[600px] h-[600px] bg-red-50 rounded-full blur-[120px] opacity-50"></div>
 
-        <div className="max-w-7xl mx-auto text-center mb-24 relative z-10" data-aos="fade-up">
+        <div className="max-w-7xl mx-auto text-center mb-24 relative z-10">
           <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 uppercase tracking-tight">
             Proven <span className="text-red-600 italic font-light">Results</span>
           </h2>
@@ -123,7 +114,7 @@ const SEOPage = () => {
               icon: <IoHeadsetOutline size={32} className="text-red-600" /> 
             }
           ].map((item, idx) => (
-            <div key={idx} className="bg-white p-12 rounded-[2.5rem] shadow-[0_20px_60px_rgba(0,0,0,0.03)] border border-gray-50 flex flex-col items-center text-center group hover:shadow-[0_30px_80px_rgba(0,0,0,0.08)] hover:-translate-y-3 transition-all duration-700" data-aos="fade-up" data-aos-delay={idx * 100}>
+            <div key={idx} className="bg-white p-12 rounded-[2.5rem] shadow-[0_20px_60px_rgba(0,0,0,0.03)] border border-gray-50 flex flex-col items-center text-center group hover:shadow-[0_30px_80px_rgba(0,0,0,0.08)] hover:-translate-y-3 transition-all duration-700">
               <div className="mb-10 bg-red-50 p-6 rounded-3xl group-hover:bg-red-600 group-hover:rotate-[360deg] transition-all duration-700 group-hover:shadow-[0_15px_30px_rgba(220,38,38,0.2)]">
                 <div className="group-hover:text-white transition-colors duration-700">
                   {item.icon}
@@ -138,7 +129,7 @@ const SEOPage = () => {
 
       {/* Pricing Section */}
       <section className="py-32 px-6 lg:px-20 bg-gray-50 relative overflow-hidden">
-        <div className="max-w-7xl mx-auto text-center mb-24" data-aos="fade-up">
+        <div className="max-w-7xl mx-auto text-center mb-24">
           <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 uppercase tracking-tight">
             Transparent <span className="text-red-600 italic font-light">Pricing</span>
           </h2>
@@ -172,7 +163,7 @@ const SEOPage = () => {
               features: ["High Competition", "40 Keywords", "Advanced Optimization", "Perfect for Ecommerce", "Dedicated Support"] 
             }
           ].map((plan, idx) => (
-            <div key={idx} className={`relative bg-white p-10 rounded-[3rem] shadow-xl border-2 transition-all duration-700 hover:shadow-2xl flex flex-col ${plan.highlight ? 'border-red-600 scale-105 z-10' : 'border-transparent'}`} data-aos="fade-up" data-aos-delay={idx * 100}>
+            <div key={idx} className={`relative bg-white p-10 rounded-[3rem] shadow-xl border-2 transition-all duration-700 hover:shadow-2xl flex flex-col ${plan.highlight ? 'border-red-600 scale-105 z-10' : 'border-transparent'}`}>
               {plan.highlight && (
                 <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-red-600 text-white text-[10px] font-black py-2 px-6 rounded-full tracking-[0.2em] shadow-xl uppercase">
                   Most Popular
@@ -212,7 +203,7 @@ const SEOPage = () => {
           />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto text-center" data-aos="fade-up">
+        <div className="relative z-10 max-w-7xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-semibold text-white mb-6 uppercase tracking-tight">
             3-STEPS TO MAKE YOUR BUSINESS AN ONLINE POWERHOUSE
           </h2>
@@ -244,7 +235,7 @@ const SEOPage = () => {
 
       {/* Contact Section - REIMAGINED */}
       <section className="py-32 px-6 lg:px-20 bg-white relative" id="contact">
-        <div className="max-w-7xl mx-auto" data-aos="fade-up">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center mb-24">
             <h2 className="text-4xl md:text-6xl font-semibold text-gray-900 mb-6 uppercase tracking-tight">Contact</h2>
             <div className="w-16 h-1 bg-red-600 mx-auto mb-10"></div>

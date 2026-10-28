@@ -4,19 +4,10 @@ import React, { useEffect } from "react";
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { Server, Zap, ShieldCheck, Headphones, Database, Globe, Rocket, CheckCircle2, ShoppingCart } from "lucide-react";
 import { SiWordpress, SiJoomla } from "react-icons/si";
 
 const CheapHostingPage = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  }, []);
-
   const features = [
     {
       title: "1-click Application Installer",
@@ -72,13 +63,13 @@ const CheapHostingPage = () => {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-gradient-to-b from-red-50 to-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 flex flex-col items-center text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 uppercase tracking-tight" data-aos="fade-up">
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 uppercase tracking-tight">
             Cheapest Hosting
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-2xl" data-aos="fade-up" data-aos-delay="100">
+          <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-2xl">
             Start Your Own Web Hosting Business Today..
           </p>
-          <div className="flex flex-wrap justify-center gap-6 mb-12" data-aos="fade-up" data-aos-delay="200">
+          <div className="flex flex-wrap justify-center gap-6 mb-12">
             <div className="flex items-center gap-2 text-gray-700 font-medium">
               <CheckCircle2 className="text-red-600" size={20} />
               <span>10x Faster Then SSD Hosting</span>
@@ -101,7 +92,7 @@ const CheapHostingPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center items-start">
             {/* Placeholder for other plans if needed, but showing Basic as requested */}
             <div className="hidden md:block"></div> 
-            <div className="bg-white border-2 border-red-600 rounded-3xl p-8 shadow-2xl relative overflow-hidden" data-aos="zoom-in">
+            <div className="bg-white border-2 border-red-600 rounded-3xl p-8 shadow-2xl relative overflow-hidden">
               <div className="absolute top-0 right-0 bg-red-600 text-white px-4 py-1 rounded-bl-xl font-bold text-sm">
                 Save 30%
               </div>
@@ -152,7 +143,7 @@ const CheapHostingPage = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {features.map((feature, idx) => (
-              <div key={idx} className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay={idx * 50}>
+              <div key={idx} className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                 <div className="mb-6">{feature.icon}</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">{feature.title}</h3>
                 <p className="text-gray-600 leading-relaxed text-sm">{feature.desc}</p>
@@ -175,7 +166,7 @@ const CheapHostingPage = () => {
               { name: "Joomla", icon: <SiJoomla size={64} className="text-[#f47321]" />, desc: "Joomla is an open-source content management system used for creating Web content. It is written in PHP and makes use of a MySQL database for storing data." },
               { name: "Opencart", icon: <ShoppingCart size={64} className="text-[#2396d8]" />, desc: "The OpenCart marketplace features 13000+ modules and themes to jump-start, grow and expand your business. You can find beautiful themes for just about any sector." }
             ].map((cms, i) => (
-              <div key={i} className="flex flex-col items-center" data-aos="fade-up" data-aos-delay={i * 100}>
+              <div key={i} className="flex flex-col items-center">
                 <div className="mb-6 p-4 rounded-full bg-gray-50">{cms.icon}</div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">{cms.name}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{cms.desc}</p>

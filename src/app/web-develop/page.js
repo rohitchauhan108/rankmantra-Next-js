@@ -5,20 +5,11 @@ import React, { useEffect } from "react";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { IoLocationOutline, IoCallOutline } from "react-icons/io5";
 import { TfiEmail } from "react-icons/tfi";
 import { fromJSON } from "postcss";
 
 const WebDevelopPage = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  }, []);
-
   // form submition part
   const form = useRef();
   const sendEmail = (e) => {
@@ -59,7 +50,7 @@ const WebDevelopPage = () => {
 
         <div
           className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-20 text-center"
-          data-aos="fade-up"
+         
         >
           <div className="inline-block px-6 py-2 mb-8 rounded-full bg-red-600/10 border border-red-600/20 backdrop-blur-md">
             <span className="text-red-600 text-xs font-bold tracking-[0.4em] uppercase">
@@ -93,7 +84,7 @@ const WebDevelopPage = () => {
 
       {/* Intro Section */}
       <section className="py-24 px-6 lg:px-20 bg-white border-b border-gray-50">
-        <div className="max-w-4xl mx-auto text-center" data-aos="fade-up">
+        <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-8 uppercase tracking-tight">
             Custom Web Applications
           </h2>
@@ -122,7 +113,7 @@ const WebDevelopPage = () => {
       {/* Transform Your Business Section */}
       <section className="py-24 px-6 lg:px-20 bg-gray-50/50">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 md:gap-24">
-          <div className="lg:w-1/2" data-aos="fade-right">
+          <div className="lg:w-1/2">
             <div className="relative aspect-video rounded-3xl overflow-hidden shadow-sm border-[12px] border-white">
               <Image
                 src="https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1000"
@@ -132,7 +123,7 @@ const WebDevelopPage = () => {
               />
             </div>
           </div>
-          <div className="lg:w-1/2" data-aos="fade-left">
+          <div className="lg:w-1/2">
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               How Our Web Application Services Transform Your Business
             </h2>
@@ -165,7 +156,7 @@ const WebDevelopPage = () => {
       {/* Responsive Web Design Section */}
       <section className="py-24 px-6 lg:px-20 bg-white">
         <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-16 md:gap-24">
-          <div className="lg:w-1/2" data-aos="fade-right">
+          <div className="lg:w-1/2">
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               Responsive Web Design
             </h2>
@@ -194,7 +185,7 @@ const WebDevelopPage = () => {
               </div>
             </div>
           </div>
-          <div className="lg:w-1/2" data-aos="fade-left">
+          <div className="lg:w-1/2">
             <div className="relative aspect-video rounded-3xl overflow-hidden shadow-sm border-[12px] border-gray-50">
               <Image
                 src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1000"
@@ -210,7 +201,7 @@ const WebDevelopPage = () => {
       {/* SEO Friendly Section */}
       <section className="py-24 px-6 lg:px-20 bg-gray-50/50 mb-12">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 md:gap-24">
-          <div className="lg:w-1/2" data-aos="fade-right">
+          <div className="lg:w-1/2">
             <div className="relative aspect-video rounded-3xl overflow-hidden shadow-sm border-[12px] border-white">
               <Image
                 src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000"
@@ -220,7 +211,7 @@ const WebDevelopPage = () => {
               />
             </div>
           </div>
-          <div className="lg:w-1/2" data-aos="fade-left">
+          <div className="lg:w-1/2">
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               Drag, Drop, and Go Are SEO Friendly
             </h2>
@@ -253,7 +244,7 @@ const WebDevelopPage = () => {
 
       {/* Testimonials Section */}
       <section className="py-24 bg-gray-50 text-center">
-        <div className="max-w-5xl mx-auto px-6" data-aos="fade-up">
+        <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-sm font-bold text-red-600 uppercase tracking-[0.4em] mb-12">
             What Our Clients Say
           </h2>
@@ -295,7 +286,7 @@ const WebDevelopPage = () => {
 
         <div
           className="relative z-10 max-w-7xl mx-auto text-center"
-          data-aos="fade-up"
+         
         >
           <h2 className="text-3xl md:text-5xl font-semibold text-white mb-6 uppercase tracking-tight">
             3-STEPS TO MAKE YOUR BUSINESS AN ONLINE POWERHOUSE
@@ -363,7 +354,7 @@ const WebDevelopPage = () => {
 
       {/* Contact Section - REIMAGINED */}
       <section className="py-32 px-6 lg:px-20 bg-white relative" id="contact">
-        <div className="max-w-7xl mx-auto" data-aos="fade-up">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center mb-24">
             <h2 className="text-4xl md:text-6xl font-semibold text-gray-900 mb-6 uppercase tracking-tight">
               Contact

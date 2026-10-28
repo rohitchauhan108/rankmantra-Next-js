@@ -2,21 +2,11 @@
 
 import React, { useEffect } from "react";
 
-// aos
-import AOS from "aos";
-import "aos/dist/aos.css";
-
 // React Form
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 
 const Newsletter = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1200,
-    });
-  }, []);
-
   const { register, handleSubmit } = useForm();
 
   const onSubmit = (data, e) => {
@@ -26,7 +16,7 @@ const Newsletter = () => {
   };
 
   return (
-    <div data-aos="fade-down" className="text-[#7A6960]">
+    <div className="text-[#7A6960]">
       <h2 className="text-3xl font-semibold text-center">
         Join Our Newsletter
       </h2>

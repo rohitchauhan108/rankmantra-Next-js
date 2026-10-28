@@ -5,18 +5,10 @@ import emailjs from "@emailjs/browser";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { IoLocationOutline, IoCallOutline } from "react-icons/io5";
 import { TfiEmail } from "react-icons/tfi";
 
 const LogoDesignPage = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  }, []);
   // form submit part
   const form = useRef();
   const sendEmail = (e) => {
@@ -55,7 +47,7 @@ const LogoDesignPage = () => {
 
         <div
           className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-20 text-center"
-          data-aos="fade-up"
+         
         >
           <div className="inline-block px-6 py-2 mb-8 rounded-full bg-red-600/10 border border-red-600/20 backdrop-blur-md">
             <span className="text-red-600 text-xs font-bold tracking-[0.4em] uppercase">
@@ -88,7 +80,7 @@ const LogoDesignPage = () => {
 
       {/* Services we provide Section */}
       <section className="py-24 px-6 lg:px-20 bg-white border-b border-gray-50">
-        <div className="max-w-7xl mx-auto" data-aos="fade-up">
+        <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12">
             Services we provide
           </h2>
@@ -124,7 +116,7 @@ const LogoDesignPage = () => {
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
           <div
             className="lg:w-1/2 grid grid-cols-3 gap-4"
-            data-aos="fade-right"
+           
           >
             {[
               "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=300",
@@ -150,7 +142,7 @@ const LogoDesignPage = () => {
           </div>
           <div
             className="lg:w-1/2 text-center lg:text-left"
-            data-aos="fade-left"
+           
           >
             <h2 className="text-3xl md:text-5xl font-bold text-red-600 mb-8 leading-tight">
               400+ Logo design are Done by using the Canva, Looka, Adobe
@@ -167,7 +159,7 @@ const LogoDesignPage = () => {
 
       {/* Intro Section - Matching search style */}
       <section className="py-24 px-6 lg:px-20 bg-gray-50/50 border-b border-gray-50">
-        <div className="max-w-4xl mx-auto text-center" data-aos="fade-up">
+        <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-8 uppercase tracking-tight">
             Professional Brand Identity
           </h2>
@@ -193,7 +185,7 @@ const LogoDesignPage = () => {
 
       {/* Testimonials Section */}
       <section className="py-24 bg-gray-50 text-center">
-        <div className="max-w-5xl mx-auto px-6" data-aos="fade-up">
+        <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-sm font-bold text-red-600 uppercase tracking-[0.4em] mb-12">
             What Our Clients Say
           </h2>
@@ -235,7 +227,7 @@ const LogoDesignPage = () => {
 
         <div
           className="relative z-10 max-w-7xl mx-auto text-center"
-          data-aos="fade-up"
+         
         >
           <h2 className="text-3xl md:text-5xl font-semibold text-white mb-6 uppercase tracking-tight">
             3-STEPS TO MAKE YOUR BUSINESS AN ONLINE POWERHOUSE
@@ -298,7 +290,7 @@ const LogoDesignPage = () => {
 
       {/* Contact Section */}
       <section className="py-32 px-6 lg:px-20 bg-white relative" id="contact">
-        <div className="max-w-7xl mx-auto" data-aos="fade-up">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center mb-24">
             <h2 className="text-4xl md:text-6xl font-semibold text-gray-900 mb-6 uppercase tracking-tight">
               Contact

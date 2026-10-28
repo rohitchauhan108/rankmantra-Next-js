@@ -1,17 +1,9 @@
 'use client'
 
 import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Image from "next/image";
 
 const Portfolio = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1200,
-    });
-  }, []);
-
   const projects = [
     { id: 'web1', title: 'SSIN', category: 'Web Development', img: '/img/portfolio/ssin.png' },
     { id: 'web2', title: 'Oliver', category: 'Web Development', img: '/img/portfolio/oliver.png' },
@@ -23,7 +15,7 @@ const Portfolio = () => {
 
   return (
     <div className="text-[#7A6960]">
-      <h1 data-aos="fade-down" className="text-3xl font-semibold text-center uppercase">
+      <h1 className="text-3xl font-semibold text-center uppercase">
         Portfolio
       </h1>
       <div className="flex justify-center items-center mt-2 mb-10">
@@ -35,7 +27,7 @@ const Portfolio = () => {
 
       <div
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-2"
-        data-aos="fade-up"
+       
       >
         {projects.map((project) => (
           <a

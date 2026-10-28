@@ -2,17 +2,9 @@
 
 import React, { useEffect } from "react";
 import Marquee from "react-fast-marquee";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Image from "next/image";
 
 const Clients = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1200,
-    });
-  }, []);
-
   const clients = [
     { name: "Client 1", img: "/assets/img1.png" },
     { name: "Client 2", img: "/assets/img2.png" },
@@ -26,7 +18,7 @@ const Clients = () => {
   ];
 
   return (
-    <div data-aos="fade-down" className="text-[#7A6960]">
+    <div className="text-[#7A6960]">
       <div className="flex justify-center items-center mt-2">
         <div className="bg-red-600 h-1 w-16 rounded"></div>
       </div>

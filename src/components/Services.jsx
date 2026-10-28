@@ -10,19 +10,13 @@ import { FaAmazonPay } from "react-icons/fa6";
 import { IoShareSocialSharp } from "react-icons/io5";
 import { RiBaseStationLine } from "react-icons/ri";
 import { SiHostinger } from "react-icons/si";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Link from "next/link";
 
 const Services = () => {
 
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
     <div className="text-[#7A6960]">
-      <h2 data-aos="fade-down" className="text-3xl font-semibold text-center uppercase">
+      <h2 className="text-3xl font-semibold text-center uppercase">
         Services
       </h2>
       <div className="flex justify-center items-center mt-2">
@@ -33,7 +27,7 @@ const Services = () => {
       </p>
       <div
         className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 p-2"
-        data-aos="fade-up"
+       
       >
         <div>
           <Card

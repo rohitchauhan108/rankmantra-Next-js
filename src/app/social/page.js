@@ -6,20 +6,11 @@ import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import Contact from '@/components/Contact'
 import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { IoLocationOutline, IoCallOutline } from "react-icons/io5";
 import { TfiEmail } from "react-icons/tfi";
 
 const SocialMediaPage = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  }, []);
-
-    // email send part
+  // email send part
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -60,7 +51,7 @@ const SocialMediaPage = () => {
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
         
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-20 text-center" data-aos="fade-up">
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-20 text-center">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white tracking-tight mb-8 leading-[1.1]">
             Social Media <span className="text-red-600">Marketing</span>
           </h1>
@@ -78,7 +69,7 @@ const SocialMediaPage = () => {
 
       {/* Social Media Made Easy Section */}
       <section className="py-20 px-6 lg:px-20 bg-white">
-        <div className="max-w-7xl mx-auto text-center" data-aos="fade-up">
+        <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-6">
             Social Media Made Easy
           </h2>
@@ -101,7 +92,7 @@ const SocialMediaPage = () => {
       {/* Frontline Solutions Section */}
       <section className="py-20 px-6 lg:px-20 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
-          <div className="md:w-1/2" data-aos="fade-right">
+          <div className="md:w-1/2">
             <div className="relative">
               <Image 
                 src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070" 
@@ -112,7 +103,7 @@ const SocialMediaPage = () => {
               />
             </div>
           </div>
-          <div className="md:w-1/2" data-aos="fade-left">
+          <div className="md:w-1/2">
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight">
               The Frontline Web Design And Development Solutions
             </h2>
@@ -135,7 +126,7 @@ const SocialMediaPage = () => {
       {/* Maintain a consistent schedule calendar Section */}
       <section className="py-20 px-6 lg:px-20 bg-gray-50 overflow-hidden">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
-          <div className="md:w-1/2" data-aos="fade-right">
+          <div className="md:w-1/2">
             <Image 
               src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=1000" 
               alt="Calendar Schedule" 
@@ -144,7 +135,7 @@ const SocialMediaPage = () => {
               className="rounded-2xl shadow-2xl"
             />
           </div>
-          <div className="md:w-1/2" data-aos="fade-left">
+          <div className="md:w-1/2">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 relative">
               Maintain a consistent schedule calendar
               <span className="absolute -bottom-3 left-0 w-20 h-1 bg-red-600"></span>
@@ -167,7 +158,7 @@ const SocialMediaPage = () => {
       {/* Specialized Content Management System Section */}
       <section className="py-20 px-6 lg:px-20 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row-reverse items-center gap-12">
-          <div className="md:w-1/2" data-aos="fade-left">
+          <div className="md:w-1/2">
             <Image 
               src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000" 
               alt="Content Management System" 
@@ -176,7 +167,7 @@ const SocialMediaPage = () => {
               className="rounded-2xl shadow-2xl"
             />
           </div>
-          <div className="md:w-1/2" data-aos="fade-right">
+          <div className="md:w-1/2">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 relative">
               Specialized Content Management System
               <span className="absolute -bottom-3 left-0 w-20 h-1 bg-red-600"></span>
@@ -199,7 +190,7 @@ const SocialMediaPage = () => {
       {/* SEO Expert Section */}
       <section className="py-20 px-6 lg:px-20 bg-gray-50 overflow-hidden">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
-          <div className="md:w-1/2" data-aos="fade-right">
+          <div className="md:w-1/2">
             <Image 
               src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1000" 
               alt="SEO Expert analyzing website performance with team" 
@@ -208,7 +199,7 @@ const SocialMediaPage = () => {
               className="rounded-2xl shadow-2xl"
             />
           </div>
-          <div className="md:w-1/2" data-aos="fade-left">
+          <div className="md:w-1/2">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 relative">
               SEO Expert Can Help Your Website Get Noticed
               <span className="absolute -bottom-3 left-0 w-20 h-1 bg-red-600"></span>
@@ -230,7 +221,7 @@ const SocialMediaPage = () => {
 
       {/* Plans & Signup Section */}
       <section className="py-20 px-6 lg:px-20 bg-white">
-        <div className="max-w-7xl mx-auto text-center" data-aos="fade-up">
+        <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-6">
             Plans & Signup – Post Planner
           </h2>
@@ -253,7 +244,7 @@ const SocialMediaPage = () => {
       {/* Testimonials Section with Premium Avatar */}
       <section className="py-24 bg-gray-50 text-center relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-red-600 to-transparent opacity-20"></div>
-        <div className="max-w-5xl mx-auto px-6" data-aos="fade-up">
+        <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-sm font-bold text-red-600 uppercase tracking-[0.4em] mb-16">What Our Clients Say</h2>
           <div className="bg-white p-10 md:p-20 rounded-[3rem] shadow-[0_50px_100px_rgba(0,0,0,0.04)] relative border border-gray-100/50">
             <div className="absolute -top-12 left-1/2 -translate-x-1/2">
@@ -295,7 +286,7 @@ const SocialMediaPage = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-gray-950/80 via-transparent to-gray-950/80"></div>
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto" data-aos="fade-up">
+        <div className="relative z-10 max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 uppercase tracking-tight leading-tight">
             3-STEPS TO MAKE YOUR BUSINESS AN <span className="text-red-600">ONLINE POWERHOUSE</span>
           </h2>
@@ -331,7 +322,7 @@ const SocialMediaPage = () => {
 
       {/* Premium Contact Section */}
       <section className="py-32 px-6 lg:px-20 bg-white relative" id="contact">
-        <div className="max-w-7xl mx-auto" data-aos="fade-up">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center mb-24">
             <div className="inline-block px-6 py-2 mb-6 rounded-full bg-red-600/10 border border-red-600/20">
               <span className="text-red-600 text-xs font-black tracking-[0.3em] uppercase">Connect With Us</span>

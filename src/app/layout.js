@@ -1,18 +1,18 @@
 import './globals.css'
-import { Open_Sans, Poppins } from 'next/font/google'
+import { Space_Grotesk, DM_Sans } from 'next/font/google'
 import Script from 'next/script'
 
-const openSans = Open_Sans({
+const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--primary-font',
+  variable: '--font-space-grotesk',
 })
 
-const poppins = Poppins({
+const dmSans = DM_Sans({
   subsets: ['latin'],
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
   display: 'swap',
-  variable: '--secondary-font',
+  variable: '--font-dm-sans',
 })
 
 export const metadata = {
@@ -29,7 +29,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${openSans.variable} ${poppins.variable}`}>
+    <html lang="en" className={`${dmSans.variable} ${spaceGrotesk.variable}`}>
       <body>
         {children}
         <Script

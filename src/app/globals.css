@@ -4,12 +4,16 @@
 
 /* Important */
 body {
-  font-family: var(--primary-font), sans-serif;
+  font-family: var(--font-dm-sans), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-space-grotesk), sans-serif;
 }
 
 :root {
-  --primary-font: var(--primary-font);
-  --secondary-font: var(--secondary-font);
+  --primary-font: var(--font-dm-sans);
+  --secondary-font: var(--font-space-grotesk);
 }
 
 .primary-font {

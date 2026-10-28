@@ -4,17 +4,7 @@ import React, { useEffect } from "react";
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
-
 export default function AppDevelopmentPage() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  }, []);
-
   return (
     <div className="secondary-font overflow-x-hidden bg-white selection:bg-red-50 selection:text-red-600">
       <NavBar />
@@ -32,7 +22,7 @@ export default function AppDevelopmentPage() {
           <div className="absolute inset-0 bg-black/60"></div>
         </div>
         
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-20 text-center" data-aos="fade-up">
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-20 text-center">
           <div className="inline-block px-6 py-2 mb-8 rounded-full bg-red-600/10 border border-red-600/20 backdrop-blur-md">
             <span className="text-red-600 text-xs font-bold tracking-[0.4em] uppercase">Mobile & Web Apps</span>
           </div>

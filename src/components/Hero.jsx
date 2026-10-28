@@ -2,16 +2,7 @@
 
 import React, { useEffect } from "react";
 import CtaButton from "./CtaButton";
-import AOS from "aos";
-import "aos/dist/aos.css";
-
 const Hero = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1200,
-    });
-  }, []);
-
   return (
     <div className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Video */}
@@ -30,7 +21,7 @@ const Hero = () => {
         <div className="absolute inset-0 bg-black/50"></div>
       </div>
 
-      <div data-aos="fade-up" className="relative z-10 text-center px-6 max-w-5xl pt-16">
+      <div className="relative z-10 text-center px-6 max-w-5xl pt-16">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg leading-tight">
           Elevate Your Digital Presence with Digital Marketing Services in Dehradun
         </h1>

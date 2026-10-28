@@ -4,19 +4,10 @@ import emailjs from "@emailjs/browser"
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { IoLocationOutline, IoCallOutline } from "react-icons/io5";
 import { TfiEmail } from "react-icons/tfi";
 
 export default function ContactUsPage() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  }, []);
-
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -53,7 +44,7 @@ export default function ContactUsPage() {
           <div className="absolute inset-0 bg-black/70"></div>
         </div>
         
-        <div className="relative z-10 w-full max-w-4xl mx-auto px-6 text-center text-white py-12 lg:py-24" data-aos="fade-up">
+        <div className="relative z-10 w-full max-w-4xl mx-auto px-6 text-center text-white py-12 lg:py-24">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 lg:mb-8 tracking-tight">
             Contact <span className="text-red-600">Us</span>
           </h1>
@@ -69,7 +60,7 @@ export default function ContactUsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-20">
             
             {/* Contact Info */}
-            <div className="lg:col-span-1 space-y-10 lg:space-y-12" data-aos="fade-right">
+            <div className="lg:col-span-1 space-y-10 lg:space-y-12">
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6 uppercase tracking-tighter">Get In <span className="text-red-600">Touch</span></h2>
                 <div className="w-12 h-1 bg-red-600 rounded-full mb-8"></div>
@@ -114,7 +105,7 @@ export default function ContactUsPage() {
             </div>
 
             {/* Contact Form */}
-            <div className="lg:col-span-2" data-aos="fade-left">
+            <div className="lg:col-span-2">
               <form className="bg-gray-50/50 p-8 lg:p-12 rounded-[3rem] border border-gray-100 shadow-inner" ref={form} onSubmit={sendEmail}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-6 lg:mb-8">
                   <div className="space-y-2">
@@ -145,7 +136,7 @@ export default function ContactUsPage() {
 
       {/* Map Section */}
       <section className="pb-20 lg:pb-32 px-4 lg:px-20 bg-white overflow-hidden">
-        <div className="max-w-7xl mx-auto rounded-[3rem] overflow-hidden shadow-2xl h-[400px] relative border border-gray-100" data-aos="zoom-in">
+        <div className="max-w-7xl mx-auto rounded-[3rem] overflow-hidden shadow-2xl h-[400px] relative border border-gray-100">
           <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2870.2789476479875!2d77.9935024518577!3d30.301079233132025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929f8421dcd3b%3A0xc98798955cbfeb6d!2sRankMantra%20Web%20Designing%20%26%20SEO%20Company!5e1!3m2!1sen!2sin!4v1782734587565!5m2!1sen!2sin" 
             width="100%" 

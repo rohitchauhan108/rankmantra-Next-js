@@ -154,25 +154,33 @@ const Faquestions = () => {
     },
   ]
 
+  const [activeQuestion, setActiveQuestion] = useState(categories[0].questions[0].question)
   const selectedCategory = categories.find(({ name }) => name === activeCategory)
 
   return (
     <div>
       <div className="mx-auto flex w-fit max-w-full flex-wrap justify-center gap-2 rounded-2xl border border-orange-100 bg-white/90 p-2 shadow-[0_12px_35px_rgba(122,105,96,0.08)] backdrop-blur mb-12">
-        {categories.map(({ name, color }) => (
-          <button
-            key={name}
-            type="button"
-            onClick={() => setActiveCategory(name)}
-            className={`rounded-xl px-4 py-3 text-sm font-semibold transition-colors ${
-              activeCategory === name
-                ? `${color.tab} text-white shadow-md`
-                : `text-[#7A6960] ${color.hover}`
-            }`}
-          >
-            {name}
-          </button>
-        ))}
+        {categories.map((category) => {
+          const { name, color } = category
+
+          return (
+            <button
+              key={name}
+              type="button"
+              onClick={() => {
+                setActiveCategory(name)
+                setActiveQuestion(category.questions[0].question)
+              }}
+              className={`rounded-xl px-4 py-3 text-sm font-semibold transition-colors ${
+                activeCategory === name
+                  ? `${color.tab} text-white shadow-md`
+                  : `text-[#7A6960] ${color.hover}`
+              }`}
+            >
+              {name}
+            </button>
+          )
+        })}
       </div>
 
       <div className="mb-6 flex items-end justify-between gap-4">
@@ -189,7 +197,7 @@ const Faquestions = () => {
         </p>
       </div>
 
-      <div className="grid gap-4 md:grid-cols-2">
+      <div className="grid gap-4">
         {selectedCategory.questions.map(({ question, answer, href }) => (
           <Accordian
             key={question}
@@ -197,6 +205,12 @@ const Faquestions = () => {
             answer={answer}
             href={href}
             color={selectedCategory.color}
+            isOpen={activeQuestion === question}
+            onToggle={() =>
+              setActiveQuestion((currentQuestion) =>
+                currentQuestion === question ? null : question
+              )
+            }
           />
         ))}
       </div>

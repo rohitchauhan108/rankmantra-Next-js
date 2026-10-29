@@ -190,14 +190,13 @@ const Faquestions = () => {
       </div>
 
       <div className="grid gap-4 md:grid-cols-2">
-        {selectedCategory.questions.map(({ question, answer, href }, index) => (
+        {selectedCategory.questions.map(({ question, answer, href }) => (
           <Accordian
             key={question}
             question={question}
             answer={answer}
             href={href}
             color={selectedCategory.color}
-            defaultOpen={index === 0}
           />
         ))}
       </div>

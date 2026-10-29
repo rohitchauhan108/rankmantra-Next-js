@@ -241,38 +241,7 @@ const SocialMediaPage = () => {
         </div>
       </section>
 
-      {/* Testimonials Section with Premium Avatar */}
-      <section className="py-24 bg-gray-50 text-center relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-red-600 to-transparent opacity-20"></div>
-        <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-sm font-bold text-red-600 uppercase tracking-[0.4em] mb-16">What Our Clients Say</h2>
-          <div className="bg-white p-10 md:p-20 rounded-[3rem] shadow-[0_50px_100px_rgba(0,0,0,0.04)] relative border border-gray-100/50">
-            <div className="absolute -top-12 left-1/2 -translate-x-1/2">
-              <div className="w-24 h-24 rounded-full overflow-hidden border-[6px] border-white shadow-2xl relative">
-                <Image 
-                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=150&h=150&auto=format&fit=crop" 
-                  alt="Client Avatar" 
-                  width={96} 
-                  height={96} 
-                  className="object-cover h-full w-full scale-110" 
-                />
-              </div>
-            </div>
-            <div className="mt-4">
-              <div className="flex justify-center gap-1 mb-6 text-yellow-400">
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
-                ))}
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2 uppercase tracking-widest">Pooja Parkash</h3>
-              <p className="text-red-600 text-xs font-black tracking-[0.2em] mb-8 uppercase">Verified Business Owner</p>
-              <p className="text-gray-600 italic text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto font-medium">
-                "Rankmantra stands above the rest in the category of IT companies in Dehradun. The team of professionals they have is par-excellence, ensuring top-notch service each and every time. Highly recommend for all your tech needs!"
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Premium 3-Steps Section */}
       <section className="relative py-32 px-6 lg:px-20 bg-gray-950 overflow-hidden text-center">

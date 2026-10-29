@@ -1,10 +1,12 @@
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import Faquestions from '@/components/Faquestions'
+import { StructuredData, faqsSchema } from '@/components/StructuredData'
 
 export default function FaqsPage() {
   return (
     <>
+      <StructuredData id="faqs-structured-data" schema={faqsSchema} />
       <NavBar />
       <main className="relative w-full min-h-screen overflow-hidden bg-white border-b border-orange-100">
         <div className="pointer-events-none absolute -top-32 -right-32 h-96 w-96 rounded-full bg-red-100/50 blur-3xl" />

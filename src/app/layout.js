@@ -1,6 +1,7 @@
 import './globals.css'
 import { Space_Grotesk, DM_Sans } from 'next/font/google'
 import Script from 'next/script'
+import { StructuredData, sitewideSchema } from '@/components/StructuredData'
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${dmSans.variable} ${spaceGrotesk.variable}`}>
       <body>
+        <StructuredData id="sitewide-structured-data" schema={sitewideSchema} />
         {children}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-YRL5W2H3KK"

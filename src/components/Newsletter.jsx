@@ -16,7 +16,7 @@ const Newsletter = () => {
   };
 
   return (
-    <div className="text-[#7A6960]">
+    <div className="text-[#7A6960] py-12">
       <h2 className="text-3xl font-semibold text-center">
         Join Our Newsletter
       </h2>

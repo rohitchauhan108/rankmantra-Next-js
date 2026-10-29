@@ -199,7 +199,6 @@ src/
    - [ ] /online-reputation (ORM packages)
    - [ ] /web-hosting-package
    - [ ] /search (SEO)
-   - [ ] /social (Social Media)
    - [ ] /privacy-policy
    - [ ] /terms-and-conditions
    - [ ] /website-designing
@@ -328,7 +327,6 @@ Based on the original React Router, here's the complete routing structure:
 | `/wix-development` | Wix Dev | Page |
 | `/logo-design` | Logo Design | Page |
 | `/app-development` | App Development | Page |
-| `/social` | Social Media | Page |
 | `/portfolio/web1-web6` | Portfolio Projects | Page |
 | `/portfolio/app3` | App Portfolio | Page |
 | `/portfolio/product3` | Product Portfolio | Page |

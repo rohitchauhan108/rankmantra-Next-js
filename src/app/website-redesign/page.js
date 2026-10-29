@@ -171,36 +171,7 @@ const WebsiteRedesignPage = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-24 bg-gray-50 text-center">
-        <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-sm font-bold text-red-600 uppercase tracking-[0.4em] mb-12">
-            What Our Clients Say
-          </h2>
-          <div className="bg-white p-10 md:p-20 rounded-[2rem] shadow-sm relative border border-gray-100">
-            <div className="flex justify-center mb-8">
-              <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-white shadow-lg">
-                <Image
-                  src="/img/team/team-1.jpg"
-                  alt="Pooja Parkash"
-                  width={96}
-                  height={96}
-                  className="object-cover h-full w-full"
-                />
-              </div>
-            </div>
-            <h3 className="text-xl font-semibold text-gray-800 mb-4 uppercase tracking-widest">
-              Pooja Parkash
-            </h3>
-            <p className="text-gray-500 italic text-lg md:text-xl leading-relaxed max-w-3xl mx-auto font-normal">
-              "Rankmantra stands above the rest in the category of IT companies
-              in Dehradun. The team of professionals they have is
-              par-excellence, ensuring top-notch service each and every time.
-              Highly recommend for all your tech needs!"
-            </p>
-          </div>
-        </div>
-      </section>
+
 
       {/* 3-Steps Section */}
       <section className="relative py-32 px-6 lg:px-20 bg-gray-950 overflow-hidden">

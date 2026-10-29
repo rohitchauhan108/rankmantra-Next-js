@@ -59,7 +59,7 @@ const Footer = () => {
             <a href="mailto:info@rankmantra.com" className="ml-1 font-normal hover:text-red-600">
               info@rankmantra.com
             </a>
-          </p>
+          </p> 
         </div>
 
         {/* Column 2 */}
@@ -77,7 +77,6 @@ const Footer = () => {
             View Our Google Reviews
           </a>
 
-          <div className="mt-4 max-w-[200px] text-gray-500">Google Reviews Image</div>
         </div>
 
         {/* Column 3 */}

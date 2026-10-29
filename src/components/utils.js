@@ -4,12 +4,75 @@ import { MdDesignServices, MdDeveloperBoard, MdEco, MdLogoDev } from "react-icon
 import { SiErpnext, SiShopify, SiWebstorm, SiWix, SiWordpress } from "react-icons/si";
 import { FaCode, FaSearch, FaShareAlt } from "react-icons/fa";
 
-export const Menus = [
-  
+const websiteServiceColumns = [
   {
-    name: "SEO",
-    link:"/seo"
+    heading: "DEVELOPMENT",
+    items: [
+      {
+        name: "Web Development",
+        icon: MdDeveloperBoard,
+        link:"/web-develop"
+      },
+      {
+        name: "E-Commerce Development",
+        icon: MdEco,
+        link:"/ecommerce-develop"
+      },
+      {
+        name: "Logo Designing",
+        icon: MdLogoDev,
+        link:"/logo-design"
+      },
+    ],
   },
+  {
+    heading: "DESIGNING",
+    items: [
+      {
+        name: "Website Designing",
+        icon: SiWebstorm,
+        link:"/website-designing"
+      },
+      {
+        name: "Website Redesigning",
+        icon: MdDesignServices,
+        link:"/website-redesign",
+      },
+      {
+        name: "Shopify Development",
+        icon: SiShopify,
+        link:"/shopify-development"
+      },
+    ],
+  },
+  {
+    heading: "CMS DEVELOPMENT",
+    items: [
+      {
+        name: "Wordpress Development",
+        icon: SiWordpress,
+        link:"/wordpress-development"
+      },
+      {
+        name: "Wix Development",
+        icon: SiWix,
+        link:"/wix-development"
+      },
+    ],
+  },
+  {
+    heading: "SEO",
+    items: [
+      {
+        name: "SEO Services",
+        icon: FaSearch,
+        link:"/seo"
+      },
+    ],
+  },
+];
+
+export const Menus = [
   /*
   {
     name: "HOSTING",
@@ -76,53 +139,9 @@ export const Menus = [
   */
   {
     name: "WEBSITE SERVICES",
-    subMenuHeading: ["DEVELOPMENT", "DESIGNING","CMS DEVELOPMENT"],
-    subMenu: [
-      {
-        name: "Web Development",
-        icon: MdDeveloperBoard,
-        link:"/web-develop"
-      },
-      {
-        name: "Website Designing",
-        icon: SiWebstorm,
-        link:"/website-designing"
-      },
-      {
-        name: "Wordpress Development",
-        icon: SiWordpress,
-        link:"/wordpress-development"
-      },
-      {
-        name: "E-Commerce Development",
-        icon: MdEco,
-        link:"/ecommerce-develop"
-      },
-      
-      {
-        name: "Website Redesigning",
-        icon: MdDesignServices,
-        link:"/website-redesign",
-      },
-      {
-        name: "Wix Development",
-        icon: SiWix,
-        link:"/wix-development"
-      },
-     
-      {
-        name: "Logo Designing",
-        icon: MdLogoDev,
-        link:"/logo-design"
-      },
-      {
-        name: "Shopify Development",
-        icon: SiShopify,
-        link:"/shopify-development"
-      },
-      
-    ],
-    gridCols: 3,
+    subMenu: websiteServiceColumns.flatMap(({ items }) => items),
+    subMenuColumns: websiteServiceColumns,
+    gridCols: 4,
   },
   {
     name: "PACKAGES",
@@ -157,7 +176,7 @@ export const Menus = [
   },
   {
     name: "SOCIAL MEDIA",
-    link:"/social"
+    link:"/social-media"
   },
   {
     name:"OUR PORTFOLIO",

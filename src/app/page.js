@@ -1,4 +1,5 @@
 import Home from '@/components/Home'
+import { StructuredData, homepageSchema } from '@/components/StructuredData'
 
 export const metadata = {
   title: 'SEO & Digital Marketing Agency | RankMantra',
@@ -6,5 +7,10 @@ export const metadata = {
 }
 
 export default function Page() {
-  return <Home />
+  return (
+    <>
+      <StructuredData id="homepage-structured-data" schema={homepageSchema} />
+      <Home />
+    </>
+  )
 }

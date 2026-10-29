@@ -13,6 +13,7 @@ import Footer from '@/components/Footer'
 import ChatWidget from '@/components/ChatWidget'
 import Newsletter from '@/components/Newsletter'
 import FlotingIcons from './FlotingIcons';
+import Review from './Review';
 const Home = () => {
   return (
     <div className="container min-w-full min-h-lvh secondary-font">
@@ -37,6 +38,10 @@ const Home = () => {
 
       <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden border-b border-orange-100">
         <Team />
+      </section>
+
+      <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden border-b border-orange-100">
+        <Review/>
       </section>
 
       <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden bg-[#FEFAF8] border-b border-orange-100">

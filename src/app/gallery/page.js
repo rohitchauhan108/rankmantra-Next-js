@@ -8,17 +8,17 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, Play, Pause, ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
-  "/images/g1.jpeg",
-  "/images/g2.jpeg",
-  "/images/g3.jpeg",
-  "/images/g4.jpeg",
-  "/images/g5.jfif",
-  "/images/g5.jpeg",
-  "/images/g6.jpeg",
-  "/images/g7.jpeg",
-  "/images/g8.jpeg",
-  "/images/g9.jpeg",
-  "/images/g10.jpeg",
+  "/images/g1.webp",
+  "/images/g2.webp",
+  "/images/g3.webp",
+  "/images/g4.webp",
+  "/images/g5.webp",
+  "/images/g5.webp",
+  "/images/g6.webp",
+  "/images/g7.webp",
+  "/images/g8.webp",
+  "/images/g9.webp",
+  "/images/g10.webp",
 ];
 
 const videos = [

@@ -13,7 +13,7 @@ export default function FaqsPage() {
         <div className="pointer-events-none absolute top-[32rem] -left-40 h-80 w-80 rounded-full bg-orange-100/60 blur-3xl" />
         <div className="pointer-events-none absolute inset-0 opacity-60 [background-image:linear-gradient(rgba(228,50,50,0.045)_1px,transparent_1px),linear-gradient(90deg,rgba(228,50,50,0.045)_1px,transparent_1px)] [background-size:38px_38px]" />
 
-        <div className="relative max-w-7xl mx-auto px-5 pt-28 pb-20 lg:px-8">
+        <div className="relative max-w-5xl mx-auto px-5 pt-28 pb-20 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-14">
             <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-red-600 text-2xl font-semibold text-white shadow-lg shadow-red-600/20">
               ?

@@ -22,9 +22,9 @@ const images = [
 ];
 
 const videos = [
-  "/v1.mp4",
-  "/v2.mp4",
-  "/v3.mp4",
+  "https://res.cloudinary.com/dxfuimb1a/video/upload/v1793345646/v1_qbhcuc.mp4",
+  "https://res.cloudinary.com/dxfuimb1a/video/upload/v1793345638/v2_b8xpwf.mp4",
+  "https://res.cloudinary.com/dxfuimb1a/video/upload/v1793345638/v3_knmgue.mp4",
 ];
 
 export default function GalleryPage() {

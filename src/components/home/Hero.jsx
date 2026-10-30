@@ -14,7 +14,7 @@ const Hero = () => {
           playsInline
           className="w-full h-full object-cover"
         >
-          <source src="https://www.pexels.com/download/video/3255386/" type="video/mp4" />
+          <source src="https://res.cloudinary.com/dxfuimb1a/video/upload/v1793345968/3255386-uhd_3840_2160_25fps_vkneny.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         {/* Overlay for better text visibility */}

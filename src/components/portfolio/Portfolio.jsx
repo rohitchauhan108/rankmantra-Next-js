@@ -5,12 +5,12 @@ import Image from "next/image";
 
 const Portfolio = () => {
   const projects = [
-    { id: 'web1', title: 'SSIN', category: 'Web Development', img: '/img/portfolio/ssin.png' },
-    { id: 'web2', title: 'Oliver', category: 'Web Development', img: '/img/portfolio/oliver.png' },
-    { id: 'web3', title: 'DDMR', category: 'Web Development', img: '/img/portfolio/ddmr.png' },
-    { id: 'web4', title: 'Hotel', category: 'E-Commerce', img: '/img/portfolio/hotel.png' },
-    { id: 'web5', title: 'Mahme', category: 'Responsive Design', img: '/img/portfolio/mahme.png' },
-    { id: 'web6', title: 'Tangle', category: 'Web Development', img: '/img/portfolio/tangle.png' },
+    { id: 'web1', title: 'SSIN', category: 'Web Development', img: '/img/portfolio/ssin.webp' },
+    { id: 'web2', title: 'Oliver', category: 'Web Development', img: '/img/portfolio/oliver.webp' },
+    { id: 'web3', title: 'DDMR', category: 'Web Development', img: '/img/portfolio/ddmr.webp' },
+    { id: 'web4', title: 'Hotel', category: 'E-Commerce', img: '/img/portfolio/hotel.webp' },
+    { id: 'web5', title: 'Mahme', category: 'Responsive Design', img: '/img/portfolio/mahme.webp' },
+    { id: 'web6', title: 'Tangle', category: 'Web Development', img: '/img/portfolio/tangle.webp' },
   ];
 
   return (

@@ -14,6 +14,8 @@ import ChatWidget from '@/components/ui/ChatWidget'
 import Newsletter from './Newsletter'
 import FlotingIcons from '@/components/ui/FlotingIcons';
 import Review from './Review';
+import WhyChooseUs from "./WhyChooseUs";
+
 const Home = () => {
   return (
     <div className="container min-w-full min-h-lvh secondary-font">
@@ -31,6 +33,8 @@ const Home = () => {
       <section id="services" className="w-full py-20 lg:px-10 overflow-hidden bg-[#FEFAF8] border-b border-orange-100">
         <Services />
       </section>
+
+      <WhyChooseUs />
 
       {/* <section id="portfolio" className="w-full max-h-fit py-20 lg:px-10 overflow-hidden border-b border-orange-100">
         <Portfolio />

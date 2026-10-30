@@ -1,18 +1,18 @@
 "use client";
 
 import React from 'react'
-import NavBar from '@/components/NavBar'
-import Hero from '@/components/Hero'
-import About from '@/components/About'
-import Services from '@/components/Services'
-// import Portfolio from '@/components/Portfolio'
-import Clients from '@/components/Clients'
-import Team from '@/components/Team'
-import Contact from '@/components/Contact'
-import Footer from '@/components/Footer'
-import ChatWidget from '@/components/ChatWidget'
-import Newsletter from '@/components/Newsletter'
-import FlotingIcons from './FlotingIcons';
+import NavBar from '@/components/ui/NavBar'
+import Hero from './Hero'
+import About from './About'
+import Services from '@/components/services/Services'
+// import Portfolio from '@/components/portfolio/Portfolio'
+import Clients from './Clients'
+import Team from './Team'
+import Contact from '@/components/contact/Contact'
+import Footer from '@/components/ui/Footer'
+import ChatWidget from '@/components/ui/ChatWidget'
+import Newsletter from './Newsletter'
+import FlotingIcons from '@/components/ui/FlotingIcons';
 import Review from './Review';
 const Home = () => {
   return (

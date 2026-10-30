@@ -20,6 +20,7 @@ const Clients = () => {
   return (
     <div className="text-[#7A6960]">
       <div className="flex justify-center items-center mt-2">
+        
         <div className="bg-red-600 h-1 w-16 rounded"></div>
       </div>
       <p className="text-gray-700 text-center mt-7 mb-10 text-lg">

@@ -1,7 +1,7 @@
 'use client'
 
-import NavBar from '@/components/NavBar'
-import Footer from '@/components/Footer'
+import NavBar from '@/components/ui/NavBar'
+import Footer from '@/components/ui/Footer'
 
 export default function Web1Page() {
   return (

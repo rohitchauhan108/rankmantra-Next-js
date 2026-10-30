@@ -1,9 +1,9 @@
 'use client'
 
 import React, { useEffect,useRef } from "react";
-import NavBar from '@/components/NavBar'
+import NavBar from '@/components/ui/NavBar'
 import emailjs from "@emailjs/browser"
-import Footer from '@/components/Footer'
+import Footer from '@/components/ui/Footer'
 import Image from "next/image";
 import { MdDeveloperMode, MdOutlineDesignServices, MdSettingsSuggest } from "react-icons/md";
 import { IoLocationOutline, IoCallOutline } from "react-icons/io5";

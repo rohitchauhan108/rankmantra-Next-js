@@ -1,8 +1,8 @@
 'use client'
 
 import React, { useEffect, useState, useRef } from "react";
-import NavBar from '@/components/NavBar'
-import Footer from '@/components/Footer'
+import NavBar from '@/components/ui/NavBar'
+import Footer from '@/components/ui/Footer'
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Play, Pause, ChevronLeft, ChevronRight } from "lucide-react";

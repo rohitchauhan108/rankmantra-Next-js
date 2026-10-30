@@ -1,8 +1,8 @@
 'use client'
 
 import React, { useEffect } from "react";
-import NavBar from '@/components/NavBar'
-import Footer from '@/components/Footer'
+import NavBar from '@/components/ui/NavBar'
+import Footer from '@/components/ui/Footer'
 import Image from "next/image";
 import { Server, Zap, ShieldCheck, Headphones, Database, Globe, Rocket, CheckCircle2, ShoppingCart } from "lucide-react";
 import { SiWordpress, SiJoomla } from "react-icons/si";

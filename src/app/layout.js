@@ -1,7 +1,7 @@
 import './globals.css'
 import { Space_Grotesk, DM_Sans } from 'next/font/google'
 import Script from 'next/script'
-import { StructuredData, sitewideSchema } from '@/components/StructuredData'
+import { StructuredData, sitewideSchema } from '@/components/ui/StructuredData'
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],

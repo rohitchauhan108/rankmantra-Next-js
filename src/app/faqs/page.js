@@ -1,7 +1,7 @@
-import NavBar from '@/components/NavBar'
-import Footer from '@/components/Footer'
-import Faquestions from '@/components/Faquestions'
-import { StructuredData, faqsSchema } from '@/components/StructuredData'
+import NavBar from '@/components/ui/NavBar'
+import Footer from '@/components/ui/Footer'
+import Faquestions from '@/components/faqs/Faquestions'
+import { StructuredData, faqsSchema } from '@/components/ui/StructuredData'
 
 export default function FaqsPage() {
   return (

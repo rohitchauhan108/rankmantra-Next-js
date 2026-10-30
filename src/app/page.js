@@ -1,5 +1,5 @@
-import Home from '@/components/Home'
-import { StructuredData, homepageSchema } from '@/components/StructuredData'
+import Home from '@/components/home/Home'
+import { StructuredData, homepageSchema } from '@/components/ui/StructuredData'
 
 export const metadata = {
   title: 'SEO & Digital Marketing Agency | RankMantra',

@@ -1,6 +1,6 @@
-import NavBar from '@/components/NavBar'
-import Footer from '@/components/Footer'
-import { portfolioData } from '@/components/portfolioData'
+import NavBar from '@/components/ui/NavBar'
+import Footer from '@/components/ui/Footer'
+import { portfolioData } from '@/components/portfolio/portfolioData'
 import Link from 'next/link'
 
 export function generateStaticParams() {

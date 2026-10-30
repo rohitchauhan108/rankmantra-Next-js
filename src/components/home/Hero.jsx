@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useEffect } from "react";
-import CtaButton from "./CtaButton";
+import CtaButton from "../ui/CtaButton";
 const Hero = () => {
   return (
     <div className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">

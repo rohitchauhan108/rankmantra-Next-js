@@ -2,12 +2,12 @@
 
 import React, { useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import NavBar from "@/components/NavBar";
-import Footer from "@/components/Footer";
+import NavBar from "@/components/ui/NavBar";
+import Footer from "@/components/ui/Footer";
 import Image from "next/image";
 import { IoLocationOutline, IoCallOutline } from "react-icons/io5";
 import { TfiEmail } from "react-icons/tfi";
-import { StructuredData, seoSchema } from "@/components/StructuredData";
+import { StructuredData, seoSchema } from "@/components/ui/StructuredData";
 
 const SearchPage = () => {
   // email send part

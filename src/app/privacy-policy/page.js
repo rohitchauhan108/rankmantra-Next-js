@@ -1,8 +1,8 @@
 'use client'
 
 import React, { useEffect } from "react";
-import NavBar from "@/components/NavBar";
-import Footer from "@/components/Footer";
+import NavBar from "@/components/ui/NavBar";
+import Footer from "@/components/ui/Footer";
 const PrivacyPolicy = () => {
   return (
     <div>

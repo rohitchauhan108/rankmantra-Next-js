@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import Accordian from './Accordian'
+import Accordian from '../ui/Accordian'
 
 const Faquestions = () => {
   const [activeCategory, setActiveCategory] = useState('About RankMantra')

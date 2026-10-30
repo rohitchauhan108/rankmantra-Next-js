@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useEffect, useState } from "react";
-import CtaButton from "./CtaButton";
+import CtaButton from "../ui/CtaButton";
 import { BsPeople } from "react-icons/bs";
 import Image from "next/image";
 

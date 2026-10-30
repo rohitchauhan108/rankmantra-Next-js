@@ -3,7 +3,7 @@
 import React, { useEffect } from "react";
 import { IoLocationOutline, IoCallOutline } from "react-icons/io5";
 import { TfiEmail } from "react-icons/tfi";
-import CtaButton from "./CtaButton";
+import CtaButton from "../ui/CtaButton";
 import { useForm } from "react-hook-form";
 import toast, { Toaster } from 'react-hot-toast';
 

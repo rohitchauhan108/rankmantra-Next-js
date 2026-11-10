@@ -213,6 +213,10 @@ export const Menus = [
     link:"/gallery"
   },
   {
+    name: "BLOG",
+    link:"/blog"
+  },
+  {
     name: "FAQS",
     link:"/faqs"
   },

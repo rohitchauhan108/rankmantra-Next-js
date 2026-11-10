@@ -101,25 +101,37 @@ const Footer = () => {
         {/* Column 4 */}
         <div>
           <h3 className="text-[#7A6960] font-semibold text-lg mb-4">
-            Follow Us
+            International SEO
           </h3>
+          <div className="flex flex-col gap-2 text-sm text-zinc-700">
+            <Link href="/uk/seo-services" onClick={scrollToTop} className="hover:text-red-600">SEO Services UK</Link>
+            <Link href="/us/seo-services" onClick={scrollToTop} className="hover:text-red-600">SEO Company USA</Link>
+            <Link href="/uae/seo-services" onClick={scrollToTop} className="hover:text-red-600">SEO Services Dubai & UAE</Link>
+            <Link href="/blog" onClick={scrollToTop} className="hover:text-red-600">SEO & Digital Marketing Blog</Link>
+          </div>
 
-          <p className="text-sm text-zinc-700 mb-4">
-            Follow RankMantra for daily inspiration and expert digital marketing insights.
-          </p>
+          <div className="mt-8">
+            <h3 className="text-[#7A6960] font-semibold text-lg mb-4">
+              Follow Us
+            </h3>
 
-          <div className="flex gap-4">
-            <a href="https://www.facebook.com/rankmantra/" target="_blank" rel="noopener noreferrer" className="border p-2 rounded-full hover:border-red-600 hover:text-red-600">
-              <IoLogoFacebook size={22} />
-            </a>
+            <p className="text-sm text-zinc-700 mb-4">
+              Follow RankMantra for daily inspiration and expert digital marketing insights.
+            </p>
 
-            <a href="https://www.instagram.com/rank_mantra/" target="_blank" rel="noopener noreferrer" className="border p-2 rounded-full hover:border-red-600 hover:text-red-600">
-              <IoLogoInstagram size={22} />
-            </a>
+            <div className="flex gap-4">
+              <a href="https://www.facebook.com/rankmantra/" target="_blank" rel="noopener noreferrer" className="border p-2 rounded-full hover:border-red-600 hover:text-red-600">
+                <IoLogoFacebook size={22} />
+              </a>
 
-            <a href="https://www.linkedin.com/company/rankmantra/" target="_blank" rel="noopener noreferrer" className="border p-2 rounded-full hover:border-red-600 hover:text-red-600">
-              <IoLogoLinkedin size={22} />
-            </a>
+              <a href="https://www.instagram.com/rank_mantra/" target="_blank" rel="noopener noreferrer" className="border p-2 rounded-full hover:border-red-600 hover:text-red-600">
+                <IoLogoInstagram size={22} />
+              </a>
+
+              <a href="https://www.linkedin.com/company/rankmantra/" target="_blank" rel="noopener noreferrer" className="border p-2 rounded-full hover:border-red-600 hover:text-red-600">
+                <IoLogoLinkedin size={22} />
+              </a>
+            </div>
           </div>
         </div>
 

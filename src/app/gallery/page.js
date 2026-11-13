@@ -5,7 +5,7 @@ import NavBar from '@/components/ui/NavBar'
 import Footer from '@/components/ui/Footer'
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Play, Pause, ChevronLeft, ChevronRight } from "lucide-react";
+import { X, Play, ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
   "/images/g1.webp",
@@ -19,10 +19,13 @@ const images = [
   "/images/g8.webp",
   "/images/g9.webp",
   "/images/g10.webp",
+  "/images/g11.webp",
+  "/images/g12.webp",
+  "/images/g13.webp",
+  "/images/g14.webp",
 ];
 
 const videos = [
-  "https://res.cloudinary.com/dxfuimb1a/video/upload/v1793345646/v1_qbhcuc.mp4",
   "https://res.cloudinary.com/dxfuimb1a/video/upload/v1793345638/v2_b8xpwf.mp4",
   "https://res.cloudinary.com/dxfuimb1a/video/upload/v1793345638/v3_knmgue.mp4",
 ];
@@ -30,6 +33,7 @@ const videos = [
 export default function GalleryPage() {
   const [selectedImageIndex, setSelectedImageIndex] = useState(null);
   const [playingVideo, setPlayingVideo] = useState(null);
+  const [startedVideos, setStartedVideos] = useState({});
   const videoRefs = useRef({});
 
   const handleVideoPlayPause = (index) => {
@@ -44,6 +48,7 @@ export default function GalleryPage() {
         videoRefs.current[playingVideo].pause();
       }
       videoElement.play();
+      setStartedVideos((prev) => ({ ...prev, [index]: true }));
       setPlayingVideo(index);
     }
   };
@@ -124,13 +129,6 @@ export default function GalleryPage() {
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center">
-                    <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-50 group-hover:scale-100 transform">
-                      <span className="bg-red-600 px-6 py-2 rounded-full inline-block font-medium tracking-wide">
-                        View
-                      </span>
-                    </div>
-                  </div>
                 </div>
               );
             })}
@@ -139,9 +137,17 @@ export default function GalleryPage() {
       </section>
 
       {/* Video Section */}
+      <div className="text-center pt-4 pb-16 text-3xl md:text-5xl font-bold tracking-wide flex flex-col items-center">
+        <h2 className="uppercase">
+          <span className="text-[#1e293b]">Video</span>{" "}
+          <span className="text-[#e22626]">Gallery</span>
+        </h2>
+        <div className="w-16 h-[3px] bg-[#e22626] mt-3"></div>
+      </div>
+
       <section className="py-16 lg:py-24 px-4 lg:px-10 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-center items-center md:items-stretch gap-6 lg:gap-10">
+          <div className="flex flex-col md:flex-row justify-start items-start md:items-stretch gap-6 lg:gap-10">
             {videos.map((src, idx) => (
               <div
                 key={idx}
@@ -157,21 +163,27 @@ export default function GalleryPage() {
                   className="w-full h-full object-cover"
                   loop
                   playsInline
+                  controls={Boolean(startedVideos[idx])}
+                  onPlay={() => {
+                    setStartedVideos((prev) => ({ ...prev, [idx]: true }));
+                    setPlayingVideo(idx);
+                  }}
+                  onPause={() => {
+                    if (playingVideo === idx) setPlayingVideo(null);
+                  }}
                   onEnded={() => setPlayingVideo(null)}
                 />
 
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <button
-                    onClick={() => handleVideoPlayPause(idx)}
-                    className="w-20 h-20 rounded-full flex items-center justify-center bg-red-600/90 text-white"
-                  >
-                    {playingVideo === idx ? (
-                      <Pause className="w-10 h-10" />
-                    ) : (
+                {!startedVideos[idx] && (
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <button
+                      onClick={() => handleVideoPlayPause(idx)}
+                      className="w-20 h-20 rounded-full flex items-center justify-center bg-red-600/90 text-white"
+                    >
                       <Play className="w-10 h-10 ml-2" />
-                    )}
-                  </button>
-                </div>
+                    </button>
+                  </div>
+                )}
               </div>
             ))}
           </div>

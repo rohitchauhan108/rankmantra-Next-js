@@ -139,6 +139,7 @@ export default function ContactUsPage() {
         <div className="max-w-7xl mx-auto rounded-[3rem] overflow-hidden shadow-2xl h-[400px] relative border border-gray-100">
           <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2870.2789476479875!2d77.9935024518577!3d30.301079233132025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929f8421dcd3b%3A0xc98798955cbfeb6d!2sRankMantra%20Web%20Designing%20%26%20SEO%20Company!5e1!3m2!1sen!2sin!4v1782734587565!5m2!1sen!2sin" 
+            title="RankMantra office location map"
             width="100%" 
             height="100%" 
             style={{ border: 0 }} 

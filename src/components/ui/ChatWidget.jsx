@@ -107,14 +107,16 @@ const ChatWidget = () => {
     <>
       {/* Floating Button */}
       <div className="fixed bottom-6 right-8 z-50">
-        <div
+        <button
+          type="button"
+          aria-label="Open live chat"
           onClick={toggleChat}
           className={`w-14 h-14 flex items-center justify-center bg-red-600 text-white rounded-full shadow-lg cursor-pointer transition-all duration-300 hover:scale-110 ${
             isOpen ? "opacity-0 scale-75 pointer-events-none" : "opacity-100"
           }`}
         >
           <FaComment />
-        </div>
+        </button>
       </div>
 
       {/* Chat Window */}
@@ -129,7 +131,7 @@ const ChatWidget = () => {
         {/* Header */}
         <div className="flex justify-between items-center p-4 bg-red-600 text-white rounded-t-lg">
           <h3>Live Chat</h3>
-          <button onClick={toggleChat}>
+          <button type="button" aria-label="Close live chat" onClick={toggleChat}>
             <FaTimes />
           </button>
         </div>
@@ -160,7 +162,11 @@ const ChatWidget = () => {
 
         {/* Input */}
         <div className="p-4 border-t flex">
+          <label htmlFor="chat-message" className="sr-only">
+            Type a message
+          </label>
           <input
+            id="chat-message"
             type="text"
             value={input}
             placeholder="Type a message..."
@@ -169,6 +175,7 @@ const ChatWidget = () => {
             className="flex-1 px-4 py-2 border rounded-full"
           />
           <button
+            type="button"
             onClick={sendMessage}
             className="ml-2 bg-red-500 text-white px-4 rounded-full"
           >

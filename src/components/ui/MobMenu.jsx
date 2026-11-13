@@ -27,7 +27,13 @@ export default function MobMenu({ Menus }) {
 
   return (
     <div>
-      <button className="lg:hidden z-[999] relative" onClick={toggleDrawer}>
+      <button
+        type="button"
+        aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+        aria-expanded={isOpen}
+        className="lg:hidden z-[999] relative"
+        onClick={toggleDrawer}
+      >
         {isOpen ? <X size={40} /> : <Menu size={40} />}
       </button>
 

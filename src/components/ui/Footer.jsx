@@ -120,15 +120,15 @@ const Footer = () => {
             </p>
 
             <div className="flex gap-4">
-              <a href="https://www.facebook.com/rankmantra/" target="_blank" rel="noopener noreferrer" className="border p-2 rounded-full hover:border-red-600 hover:text-red-600">
+              <a href="https://www.facebook.com/rankmantra/" aria-label="RankMantra on Facebook" target="_blank" rel="noopener noreferrer" className="border p-2 rounded-full hover:border-red-600 hover:text-red-600">
                 <IoLogoFacebook size={22} />
               </a>
 
-              <a href="https://www.instagram.com/rank_mantra/" target="_blank" rel="noopener noreferrer" className="border p-2 rounded-full hover:border-red-600 hover:text-red-600">
+              <a href="https://www.instagram.com/rank_mantra/" aria-label="RankMantra on Instagram" target="_blank" rel="noopener noreferrer" className="border p-2 rounded-full hover:border-red-600 hover:text-red-600">
                 <IoLogoInstagram size={22} />
               </a>
 
-              <a href="https://www.linkedin.com/company/rankmantra/" target="_blank" rel="noopener noreferrer" className="border p-2 rounded-full hover:border-red-600 hover:text-red-600">
+              <a href="https://www.linkedin.com/company/rankmantra/" aria-label="RankMantra on LinkedIn" target="_blank" rel="noopener noreferrer" className="border p-2 rounded-full hover:border-red-600 hover:text-red-600">
                 <IoLogoLinkedin size={22} />
               </a>
             </div>

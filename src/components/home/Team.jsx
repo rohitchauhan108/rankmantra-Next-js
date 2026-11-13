@@ -51,6 +51,7 @@ const Team = () => {
             <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center opacity-0 hover:opacity-100 transition-opacity">
               <a
                 href={member.linkedin}
+                aria-label={`View ${member.name}'s LinkedIn profile`}
                 className="text-blue-600 text-4xl mx-3 p-2 rounded-full bg-white hover:bg-blue-600 hover:text-white transition-all duration-300"
                 target="_blank"
                 rel="noopener noreferrer"

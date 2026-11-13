@@ -60,7 +60,7 @@ const Services = () => {
     <section className="py-12 px-4 max-w-7xl mx-auto text-[#7A6960]">
       {/* Header Section */}
       <div className="text-center max-w-3xl mx-auto mb-12">
-        <span className="text-xs font-bold uppercase tracking-widest text-red-600 bg-red-50 px-3 py-1 rounded-full border border-red-100 inline-block mb-3">
+        <span className="text-xs font-bold uppercase tracking-widest text-red-700 bg-red-50 px-3 py-1 rounded-full border border-red-100 inline-block mb-3">
           What We Offer
         </span>
         <h2 className="text-3xl md:text-4xl font-extrabold uppercase tracking-tight text-gray-900">

@@ -7,7 +7,13 @@ function Review() {
         <div className="flex justify-center items-center mt-2">
         <div className="bg-red-600 h-1 w-16 rounded"></div>
       </div>
-        <iframe src="https://widgets.sociablekit.com/google-reviews/iframe/25725773" frameBorder="0" width="100%" height="620px"></iframe>
+        <iframe
+          src="https://widgets.sociablekit.com/google-reviews/iframe/25725773"
+          title="RankMantra Google reviews"
+          frameBorder="0"
+          width="100%"
+          height="620px"
+        ></iframe>
     </div>
   )
 }

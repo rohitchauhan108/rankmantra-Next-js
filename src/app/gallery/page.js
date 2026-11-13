@@ -177,6 +177,8 @@ export default function GalleryPage() {
                 {!startedVideos[idx] && (
                   <div className="absolute inset-0 flex items-center justify-center">
                     <button
+                      type="button"
+                      aria-label={`Play gallery video ${idx + 1}`}
                       onClick={() => handleVideoPlayPause(idx)}
                       className="w-20 h-20 rounded-full flex items-center justify-center bg-red-600/90 text-white"
                     >
@@ -202,6 +204,8 @@ export default function GalleryPage() {
           >
             {/* Close */}
             <button
+              type="button"
+              aria-label="Close image lightbox"
               className="absolute top-6 right-6 text-white bg-white/10 p-2 rounded-full"
               onClick={() => setSelectedImageIndex(null)}
             >
@@ -210,6 +214,8 @@ export default function GalleryPage() {
 
             {/* Prev */}
             <button
+              type="button"
+              aria-label="Previous gallery image"
               className="absolute left-4 md:left-10 text-white bg-white/10 p-3 rounded-full"
               onClick={(e) => {
                 e.stopPropagation();
@@ -221,6 +227,8 @@ export default function GalleryPage() {
 
             {/* Next */}
             <button
+              type="button"
+              aria-label="Next gallery image"
               className="absolute right-4 md:right-10 text-white bg-white/10 p-3 rounded-full"
               onClick={(e) => {
                 e.stopPropagation();

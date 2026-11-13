@@ -10,6 +10,7 @@ function FlotingIcons() {
       <div className="relative group flex justify-end">
         <a
           href={`https://wa.me/${phoneNumber}`}
+          aria-label="Contact RankMantra on WhatsApp"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-green-500 hover:bg-green-600 text-white h-12 w-12 md:h-14 md:w-14 rounded-full flex items-center justify-center text-2xl shadow-lg transition-all duration-300 hover:scale-110"

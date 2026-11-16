@@ -121,6 +121,24 @@ export default function ContactUsPage() {
                   <label className="text-xs font-black uppercase tracking-widest text-gray-400 ml-2">Subject</label>
                   <input type="text" name="subject" required placeholder="What are you looking for?" className="w-full p-4 lg:p-5 bg-white border border-gray-100 rounded-2xl outline-none focus:border-red-600 transition-all font-bold text-gray-900 shadow-sm" />
                 </div>
+                <div className="space-y-2 mb-6 lg:mb-8">
+                  <label className="text-xs font-black uppercase tracking-widest text-gray-400 ml-2">Select Service</label>
+                  <select name="service" required defaultValue="" className="w-full p-4 lg:p-5 bg-white border border-gray-100 rounded-2xl outline-none focus:border-red-600 transition-all font-bold text-gray-900 shadow-sm">
+                    <option value="" disabled className="text-gray-300">Select a Service</option>
+                    <option value="Website Development And Hosting">Website Development And Hosting</option>
+                    <option value="Search Engine Optimization (SEO)">Search Engine Optimization (SEO)</option>
+                    <option value="Social Media Marketing (SMM)">Social Media Marketing (SMM)</option>
+                    <option value="Meta Ads / Google Ads">Meta Ads / Google Ads</option>
+                    <option value="E-commerce Development">E-commerce Development</option>
+                    <option value="WordPress Development">WordPress Development</option>
+                    <option value="Shopify Development">Shopify Development</option>
+                    <option value="Wix Development">Wix Development</option>
+                    <option value="Website Redesign">Website Redesign</option>
+                    <option value="Logo Design">Logo Design</option>
+                    <option value="Online Reputation Management">Online Reputation Management</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
                 <div className="space-y-2 mb-10 lg:mb-12">
                   <label className="text-xs font-black uppercase tracking-widest text-gray-400 ml-2">Message</label>
                   <textarea name="message" required placeholder="Tell us more about your project..." rows="5" className="w-full p-4 lg:p-5 bg-white border border-gray-100 rounded-2xl outline-none focus:border-red-600 transition-all font-bold text-gray-900 shadow-sm resize-none"></textarea>

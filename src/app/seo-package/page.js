@@ -25,10 +25,10 @@ const SEOPage = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        "service_dp4k7xw",
+        "template_t0fhv2q",
         form.current,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
+        "rWWHLzNsyDThId7TW",
       )
       .then(() => {
         alert("Message Send");

@@ -15,10 +15,10 @@ const LogoDesignPage = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        "service_dp4k7xw",
+        "template_t0fhv2q",
         form.current,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
+        "rWWHLzNsyDThId7TW",
       )
       .then(() => {
         alert("Message send");
@@ -333,6 +333,7 @@ const LogoDesignPage = () => {
                   <div className="relative group">
                     <input
                       type="text"
+                      name="name"
                       placeholder="Name"
                       className="w-full pb-4 pt-2 bg-transparent border-b border-gray-200 outline-none focus:border-red-600 transition-all font-medium text-gray-900 placeholder:text-gray-300"
                     />
@@ -341,6 +342,7 @@ const LogoDesignPage = () => {
                   <div className="relative group">
                     <input
                       type="email"
+                      name="email"
                       placeholder="Email"
                       className="w-full pb-4 pt-2 bg-transparent border-b border-gray-200 outline-none focus:border-red-600 transition-all font-medium text-gray-900 placeholder:text-gray-300"
                     />
@@ -367,6 +369,7 @@ const LogoDesignPage = () => {
                 <div className="relative group">
                   <input
                     type="text"
+                    name="subject"
                     placeholder="Subject"
                     className="w-full pb-4 pt-2 bg-transparent border-b border-gray-200 outline-none focus:border-red-600 transition-all font-medium text-gray-900 placeholder:text-gray-300"
                   />
@@ -374,6 +377,7 @@ const LogoDesignPage = () => {
                 </div>
                 <div className="relative group">
                   <textarea
+                    name="message"
                     placeholder="Message"
                     rows="4"
                     className="w-full pb-4 pt-2 bg-transparent border-b border-gray-200 outline-none focus:border-red-600 transition-all font-medium text-gray-900 placeholder:text-gray-300 resize-none"

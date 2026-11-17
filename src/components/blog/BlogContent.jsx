@@ -3,6 +3,7 @@ import Image from 'next/image'
 import NavBar from '@/components/ui/NavBar'
 import Footer from '@/components/ui/Footer'
 import { StructuredData } from '@/components/ui/StructuredData'
+import BlogFaqs from '@/components/blog/BlogFaqs'
 
 const article = {
   title: 'SEO Audit Checklist: 15 Things to Check on Your Website',
@@ -58,6 +59,23 @@ export function BlogPage() {
               <h2 className="text-3xl font-bold">Latest article</h2>
               <div className="mt-8 grid gap-6 md:grid-cols-2">
                 <Link
+                  href="/blog/seo-agency-india-for-uk-clients/"
+                  className="group rounded-2xl border border-zinc-200 p-6 transition hover:-translate-y-1 hover:border-red-600 hover:shadow-lg"
+                >
+                  <Image
+                    src="/blogs/blog2.webp"
+                    alt="SEO agency India for UK clients"
+                    width={1600}
+                    height={840}
+                    className="mb-6 aspect-[1600/840] w-full rounded-xl object-cover"
+                  />
+                  <p className="text-sm font-bold uppercase tracking-widest text-red-600">International SEO</p>
+                  <h3 className="mt-3 text-xl font-bold group-hover:text-red-600">SEO Agency India for UK Clients: How to Choose the Right Partner</h3>
+                  <p className="mt-3 text-sm leading-6 text-zinc-600">By RankMantra SEO Team · 16 November 2026</p>
+                  <p className="mt-3 leading-7 text-zinc-600">Learn what UK businesses should expect from an Indian SEO partner, how to vet providers and which questions to ask before signing.</p>
+                  <p className="mt-5 font-bold text-red-600">Read the checklist →</p>
+                </Link>
+                <Link
                   href="/blog/seo-audit-checklist"
                   className="group rounded-2xl border border-zinc-200 p-6 transition hover:-translate-y-1 hover:border-red-600 hover:shadow-lg"
                 >
@@ -88,14 +106,18 @@ export function BlogArticlePage() {
   return (
     <>
       <StructuredData id="blog-article-structured-data" schema={articleSchema()} />
-      <div className="bg-white text-zinc-800"><NavBar /><main className="pt-16"><article className="mx-auto max-w-4xl px-6 py-20"><p className="text-sm font-bold uppercase tracking-widest text-red-600">SEO pricing guide</p><h1 className="mt-5 text-4xl font-bold leading-tight md:text-6xl">{article.title}</h1><p className="mt-6 text-sm text-zinc-500">By RankMantra SEO Team · Published 8 November 2026 · 8 min read</p><p className="mt-10 text-xl leading-9 text-zinc-700">SEO is usually paid for as a monthly retainer, and the right amount depends on your market, your competition and how much work your site needs. Published 2026 figures put typical US small-business retainers at roughly $1,500 to $3,000 a month, while bilingual agency retainers in the UAE range from about AED 4,000 to AED 25,000 a month. Reliable UK figures are harder to find, so compare several written quotes.</p>
+      <div className="bg-white text-zinc-800"><NavBar /><main className="pt-16"><article className="mx-auto max-w-4xl px-6 py-20"><Link href="/blog/" className="mb-8 flex w-fit items-center rounded-full border border-red-600 px-5 py-2 font-semibold text-red-600 transition-colors hover:bg-red-600 hover:text-white">← Back to blogs</Link><p className="text-sm font-bold uppercase tracking-widest text-red-600">SEO pricing guide</p><h1 className="mt-5 text-4xl font-bold leading-tight md:text-6xl">{article.title}</h1><p className="mt-6 text-sm text-zinc-500">By RankMantra SEO Team · Published 8 November 2026 · 8 min read</p><p className="mt-10 text-xl leading-9 text-zinc-700">SEO is usually paid for as a monthly retainer, and the right amount depends on your market, your competition and how much work your site needs. Published 2026 figures put typical US small-business retainers at roughly $1,500 to $3,000 a month, while bilingual agency retainers in the UAE range from about AED 4,000 to AED 25,000 a month. Reliable UK figures are harder to find, so compare several written quotes.</p>
         <ArticleSection title="What SEO costs by market"><div className="overflow-x-auto"><table className="w-full border-collapse text-left"><thead><tr className="border-b"><th className="p-3">Market</th><th className="p-3">Directional published range</th></tr></thead><tbody><tr className="border-b"><td className="p-3 font-bold">United States</td><td className="p-3">$1,500–$3,000 per month for many small-business retainers.</td></tr><tr className="border-b"><td className="p-3 font-bold">United Arab Emirates</td><td className="p-3">AED 4,000–AED 25,000 per month depending on scope and language.</td></tr><tr><td className="p-3 font-bold">United Kingdom</td><td className="p-3">No reliable benchmark; compare itemised quotes and scope.</td></tr></tbody></table></div><p>These figures are directional. Competition, site size and the required scope change the right investment for every business.</p></ArticleSection>
         <ArticleSection title="The three common pricing models"><p><strong>Monthly retainer.</strong> The most common model, covering ongoing technical, content, link and reporting work.</p><p><strong>Project-based.</strong> A fixed fee for a defined audit, migration or content project.</p><p><strong>Hourly or consulting.</strong> Useful when an in-house team needs expert guidance or a second opinion.</p></ArticleSection>
         <ArticleSection title="What drives the price"><p>Competition matters: crowded sectors such as real estate, finance, legal and healthcare need more content and authority. Site size and condition matter too; a product catalogue with technical problems needs more work than a small brochure site. Finally, scope matters: technical fixes, content, local SEO, link building and reporting should all be clear in the quote.</p></ArticleSection>
         <ArticleSection title="What a monthly SEO retainer should include"><ol><li>Technical audit and prioritised fixes.</li><li>Keyword research and a page-level content plan.</li><li>On-page optimisation and useful content.</li><li>Local or e-commerce SEO where relevant.</li><li>Ethical link building or digital PR.</li><li>A monthly report covering rankings, traffic, leads and completed work.</li></ol></ArticleSection>
         <ArticleSection title="Red flags in an SEO quote"><ul><li>Guaranteed rankings or a secret formula.</li><li>No access to your own analytics and Search Console accounts.</li><li>A fixed keyword count with no explanation of business value.</li><li>Unclear deliverables, lock-in terms or reporting.</li></ul></ArticleSection>
         <ArticleSection title="How RankMantra prices SEO"><p>RankMantra starts with a free audit and recommends a scope based on your market, site and goals. UK, US and UAE businesses can review the relevant <Link className="font-bold text-red-600 hover:underline" href="/uk/seo-services">location SEO service</Link> before requesting a quote. Packages include technical review, keyword mapping, on-page optimisation and monthly reporting.</p></ArticleSection>
-        <ArticleSection title="Frequently asked questions"><h3>How long does it take to see SEO results?</h3><p>Most sites see steady gains within three to six months. Technical fixes can help sooner.</p><h3>Is SEO worth the investment?</h3><p>It can be, when work is tied to measurable enquiries, sales and realistic targets rather than rankings alone.</p><h3>Do I pay per keyword?</h3><p>A good retainer covers a prioritised programme of work, not a fixed number of keywords.</p></ArticleSection>
+        <BlogFaqs title="Frequently asked questions" faqs={[
+          { question: 'How long does it take to see SEO results?', answer: 'Most sites see steady gains within three to six months. Technical fixes can help sooner.' },
+          { question: 'Is SEO worth the investment?', answer: 'It can be, when work is tied to measurable enquiries, sales and realistic targets rather than rankings alone.' },
+          { question: 'Do I pay per keyword?', answer: 'A good retainer covers a prioritised programme of work, not a fixed number of keywords.' },
+        ]} />
         <div className="mt-12 rounded-3xl bg-red-50 p-8"><h2 className="text-2xl font-bold">Not sure what your site needs?</h2><p className="mt-3 leading-7">Request a free SEO audit and get a clear view of the highest-priority opportunities.</p><Link href="/contact-us" className="mt-5 inline-block rounded-full bg-red-600 px-7 py-3 font-bold text-white">Get your free SEO audit</Link></div>
       </article></main><Footer /></div>
     </>

@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import NavBar from '@/components/ui/NavBar'
 import Footer from '@/components/ui/Footer'
+import BlogFaqs from '@/components/blog/BlogFaqs'
 
 export const metadata = {
   title: 'SEO Audit Checklist: 15 Checks for Your Website | RankMantra',
@@ -42,6 +43,12 @@ export default function SeoAuditChecklistPage() {
       <NavBar />
       <main className="pt-16">
         <article className="mx-auto max-w-4xl px-6 py-20">
+          <Link
+            href="/blog/"
+            className="mb-8 flex w-fit items-center rounded-full border border-red-600 px-5 py-2 font-semibold text-red-600 transition-colors hover:bg-red-600 hover:text-white"
+          >
+            ← Back to blogs
+          </Link>
           <Image
             src="/blogs/blog1.jpeg"
             alt="SEO audit checklist"
@@ -98,12 +105,12 @@ export default function SeoAuditChecklistPage() {
             <p>At RankMantra, we have worked on SEO since 2015, and every audit ends with a prioritised action plan and plain-language reporting so you know what to fix first and why. Learn more about our <Link className="text-red-600 underline" href="/seo/">SEO services</Link>.</p>
           </Section>
 
-          <Section title="Frequently asked questions">
-            <div><h3 className="text-2xl font-bold">How often should I run an SEO audit?</h3><p className="mt-2">A full audit once or twice a year is a good rule, with a lighter monthly check of Search Console for indexing errors, speed and traffic drops. Run an extra audit after a redesign, migration or platform change.</p></div>
-            <div><h3 className="text-2xl font-bold">How long does an SEO audit take?</h3><p className="mt-2">A basic self-check can take a few hours. A professional audit of a small to medium site usually takes several days, depending on its size and complexity.</p></div>
-            <div><h3 className="text-2xl font-bold">Can I fix audit issues myself?</h3><p className="mt-2">Many content and on-page fixes (titles, descriptions, alt text, broken links) are easy to do yourself in a CMS like WordPress. Redirects, structured data, speed work and migrations usually need technical help.</p></div>
-            <div><h3 className="text-2xl font-bold">Will fixing these issues guarantee higher rankings?</h3><p className="mt-2">No one can guarantee rankings, because results depend on competition and search engine changes. A thorough audit removes the problems that hold a site back and builds a stronger base, and results typically build over several months.</p></div>
-          </Section>
+          <BlogFaqs title="Frequently asked questions" faqs={[
+            { question: 'How often should I run an SEO audit?', answer: 'A full audit once or twice a year is a good rule, with a lighter monthly check of Search Console for indexing errors, speed and traffic drops. Run an extra audit after a redesign, migration or platform change.' },
+            { question: 'How long does an SEO audit take?', answer: 'A basic self-check can take a few hours. A professional audit of a small to medium site usually takes several days, depending on its size and complexity.' },
+            { question: 'Can I fix audit issues myself?', answer: 'Many content and on-page fixes (titles, descriptions, alt text, broken links) are easy to do yourself in a CMS like WordPress. Redirects, structured data, speed work and migrations usually need technical help.' },
+            { question: 'Will fixing these issues guarantee higher rankings?', answer: 'No one can guarantee rankings, because results depend on competition and search engine changes. A thorough audit removes the problems that hold a site back and builds a stronger base, and results typically build over several months.' },
+          ]} />
         </article>
       </main>
       <Footer />

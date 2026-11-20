@@ -30,7 +30,7 @@ function NavBar() {
             </Link>
           </div>
 
-          <ul className="gap-x-1 lg:flex-center hidden" onClick={scrollToTop}>
+          <ul className="gap-x-1 lg:flex-center hidden uppercase" onClick={scrollToTop}>
             {Menus.map((menu) => (
               <DesktopMenu menu={menu} key={menu.name} />
             ))}

@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['var(--font-dm-sans)', 'sans-serif'],
-        heading: ['var(--font-space-grotesk)', 'sans-serif'],
+        heading: ['var(--font-bricolage-grotesque)', 'Poppins', 'sans-serif'],
       },
     },
   },

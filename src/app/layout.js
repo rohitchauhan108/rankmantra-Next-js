@@ -1,14 +1,14 @@
 import './globals.css'
-import { Space_Grotesk, DM_Sans } from 'next/font/google'
+import { Bricolage_Grotesque, DM_Sans } from 'next/font/google'
 import Script from 'next/script'
 import { StructuredData, sitewideSchema } from '@/components/ui/StructuredData'
 import ChatWidget from '@/components/ui/ChatWidget'
 import FlotingIcons from '@/components/ui/FlotingIcons'
 
-const spaceGrotesk = Space_Grotesk({
+const bricolageGrotesque = Bricolage_Grotesque({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-space-grotesk',
+  variable: '--font-bricolage-grotesque',
 })
 
 const dmSans = DM_Sans({
@@ -32,7 +32,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${dmSans.variable} ${spaceGrotesk.variable}`}>
+    <html lang="en" className={`${dmSans.variable} ${bricolageGrotesque.variable}`}>
       <body>
         <StructuredData id="sitewide-structured-data" schema={sitewideSchema} />
         {children}

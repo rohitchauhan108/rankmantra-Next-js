@@ -65,17 +65,23 @@ const Footer = () => {
         {/* Column 2 */}
         <div>
           <h3 className="text-[#7A6960] font-semibold text-lg mb-4">
-            Google Reviews
+            Quick Links
           </h3>
 
-          <a
-            href="https://www.google.com/search?q=RankMantra"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-zinc-700 hover:text-red-600 text-sm"
-          >
-            View Our Google Reviews
-          </a>
+          <ul className="space-y-2 text-sm text-zinc-700">
+            <li>
+              <a
+                href="https://www.google.com/search?q=RankMantra"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-red-600"
+              >
+                Google Reviews
+              </a>
+            </li>
+            <li><Link href="/blog" onClick={scrollToTop} className="hover:text-red-600">Blog</Link></li>
+            <li><Link href="/faqs" onClick={scrollToTop} className="hover:text-red-600">FAQs</Link></li>
+          </ul>
 
         </div>
 
@@ -107,7 +113,6 @@ const Footer = () => {
             <Link href="/uk/seo-services" onClick={scrollToTop} className="hover:text-red-600">SEO Services UK</Link>
             <Link href="/us/seo-services" onClick={scrollToTop} className="hover:text-red-600">SEO Company USA</Link>
             <Link href="/uae/seo-services" onClick={scrollToTop} className="hover:text-red-600">SEO Services Dubai & UAE</Link>
-            <Link href="/blog" onClick={scrollToTop} className="hover:text-red-600">SEO & Digital Marketing Blog</Link>
           </div>
 
           <div className="mt-8">

@@ -205,6 +205,10 @@ export const Menus = [
     ]
   },
   {
+    name: "Our Clients",
+    link:"/our-clients"
+  },
+  {
     name: "ABOUT US",
     link:"/about-us"
   },
@@ -212,12 +216,12 @@ export const Menus = [
     name: "GALLERY",
     link:"/gallery"
   },
-  {
-    name: "BLOG",
-    link:"/blog"
-  },
-  {
-    name: "FAQS",
-    link:"/faqs"
-  },
+  // {
+  //   name: "BLOG",
+  //   link:"/blog"
+  // },
+  // {
+  //   name: "FAQS",
+  //   link:"/faqs"
+  // },
 ];

@@ -8,12 +8,12 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-space-grotesk), sans-serif;
+  font-family: var(--font-bricolage-grotesque), "Poppins", sans-serif;
 }
 
 :root {
   --primary-font: var(--font-dm-sans);
-  --secondary-font: var(--font-space-grotesk);
+  --secondary-font: var(--font-bricolage-grotesque);
 }
 
 .primary-font {

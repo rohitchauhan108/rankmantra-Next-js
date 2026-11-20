@@ -10,9 +10,7 @@ import Clients from './Clients'
 import Team from './Team'
 import Contact from '@/components/contact/Contact'
 import Footer from '@/components/ui/Footer'
-import ChatWidget from '@/components/ui/ChatWidget'
 import Newsletter from './Newsletter'
-import FlotingIcons from '@/components/ui/FlotingIcons';
 import Review from './Review';
 import WhyChooseUs from "./WhyChooseUs";
 
@@ -20,7 +18,6 @@ const Home = () => {
   return (
     <div className="container min-w-full min-h-lvh secondary-font">
       <NavBar />
-      <ChatWidget />
       
       <section className="w-full min-h-screen lg:px-0 overflow-hidden bg-black relative flex items-center">
         <Hero />
@@ -57,7 +54,6 @@ const Home = () => {
       </section>
 
       <Newsletter />
-      <FlotingIcons/>
       <Footer />
     </div>
   )

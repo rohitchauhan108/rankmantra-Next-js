@@ -2,7 +2,7 @@ import './globals.css'
 import { Bricolage_Grotesque, DM_Sans } from 'next/font/google'
 import Script from 'next/script'
 import { StructuredData, sitewideSchema } from '@/components/ui/StructuredData'
-import ChatWidget from '@/components/ui/ChatWidget'
+import CallButton from '@/components/ui/CallButton'
 import FlotingIcons from '@/components/ui/FlotingIcons'
 
 const bricolageGrotesque = Bricolage_Grotesque({
@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
         <StructuredData id="sitewide-structured-data" schema={sitewideSchema} />
         {children}
         <FlotingIcons />
-        <ChatWidget />
+        <CallButton />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-YRL5W2H3KK"
           strategy="afterInteractive"

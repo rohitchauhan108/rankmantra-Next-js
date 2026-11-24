@@ -149,7 +149,7 @@ const SEOPage = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 relative z-10">
           {[
             {
-              title: "FROM ONLY $99 A MONTH",
+              title: "FROM ONLY $149 A MONTH",
               desc: "Premium quality SEO doesn't have to be expensive. Start small, grow big.",
               icon: (
                 <IoCheckmarkCircleOutline

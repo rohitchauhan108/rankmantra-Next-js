@@ -45,11 +45,11 @@ export function BlogPage() {
         <main className="pt-16">
           <section className="bg-zinc-950/80 bg-[url('/blogs/blog-bg.webp')] bg-cover bg-center bg-blend-multiply px-6 py-24 text-white md:py-28">
             <div className="mx-auto max-w-6xl">
-              <p className="text-sm font-bold uppercase tracking-[0.25em] text-red-400">RankMantra Blog</p>
-              <h1 className="mt-5 max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
-                SEO Audit Checklist: 15 Things to Check on Your Website
+              <p className="text-sm font-bold uppercase tracking-[0.25em] text-white">RankMantra Blog</p>
+              <h1 className="mt-5 max-w-4xl text-4xl font-bold leading-tight text-white md:text-6xl">
+                How Dubai Businesses Can Grow with the Right SEO Partner in India
               </h1>
-              <p className="mt-7 max-w-3xl text-lg leading-8 text-zinc-300">
+              <p className="mt-7 max-w-3xl text-lg leading-8 text-white">
                 Practical guides on SEO, PPC, social media and web development for businesses in India, the UK, the US, the UAE and beyond. No fluff, just what works.
               </p>
             </div>
@@ -58,6 +58,23 @@ export function BlogPage() {
             <div className="mx-auto max-w-6xl">
               <h2 className="text-3xl font-bold">Latest article</h2>
               <div className="mt-8 grid gap-6 md:grid-cols-2">
+                <Link
+                  href="/blog/seo-partner-india-dubai-businesses/"
+                  className="group rounded-2xl border border-zinc-200 p-6 transition hover:-translate-y-1 hover:border-red-600 hover:shadow-lg"
+                >
+                  <Image
+                    src="/blogs/blog3.webp"
+                    alt="SEO partner in India for Dubai businesses"
+                    width={1600}
+                    height={840}
+                    className="mb-6 aspect-[1600/840] w-full rounded-xl object-cover"
+                  />
+                  <p className="text-sm font-bold uppercase tracking-widest text-red-600">International SEO</p>
+                  <h3 className="mt-3 text-xl font-bold group-hover:text-red-600">How Dubai Businesses Can Grow with the Right SEO Partner in India</h3>
+                  <p className="mt-3 text-sm leading-6 text-zinc-600">By RankMantra SEO Team · 25 November 2026</p>
+                  <p className="mt-3 leading-7 text-zinc-600">Learn how UAE businesses can choose an Indian SEO partner, compare costs and build search visibility across Dubai.</p>
+                  <p className="mt-5 font-bold text-red-600">Read the guide →</p>
+                </Link>
                 <Link
                   href="/blog/seo-agency-india-for-uk-clients/"
                   className="group rounded-2xl border border-zinc-200 p-6 transition hover:-translate-y-1 hover:border-red-600 hover:shadow-lg"

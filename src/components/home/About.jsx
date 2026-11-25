@@ -31,7 +31,7 @@ const About = () => {
         ABOUT US.
       </h2>
       <div className="flex justify-center items-center mt-2 mb-10">
-        <div className="bg-red-600 h-1 w-16 rounded"></div>
+        <div className="border border-[#dc2626] h-1 w-28 rounded"></div>
       </div>
 
       <div className="flex flex-col lg:flex-row items-center lg:gap-12 secondary-font">

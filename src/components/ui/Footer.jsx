@@ -113,7 +113,7 @@ const Footer = () => {
             <Link href="/uk/seo-services" onClick={scrollToTop} className="hover:text-red-600">SEO Services UK</Link>
             <Link href="/us/seo-services" onClick={scrollToTop} className="hover:text-red-600">SEO Company USA</Link>
             <Link href="/uae/seo-services" onClick={scrollToTop} className="hover:text-red-600">SEO Services Dubai & UAE</Link>
-            <Link href="/seo-services-uae" onClick={scrollToTop} className="hover:text-red-600">SEO Services UAE</Link>
+            <Link href="/uae-seo" onClick={scrollToTop} className="hover:text-red-600">SEO Services UAE</Link>
 
           </div>
 

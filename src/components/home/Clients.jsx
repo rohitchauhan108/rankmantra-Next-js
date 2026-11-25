@@ -28,7 +28,7 @@ const Clients = () => {
   ];
 
   return (
-    <div className="text-[#7A6960] bg-[#fefaf8]">
+    <div className="text-[#7A6960]">
       <h1 className="text-3xl font-semibold text-center uppercase">
         Collaborating with top brands
       </h1>

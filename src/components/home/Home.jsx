@@ -27,7 +27,7 @@ const Home = () => {
         <About />
       </section>
 
-      <section id="services" className="w-full py-20 lg:px-10 overflow-hidden bg-[#FEFAF8] border-b border-orange-100">
+      <section id="services" className="w-full py-20 lg:px-10 overflow-hidden pink-dot-pattern border-b border-orange-100">
         <Services />
       </section>
 
@@ -45,7 +45,7 @@ const Home = () => {
         <Review/>
       </section>
 
-      <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden bg-[#FEFAF8] border-b border-orange-100">
+      <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden pink-dot-pattern border-b border-orange-100">
         <Clients />
       </section>
 

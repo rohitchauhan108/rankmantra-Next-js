@@ -27,12 +27,9 @@ const About = () => {
 
   return (
     <div className="relative lg:mx-30">
-      <h2 className="text-3xl font-semibold text-center text-[#7A6960]">
+      <h2 className="mb-10 text-3xl font-semibold text-center text-[#7A6960]">
         ABOUT US.
       </h2>
-      <div className="flex justify-center items-center mt-2 mb-10">
-        <div className="border border-[#dc2626] h-1 w-28 rounded"></div>
-      </div>
 
       <div className="flex flex-col lg:flex-row items-center lg:gap-12 secondary-font">
         <div className="lg:w-1/2 w-full md:w-3/4 py-8 lg:py-12 px-6 md:px-0">
@@ -46,7 +43,9 @@ const About = () => {
         </div>
         <div className="lg:w-1/2 w-full md:w-3/4 px-6 md:p-0">
           <div>
-            <h1 className="text-3xl font-semibold text-[#7A6960]">Since 2015: Digital Marketing in Dehradun,Builtfor Results</h1>
+            <h1 className="text-3xl font-semibold text-[#7A6960]">
+              Since 2015: Digital Marketing in Dehradun,Builtfor Results
+            </h1>
             <p className="text-base lg:text-lg mt-5 text-gray-600 primary-font leading-relaxed">
               RankMantra is a digital marketing company in Dehradun that began
               in 2015 with a single client. Today we help businesses in India

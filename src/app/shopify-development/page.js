@@ -123,7 +123,6 @@ const ShopifyDevelopmentPage = () => {
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               Custom Shopify Theme Design
             </h2>
-            <div className="w-16 h-1 bg-red-600 mb-10"></div>
             <div className="space-y-6 text-gray-500 text-base md:text-lg leading-relaxed font-normal">
               <p>
                 We start by designing a unique, responsive theme tailored to
@@ -154,7 +153,6 @@ const ShopifyDevelopmentPage = () => {
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               Product & Inventory Setup
             </h2>
-            <div className="w-16 h-1 bg-red-600 mb-10"></div>
             <div className="space-y-6 text-gray-500 text-base md:text-lg leading-relaxed font-normal">
               <p>
                 We help organize your products with clear categorization,
@@ -204,7 +202,6 @@ const ShopifyDevelopmentPage = () => {
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               Shopify App Integrations
             </h2>
-            <div className="w-16 h-1 bg-red-600 mb-10"></div>
             <div className="space-y-6 text-gray-500 text-base md:text-lg leading-relaxed font-normal">
               <p>
                 We integrate essential apps that enhance functionality—such as
@@ -234,7 +231,6 @@ const ShopifyDevelopmentPage = () => {
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               Payment & Checkout Optimization
             </h2>
-            <div className="w-16 h-1 bg-red-600 mb-10"></div>
             <div className="space-y-6 text-gray-500 text-base md:text-lg leading-relaxed font-normal">
               <p>
                 Secure payment gateways and smooth checkout processes are
@@ -284,7 +280,6 @@ const ShopifyDevelopmentPage = () => {
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               Ongoing Support & Updates
             </h2>
-            <div className="w-16 h-1 bg-red-600 mb-10"></div>
             <div className="space-y-6 text-gray-500 text-base md:text-lg leading-relaxed font-normal">
               <p>
                 We offer ongoing support for maintenance, updates, and future
@@ -326,7 +321,6 @@ const ShopifyDevelopmentPage = () => {
           <h2 className="text-3xl md:text-5xl font-semibold text-white mb-6 uppercase tracking-tight">
             3-STEPS TO MAKE YOUR BUSINESS AN ONLINE POWERHOUSE
           </h2>
-          <div className="w-20 h-1 bg-red-600 mx-auto mb-20"></div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
@@ -396,7 +390,6 @@ const ShopifyDevelopmentPage = () => {
             <h2 className="text-4xl md:text-6xl font-semibold text-gray-900 mb-6 uppercase tracking-tight">
               Contact
             </h2>
-            <div className="w-16 h-1 bg-red-600 mx-auto mb-10"></div>
             <p className="text-gray-500 max-w-2xl mx-auto text-lg leading-relaxed font-medium italic">
               Have questions or need assistance? Our team is ready to support
               you. Reach out to us today and let's discuss how we can boost your

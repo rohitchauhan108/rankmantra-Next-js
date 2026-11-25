@@ -128,7 +128,6 @@ const WebsiteDesigningPage = () => {
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               User Experience (UX) Design
             </h2>
-            <div className="w-16 h-1 bg-red-600 mb-10"></div>
             <div className="space-y-6 text-gray-500 text-base md:text-lg leading-relaxed font-normal">
               <p>
                 Clear, intuitive menus and search options make it easy for users
@@ -162,7 +161,6 @@ const WebsiteDesigningPage = () => {
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               User Interface (UI) Design
             </h2>
-            <div className="w-16 h-1 bg-red-600 mb-10"></div>
             <div className="space-y-6 text-gray-500 text-base md:text-lg leading-relaxed font-normal">
               <p>
                 A cohesive design with consistent colors, fonts, and elements
@@ -215,7 +213,6 @@ const WebsiteDesigningPage = () => {
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               Security
             </h2>
-            <div className="w-16 h-1 bg-red-600 mb-10"></div>
             <div className="space-y-6 text-gray-500 text-base md:text-lg leading-relaxed font-normal">
               <p>
                 Protect your users' data with secure Socket Layer encryption,
@@ -248,7 +245,6 @@ const WebsiteDesigningPage = () => {
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               Analytics & Testing
             </h2>
-            <div className="w-16 h-1 bg-red-600 mb-10"></div>
             <div className="space-y-6 text-gray-500 text-base md:text-lg leading-relaxed font-normal">
               <p>
                 Tools like Google Analytics help monitor performance and improve
@@ -297,7 +293,6 @@ const WebsiteDesigningPage = () => {
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               Maintenance
             </h2>
-            <div className="w-16 h-1 bg-red-600 mb-10"></div>
             <div className="space-y-6 text-gray-500 text-base md:text-lg leading-relaxed font-normal">
               <p>
                 Keep your website’s content, software, and plugins up-to-date.
@@ -343,7 +338,6 @@ const WebsiteDesigningPage = () => {
           <h2 className="text-3xl md:text-5xl font-semibold text-white mb-6 uppercase tracking-tight">
             3-STEPS TO MAKE YOUR BUSINESS AN ONLINE POWERHOUSE
           </h2>
-          <div className="w-20 h-1 bg-red-600 mx-auto mb-20"></div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
@@ -411,7 +405,6 @@ const WebsiteDesigningPage = () => {
             <h2 className="text-4xl md:text-6xl font-semibold text-gray-900 mb-6 uppercase tracking-tight">
               Contact
             </h2>
-            <div className="w-16 h-1 bg-red-600 mx-auto mb-10"></div>
             <p className="text-gray-500 max-w-2xl mx-auto text-lg leading-relaxed font-medium italic">
               Have questions or need assistance? Our team is ready to support
               you. Reach out to us today and let's discuss how we can boost your

@@ -81,7 +81,6 @@ const SearchPage = () => {
           <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-8 uppercase tracking-tight">
             Super Visibility in Rankings
           </h2>
-          <div className="w-16 h-1 bg-red-600 mx-auto mb-12"></div>
 
           <div className="space-y-8 text-gray-500 text-base md:text-lg max-w-3xl mx-auto leading-relaxed font-normal">
             <p>
@@ -114,7 +113,6 @@ const SearchPage = () => {
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               Rank on the 1st Page of SERPs
             </h2>
-            <div className="w-16 h-1 bg-red-600 mb-10"></div>
             <div className="space-y-6 text-gray-500 text-base md:text-lg leading-relaxed font-normal">
               <p>
                 Optimizing your website to appear on the first page of search engines is never going to be something that you can do simply by strewing a handful of keywords on your site. A well-planned SEO strategy, continuous optimization, and understanding of the search engine algorithms, come into play here. RankMantra is a prominent SEO company in Dehradun that creates personalized SEO strategies to boost your business to an effective level, connect you with the intended audience, and enhance the concentration on the search engine results page (SERP).
@@ -149,7 +147,6 @@ const SearchPage = () => {
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               Improve the Performance of Your Web Pages
             </h2>
-            <div className="w-16 h-1 bg-red-600 mb-10"></div>
             <div className="space-y-6 text-gray-500 text-base md:text-lg leading-relaxed font-normal">
               <p>
                 Our SEO experts at RankMantra have the experience needed to optimize your website pages, making them search engine friendly and user-friendly. As a trusted SEO company in Dehradun, we examine the performance of your website on the keywords that you are interested in and come up with ideas to improve visibility, traffic and engagement.
@@ -204,7 +201,6 @@ const SearchPage = () => {
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               Track Your Keywords
             </h2>
-            <div className="w-16 h-1 bg-red-600 mb-10"></div>
             <div className="space-y-6 text-gray-500 text-base md:text-lg leading-relaxed font-normal">
               <p>
                 Monitoring keyword ranking and usage would be essential to judge how effective your SEO approach is. Google Analytics and other advanced SEO tools will allow you to track your target keywords so you can see how your site performs in search results. As a reliable agence seo service, we offer you useful ideas and information that can assist you make informed choices and continually boost your web presence.
@@ -236,7 +232,6 @@ const SearchPage = () => {
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               Importance of APIs
             </h2>
-            <div className="w-16 h-1 bg-red-600 mb-10"></div>
             <div className="space-y-6 text-gray-500 text-base md:text-lg leading-relaxed font-normal">
               <p>
                 APIs serve as crucial connectors, helping to integrate various digital devices, optimize business processes, and facilitate data transfer between platforms. RankMantra is a reliable agence seo that enables businesses to get the best out of APIs, automate processes, and understand customer behavior and performance better.These seamless integrations enables sharp decision-making and digital growth over time.
@@ -291,7 +286,6 @@ const SearchPage = () => {
           <h2 className="text-3xl md:text-5xl font-semibold text-white mb-6 uppercase tracking-tight">
             3-STEPS TO MAKE YOUR BUSINESS AN ONLINE POWERHOUSE
           </h2>
-          <div className="w-20 h-1 bg-red-600 mx-auto mb-20"></div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
@@ -354,7 +348,6 @@ const SearchPage = () => {
             <h2 className="text-4xl md:text-6xl font-semibold text-gray-900 mb-6 uppercase tracking-tight">
               Contact
             </h2>
-            <div className="w-16 h-1 bg-red-600 mx-auto mb-10"></div>
             <p className="text-gray-500 max-w-2xl mx-auto text-lg leading-relaxed font-medium italic">
               Have questions or need assistance? Our team is ready to support
               you. Reach out to us today and let's discuss how we can boost your

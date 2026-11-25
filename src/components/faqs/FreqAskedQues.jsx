@@ -5,12 +5,9 @@ import Faquestions from "./Faquestions";
 const FreqAskedQues = () => {
   return (
     <div className="text-[#7A6960]">
-      <h2 className="text-3xl font-semibold text-center uppercase">
+      <h2 className="mb-10 text-3xl font-semibold text-center uppercase">
         Frequently Asked Questions
       </h2>
-      <div className="flex justify-center items-center mt-2 mb-10">
-        <div className="bg-red-600 h-1 w-16 rounded"></div>
-      </div>
       <Faquestions />
     </div>
   );

@@ -66,9 +66,6 @@ const Services = () => {
         <h2 className="text-3xl md:text-4xl font-extrabold uppercase tracking-tight text-gray-900">
           Our Services
         </h2>
-        <div className="flex justify-center items-center mt-3">
-          <div className="bg-red-600 h-1 w-16 rounded-full"></div>
-        </div>
         <p className="text-gray-600 mt-6 text-base md:text-lg leading-relaxed">
           We offer Digital Marketing Services in Dehradun that empower businesses with a strong online presence, reaching target audiences, and efficiently generating maximum returns from their online endeavors. From innovative campaign ideas to cutting-edge technology and data analysis, our custom-made approaches are designed to enhance your brand presence, boost lead quality, and ensure sustained business growth.
         </p>

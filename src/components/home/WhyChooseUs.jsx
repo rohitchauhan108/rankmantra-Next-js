@@ -45,7 +45,6 @@ const WhyChooseUs = () => (
         <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl">
           Why Businesses Choose RankMantra
         </h2>
-        <div className="mx-auto mt-5 h-1 w-16 rounded-full bg-red-600"></div>
       </div>
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-6">

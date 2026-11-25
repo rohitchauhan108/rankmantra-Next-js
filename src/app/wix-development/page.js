@@ -385,7 +385,6 @@ const WixDevelopmentPage = () => {
           <h2 className="text-3xl md:text-5xl font-semibold text-white mb-6 uppercase tracking-tight">
             3-STEPS TO MAKE YOUR BUSINESS AN ONLINE POWERHOUSE
           </h2>
-          <div className="w-20 h-1 bg-red-600 mx-auto mb-20"></div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
@@ -448,7 +447,6 @@ const WixDevelopmentPage = () => {
             <h2 className="text-4xl md:text-6xl font-semibold text-gray-900 mb-6 uppercase tracking-tight">
               Contact
             </h2>
-            <div className="w-16 h-1 bg-red-600 mx-auto mb-10"></div>
             <p className="text-gray-500 max-w-2xl mx-auto text-lg leading-relaxed font-medium italic">
               Have questions or need assistance? Our team is ready to support
               you. Reach out to us today and let's discuss how we can boost your

@@ -97,7 +97,6 @@ const WordPressDevelopmentPage = () => {
                 </span>{" "}
                 Journeys
               </h2>
-              <div className="w-20 h-1 bg-red-600 mb-10"></div>
               <div className="space-y-6 text-gray-500 text-lg leading-relaxed font-medium italic">
                 <p>
                   We specialize in delivering high-quality WordPress development
@@ -183,7 +182,6 @@ const WordPressDevelopmentPage = () => {
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               Custom Theme Design
             </h2>
-            <div className="w-16 h-1 bg-red-600 mb-10"></div>
             <div className="space-y-6 text-gray-500 text-base md:text-lg leading-relaxed font-normal">
               <p>
                 We believe every business is unique, and your website should
@@ -235,7 +233,6 @@ const WordPressDevelopmentPage = () => {
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               Content Management Setup
             </h2>
-            <div className="w-16 h-1 bg-red-600 mb-10"></div>
             <div className="space-y-6 text-gray-500 text-base md:text-lg leading-relaxed font-normal">
               <p>
                 Managing content on your website should be simple and intuitive.
@@ -267,7 +264,6 @@ const WordPressDevelopmentPage = () => {
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               Plugin Integration
             </h2>
-            <div className="w-16 h-1 bg-red-600 mb-10"></div>
             <div className="space-y-6 text-gray-500 text-base md:text-lg leading-relaxed font-normal">
               <p>
                 WordPress plugins are powerful tools that extend your website's
@@ -321,7 +317,6 @@ const WordPressDevelopmentPage = () => {
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               E-Commerce Integration
             </h2>
-            <div className="w-16 h-1 bg-red-600 mb-10"></div>
             <div className="space-y-6 text-gray-500 text-base md:text-lg leading-relaxed font-normal">
               <p>
                 If you're looking to sell products or services online, our
@@ -354,7 +349,6 @@ const WordPressDevelopmentPage = () => {
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               SEO Optimization & Launch
             </h2>
-            <div className="w-16 h-1 bg-red-600 mb-10"></div>
             <div className="space-y-6 text-gray-500 text-base md:text-lg leading-relaxed font-normal">
               <p>
                 A beautiful website is only effective if it can be found online.
@@ -409,7 +403,6 @@ const WordPressDevelopmentPage = () => {
           <h2 className="text-3xl md:text-5xl font-semibold text-white mb-6 uppercase tracking-tight">
             3-STEPS TO MAKE YOUR BUSINESS AN ONLINE POWERHOUSE
           </h2>
-          <div className="w-20 h-1 bg-red-600 mx-auto mb-20"></div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
@@ -477,7 +470,6 @@ const WordPressDevelopmentPage = () => {
             <h2 className="text-4xl md:text-6xl font-semibold text-gray-900 mb-6 uppercase tracking-tight">
               Contact
             </h2>
-            <div className="w-16 h-1 bg-red-600 mx-auto mb-10"></div>
             <p className="text-gray-500 max-w-2xl mx-auto text-lg leading-relaxed font-medium italic">
               Have questions or need assistance? Our team is ready to support
               you. Reach out to us today and let's discuss how we can boost your

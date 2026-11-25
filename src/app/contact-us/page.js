@@ -63,7 +63,6 @@ export default function ContactUsPage() {
             <div className="lg:col-span-1 space-y-10 lg:space-y-12">
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6 uppercase tracking-tighter">Get In <span className="text-red-600">Touch</span></h2>
-                <div className="w-12 h-1 bg-red-600 rounded-full mb-8"></div>
                 <p className="text-gray-500 font-medium italic mb-10">
                   Feel free to reach out to us through any of the following channels. We aim to respond to all inquiries within 24 hours.
                 </p>

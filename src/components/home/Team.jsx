@@ -31,9 +31,6 @@ const Team = () => {
       <h2 className="text-3xl font-semibold text-center uppercase">
        Our Leadership
       </h2>
-      <div className="flex justify-center items-center mt-2">
-        <div className="bg-red-600 h-1 w-28 rounded"></div>
-      </div>
       <p className="text-gray-700 text-center mt-7 mb-10 text-lg">
         Custom Web Development Services to Elevate Your Digital Presence with RankMantra
       </p>

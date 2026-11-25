@@ -117,7 +117,6 @@ const SocialMediaPage = () => {
           <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-6">
             Social Media Made Easy
           </h2>
-          <div className="w-24 h-1 bg-red-600 mx-auto mb-12"></div>
 
           <div className="space-y-6 text-gray-600 text-lg leading-relaxed max-w-5xl mx-auto">
             <p>
@@ -150,7 +149,6 @@ const SocialMediaPage = () => {
             <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-6">
               What you get with RankMantra
             </h2>
-            <div className="w-24 h-1 bg-red-600 mx-auto"></div>
           </div>
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-6 lg:gap-8">
@@ -196,7 +194,6 @@ const SocialMediaPage = () => {
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight">
               The Frontline Web Design And Development Solutions
             </h2>
-            <div className="w-20 h-1.5 bg-red-600 mb-10 rounded-full"></div>
             <div className="space-y-8 text-gray-600 text-lg leading-relaxed font-medium">
               <p className="italic border-l-4 border-red-600 pl-6 py-2 bg-gray-50 rounded-r-xl">
                 We, the Rank Mantra, are a special team of dedicated
@@ -234,7 +231,6 @@ const SocialMediaPage = () => {
           <div className="md:w-1/2">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 relative">
               Maintain a consistent schedule calendar
-              <span className="absolute -bottom-3 left-0 w-20 h-1 bg-red-600"></span>
             </h2>
             <div className="space-y-4 text-gray-600 text-lg leading-relaxed mt-10">
               <p>
@@ -277,7 +273,6 @@ const SocialMediaPage = () => {
           <div className="md:w-1/2">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 relative">
               Specialized Content Management System
-              <span className="absolute -bottom-3 left-0 w-20 h-1 bg-red-600"></span>
             </h2>
             <div className="space-y-4 text-gray-600 text-lg leading-relaxed mt-10">
               <p>
@@ -320,7 +315,6 @@ const SocialMediaPage = () => {
           <div className="md:w-1/2">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 relative">
               SEO Expert Can Help Your Website Get Noticed
-              <span className="absolute -bottom-3 left-0 w-20 h-1 bg-red-600"></span>
             </h2>
             <div className="space-y-4 text-gray-600 text-lg leading-relaxed mt-10">
               <p>
@@ -352,7 +346,6 @@ const SocialMediaPage = () => {
           <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-6">
             Plans & Signup – Post Planner
           </h2>
-          <div className="w-24 h-1 bg-red-600 mx-auto mb-12"></div>
 
           <div className="space-y-6 text-gray-600 text-lg leading-relaxed max-w-5xl mx-auto mb-12">
             <p>
@@ -394,7 +387,6 @@ const SocialMediaPage = () => {
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 uppercase tracking-tight leading-tight">
             How <span className="text-red-600">it works</span>
           </h2>
-          <div className="w-24 h-1.5 bg-red-600 mx-auto mb-24 rounded-full"></div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-left">
             {[

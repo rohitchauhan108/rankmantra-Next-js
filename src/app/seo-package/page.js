@@ -143,7 +143,6 @@ const SEOPage = () => {
             Tailored SEO packages designed to fit your business goals and
             budget.
           </p>
-          <div className="w-24 h-1 bg-red-600 mx-auto mt-10"></div>
         </div>
 
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 relative z-10">
@@ -216,7 +215,6 @@ const SEOPage = () => {
             Transparent{" "}
             <span className="text-red-600 italic font-light">Pricing</span>
           </h2>
-          <div className="w-24 h-1 bg-red-600 mx-auto mt-10"></div>
         </div>
 
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -322,7 +320,6 @@ const SEOPage = () => {
             <h2 className="text-3xl md:text-5xl font-semibold text-[#7A6960] mb-6 uppercase tracking-tight">
               Why choose RankMantra <span className="text-red-600 italic">SEO</span>
             </h2>
-            <div className="w-24 h-1 bg-red-600 mx-auto mt-10"></div>
 
           </div>
 
@@ -374,7 +371,6 @@ const SEOPage = () => {
           <h2 className="text-3xl md:text-5xl font-semibold text-white mb-6 uppercase tracking-tight">
             3-STEPS TO MAKE YOUR BUSINESS AN ONLINE POWERHOUSE
           </h2>
-          <div className="w-20 h-1 bg-red-600 mx-auto mb-20"></div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
@@ -435,7 +431,6 @@ const SEOPage = () => {
             <h2 className="text-4xl md:text-6xl font-semibold text-gray-900 mb-6 uppercase tracking-tight">
               Contact
             </h2>
-            <div className="w-16 h-1 bg-red-600 mx-auto mb-10"></div>
             <p className="text-gray-500 max-w-2xl mx-auto text-lg leading-relaxed font-medium italic">
               Have questions or need assistance? Our team is ready to support
               you. Reach out to us today and let's discuss how we can boost your

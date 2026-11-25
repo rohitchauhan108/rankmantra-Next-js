@@ -20,9 +20,6 @@ const Newsletter = () => {
       <h2 className="text-3xl font-semibold text-center">
         Join Our Newsletter
       </h2>
-      <div className="flex justify-center items-center mt-2">
-        <div className="bg-red-600 h-1 w-16 rounded"></div>
-      </div>
       <p className="text-gray-700 text-center mt-7 mb-10 p-3 md:p-0">
         Subscribe to our newsletter and receive the latest news about our
         products and services!

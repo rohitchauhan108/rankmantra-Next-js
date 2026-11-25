@@ -115,7 +115,6 @@ const AboutUsPage = () => {
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
               The Frontline Web Design And <span className="text-red-600">Development Solutions</span>
             </h2>
-            <div className="w-24 h-1.5 bg-red-600 mb-10 rounded-full"></div>
             <div className="space-y-6 text-gray-600 text-base lg:text-lg leading-relaxed font-medium">
               <p className="bg-red-50/50 p-6 rounded-2xl border-l-4 border-red-600 italic">
                 We, the Rank Mantra, are a special team of dedicated professionals with frontline competencies in the demanded specializations of Website Design and development.
@@ -146,7 +145,6 @@ const AboutUsPage = () => {
           <h2 className="text-2xl md:text-5xl font-bold text-white mb-6 uppercase tracking-tight px-4">
             3-STEPS TO MAKE YOUR BUSINESS AN <span className="text-red-600">ONLINE POWERHOUSE</span>
           </h2>
-          <div className="w-20 h-1 bg-red-600 mx-auto mb-16 lg:mb-24 rounded-full"></div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-12 text-left">
             {[
@@ -180,7 +178,6 @@ const AboutUsPage = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 lg:mb-24">
             <h2 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 uppercase tracking-tighter">Contact <span className="text-red-600">Us</span></h2>
-            <div className="w-16 h-1.5 bg-red-600 mx-auto rounded-full"></div>
             <p className="mt-8 text-gray-500 max-w-2xl mx-auto italic text-lg lg:text-xl font-medium px-4">
               Have questions or need assistance? Our team is ready to support you. Reach out to us today.
             </p>

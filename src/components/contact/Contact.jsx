@@ -40,9 +40,6 @@ const Contact = () => {
         <h2 className="text-3xl font-semibold text-center uppercase">
           Contact
         </h2>
-        <div className="flex justify-center items-center mt-2 mb-10">
-          <div className="bg-red-600 h-1 w-16 rounded"></div>
-        </div>
         <p className="text-gray-700 text-center mt-7 mb-10 text-lg">
           RankMantra is the best digital marketing agency in Dehradun and ensures businesses have a robust online presence and thrive in the long run. Our team has a proven track record of assisting clients to grasp the objectives they are hoping to achieve and developing strategies that will best suit each individual's requirements, thereby achieving tangible results. From SEO to PPC, from social media marketing to web development, and on to digital marketing all the way up to success – we are here to help you out with professional Digital Marketing Services in Dehradun.
         </p>

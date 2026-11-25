@@ -18,9 +18,6 @@ const Portfolio = () => {
       <h1 className="text-3xl font-semibold text-center uppercase">
         Portfolio
       </h1>
-      <div className="flex justify-center items-center mt-2 mb-10">
-        <div className="bg-red-600 h-1 w-16 rounded"></div>
-      </div>
       <p className="text-gray-700 text-center mt-7 mb-10 text-lg">
         View Our Recent Projects and Success Stories
       </p>

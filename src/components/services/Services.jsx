@@ -1,6 +1,6 @@
 'use client'
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { CgWebsite } from "react-icons/cg";
 import { MdContentPasteSearch, MdCampaign } from "react-icons/md";
@@ -55,9 +55,68 @@ const servicesData = [
   },
 ];
 
+const ServiceCard = ({ service, onMouseEnter, onMouseLeave }) => (
+  <Link
+    href={service.href}
+    aria-label={`Learn more about ${service.title}`}
+    onMouseEnter={onMouseEnter}
+    onMouseLeave={onMouseLeave}
+    className="group relative bg-white rounded-2xl p-6 border border-gray-400 shadow-sm hover:shadow-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between overflow-hidden md:cursor-none"
+  >
+    {/* Top accent glow effect */}
+    <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-red-500 to-red-600 origin-center scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out"></div>
+
+    {/* Arrow: Visible on mobile, hidden on desktop until hover */}
+    <GoArrowUpRight
+      aria-hidden="true"
+      className="absolute top-4 right-4 text-xl text-gray-400 opacity-100 md:opacity-0 md:-translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 group-hover:text-red-600"
+    />
+
+    <div>
+      {/* Icon Container */}
+      <div className="w-14 h-14 rounded-xl bg-red-50 flex items-center justify-center mb-5 group-hover:scale-110 group-hover:bg-red-600 group-hover:text-white transition-all duration-300">
+        {React.cloneElement(service.icon, {
+          className:
+            "text-2xl transition-colors duration-300 group-hover:text-white text-red-600",
+        })}
+      </div>
+
+      {/* Title & Description */}
+      <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-red-600 transition-colors duration-200 pr-4">
+        {service.title}
+      </h3>
+      <p className="text-sm text-gray-600 leading-relaxed">{service.desc}</p>
+    </div>
+  </Link>
+);
+
 const Services = () => {
+  const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseMove = (e) => {
+    setCursorPos({ x: e.clientX, y: e.clientY });
+  };
+
   return (
-    <section className="py-12 px-4 max-w-7xl mx-auto text-[#7A6960]">
+    <section
+      onMouseMove={handleMouseMove}
+      className="py-12 px-4 max-w-7xl mx-auto text-[#7A6960] relative"
+    >
+      {/* Custom Floating "EXPLORE" Cursor (Desktop Only) */}
+      <div
+        aria-hidden="true"
+        style={{
+          left: `${cursorPos.x}px`,
+          top: `${cursorPos.y}px`,
+        }}
+        className={`hidden md:flex fixed z-50 pointer-events-none -translate-x-1/2 -translate-y-1/2 w-20 h-20 rounded-full bg-red-600 text-white font-bold text-xs tracking-wider uppercase items-center justify-center shadow-2xl transition-transform duration-200 ease-out ${
+          isHovered ? "scale-100 opacity-100" : "scale-0 opacity-0"
+        }`}
+      >
+        EXPLORE
+      </div>
+
       {/* Header Section */}
       <div className="text-center max-w-3xl mx-auto mb-12">
         <span className="text-xs font-bold uppercase tracking-widest text-red-700 bg-red-50 px-3 py-1 rounded-full border border-red-100 inline-block mb-3">
@@ -67,83 +126,37 @@ const Services = () => {
           Our Services
         </h2>
         <p className="text-gray-600 mt-6 text-base md:text-lg leading-relaxed">
-          We offer Digital Marketing Services in Dehradun that empower businesses with a strong online presence, reaching target audiences, and efficiently generating maximum returns from their online endeavors. From innovative campaign ideas to cutting-edge technology and data analysis, our custom-made approaches are designed to enhance your brand presence, boost lead quality, and ensure sustained business growth.
+          We offer Digital Marketing Services in Dehradun that empower
+          businesses with a strong online presence, reaching target audiences,
+          and efficiently generating maximum returns from their online
+          endeavors. From innovative campaign ideas to cutting-edge technology
+          and data analysis, our custom-made approaches are designed to enhance
+          your brand presence, boost lead quality, and ensure sustained business
+          growth.
         </p>
       </div>
 
       {/* Services Grid 1 (Top 4) */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {servicesData.slice(0, 4).map((service) => (
-          <Link
-            href={service.href}
+          <ServiceCard
             key={service.href + service.title}
-            aria-label={`Learn more about ${service.title}`}
-            className="group relative bg-white rounded-2xl p-6 border border-gray-400 shadow-sm hover:shadow-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between overflow-hidden"
-          >
-            {/* Top accent glow effect */}
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-red-500 to-red-600 origin-center scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out"></div>
-            
-            {/* Arrow: Visible on mobile, hidden on desktop until hover */}
-            <GoArrowUpRight
-              aria-hidden="true"
-              className="absolute top-4 right-4 text-xl text-gray-400 opacity-100 md:opacity-0 md:-translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 group-hover:text-red-600"
-            />
-
-            <div>
-              {/* Icon Container */}
-              <div className="w-14 h-14 rounded-xl bg-red-50 flex items-center justify-center mb-5 group-hover:scale-110 group-hover:bg-red-600 group-hover:text-white transition-all duration-300">
-                {React.cloneElement(service.icon, {
-                  className: "text-2xl transition-colors duration-300 group-hover:text-white text-red-600"
-                })}
-              </div>
-
-              {/* Title & Description */}
-              <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-red-600 transition-colors duration-200 pr-4">
-                {service.title}
-              </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                {service.desc}
-              </p>
-            </div>
-          </Link>
+            service={service}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          />
         ))}
       </div>
 
       {/* Services Grid 2 (Bottom 3) */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 mt-10">
         {servicesData.slice(4, 8).map((service) => (
-          <Link
-            href={service.href}
+          <ServiceCard
             key={service.href + service.title}
-            aria-label={`Learn more about ${service.title}`}
-            className="group relative bg-white rounded-2xl p-6 border border-gray-400 shadow-sm hover:shadow-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between overflow-hidden"
-          >
-            {/* Top accent glow effect */}
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-red-500 to-red-600 origin-center scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out"></div>
-            
-            {/* Arrow: Visible on mobile, hidden on desktop until hover */}
-            <GoArrowUpRight
-              aria-hidden="true"
-              className="absolute top-4 right-4 text-xl text-gray-400 opacity-100 md:opacity-0 md:-translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 group-hover:text-red-600"
-            />
-
-            <div>
-              {/* Icon Container */}
-              <div className="w-14 h-14 rounded-xl bg-red-50 flex items-center justify-center mb-5 group-hover:scale-110 group-hover:bg-red-600 group-hover:text-white transition-all duration-300">
-                {React.cloneElement(service.icon, {
-                  className: "text-2xl transition-colors duration-300 group-hover:text-white text-red-600"
-                })}
-              </div>
-
-              {/* Title & Description */}
-              <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-red-600 transition-colors duration-200 pr-4">
-                {service.title}
-              </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                {service.desc}
-              </p>
-            </div>
-          </Link>
+            service={service}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          />
         ))}
       </div>
     </section>

@@ -78,10 +78,10 @@ const Services = () => {
             href={service.href}
             key={service.href + service.title}
             aria-label={`Learn more about ${service.title}`}
-            className="group relative bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between overflow-hidden"
+            className="group relative bg-white rounded-2xl p-6 border border-gray-400 shadow-sm hover:shadow-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between overflow-hidden"
           >
             {/* Top accent glow effect */}
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-red-500 to-red-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-red-500 to-red-600 origin-center scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out"></div>
             
             {/* Arrow: Visible on mobile, hidden on desktop until hover */}
             <GoArrowUpRight
@@ -116,10 +116,10 @@ const Services = () => {
             href={service.href}
             key={service.href + service.title}
             aria-label={`Learn more about ${service.title}`}
-            className="group relative bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between overflow-hidden"
+            className="group relative bg-white rounded-2xl p-6 border border-gray-400 shadow-sm hover:shadow-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between overflow-hidden"
           >
             {/* Top accent glow effect */}
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-red-500 to-red-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-red-500 to-red-600 origin-center scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out"></div>
             
             {/* Arrow: Visible on mobile, hidden on desktop until hover */}
             <GoArrowUpRight

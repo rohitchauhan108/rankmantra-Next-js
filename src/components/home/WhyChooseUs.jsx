@@ -54,7 +54,7 @@ const WhyChooseUs = () => (
           return (
             <article
               key={reason.title}
-              className={`group rounded-2xl border border-gray-100 bg-[#FEFAF8] p-8 transition-all duration-300 hover:-translate-y-1 hover:border-red-100 hover:shadow-xl ${
+              className={`group rounded-2xl border border-gray-400 bg-[#FEFAF8] p-8 transition-all duration-300 hover:-translate-y-1 hover:border-red-100 hover:shadow-xl ${
                 index < 3 ? "lg:col-span-2" : "lg:col-span-3"
               }`}
             >

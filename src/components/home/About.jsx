@@ -74,16 +74,16 @@ const About = () => {
               sustainable growth and long-term success.
             </p> */}
           </div>
-
-          <div className="flex flex-col lg:flex-row justify-center items-center gap-4 mt-8">
-            <div className="bg-red-600 w-fit p-3 lg:p-4 rounded-xl shadow-lg shadow-red-600/20 text-white">
-              <BsPeople size={"24px"} />
-            </div>
-            <div className="w-full">
-              <h2 className="text-[#7A6960] text-lg lg:text-xl font-bold">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+            {/* Card 1 */}
+            <div className="bg-white p-6 rounded-2xl shadow-md shadow-red-600/20 border border-gray-300 flex flex-col items-start">
+              <div className="bg-red-600 w-fit p-3 lg:p-4 rounded-xl shadow-lg shadow-red-600/20 text-white">
+                <BsPeople size={"24px"} />
+              </div>
+              <h2 className="text-[#7A6960] text-lg lg:text-xl font-bold mt-4">
                 Expert Mentorship:
               </h2>
-              <p className="text-sm lg:text-base text-gray-500 primary-font mt-1">
+              <p className="text-sm lg:text-base text-gray-500 primary-font mt-2">
                 We offer you mentorship on the highest level featuring
                 customized strategies for this digital era from industry actual
                 specialists. We aim to educate businesses on creating effective
@@ -91,16 +91,16 @@ const About = () => {
                 organization.
               </p>
             </div>
-          </div>
-          <div className="flex flex-col lg:flex-row justify-center items-center gap-4 mt-6">
-            <div className="bg-red-600 w-fit p-3 lg:p-4 rounded-xl shadow-lg shadow-red-600/20 text-white">
-              <BsPeople size={"24px"} />
-            </div>
-            <div className="w-full">
-              <h2 className="text-[#7A6960] text-lg lg:text-xl font-bold">
+
+            {/* Card 2 */}
+            <div className="bg-white p-6 rounded-2xl shadow-md shadow-red-600/20 border border-gray-300 flex flex-col items-start">
+              <div className="bg-red-600 w-fit p-3 lg:p-4 rounded-xl shadow-lg shadow-red-600/20 text-white">
+                <BsPeople size={"24px"} />
+              </div>
+              <h2 className="text-[#7A6960] text-lg lg:text-xl font-bold mt-4">
                 Skill Development:
               </h2>
-              <p className="text-sm lg:text-base text-gray-500 primary-font mt-1">
+              <p className="text-sm lg:text-base text-gray-500 primary-font mt-2">
                 Practical skill development is an important and integral part in
                 real life scenarios. This helps businesses to not just grow but
                 to comprehend the concept of digital success in today's

@@ -56,7 +56,7 @@ export function BlogPage() {
           </section>
           <section className="px-6 py-20">
             <div className="mx-auto max-w-6xl">
-              <h2 className="text-3xl font-bold">Latest article</h2>
+              <h2 className="text-3xl font-bold text-center">Latest article</h2>
               <div className="mt-8 grid gap-6 md:grid-cols-2">
                 <Link
                   href="/blog/seo-partner-india-dubai-businesses/"

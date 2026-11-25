@@ -11,6 +11,19 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-bricolage-grotesque), "Poppins", sans-serif;
 }
 
+h1:not(.text-white):not([class~="group-hover:text-white"]),
+h2:not(.text-white):not([class~="group-hover:text-white"]),
+h3:not(.text-white):not([class~="group-hover:text-white"]),
+h4:not(.text-white):not([class~="group-hover:text-white"]),
+h5:not(.text-white):not([class~="group-hover:text-white"]),
+h6:not(.text-white):not([class~="group-hover:text-white"]) {
+  background-image: linear-gradient(100deg, #000 0%, #dc2626 52%, #000 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
 :root {
   --primary-font: var(--font-dm-sans);
   --secondary-font: var(--font-bricolage-grotesque);

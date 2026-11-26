@@ -142,7 +142,7 @@ const AboutUsPage = () => {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto">
-          <h2 className="text-2xl md:text-5xl font-bold text-white mb-6 uppercase tracking-tight px-4">
+          <h2 className="text-2xl md:text-5xl font-bold text-white mb-12 !pb-8 uppercase tracking-tight px-4">
             3-STEPS TO MAKE YOUR BUSINESS AN <span className="text-red-600">ONLINE POWERHOUSE</span>
           </h2>
 

@@ -384,7 +384,7 @@ const SocialMediaPage = () => {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 uppercase tracking-tight leading-tight">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-12 !pb-8 uppercase tracking-tight leading-tight">
             How <span className="text-red-600">it works</span>
           </h2>
 

@@ -294,7 +294,7 @@ const WebHostingPage = () => {
           className="relative z-10 max-w-7xl mx-auto text-center"
          
         >
-          <h2 className="text-3xl md:text-5xl font-semibold text-white mb-6 uppercase tracking-tight">
+          <h2 className="text-3xl md:text-5xl font-semibold text-white mb-12 !pb-8 uppercase tracking-tight">
             3-STEPS TO MAKE YOUR BUSINESS AN ONLINE POWERHOUSE
           </h2>
 

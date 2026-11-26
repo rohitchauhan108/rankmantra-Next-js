@@ -76,7 +76,7 @@ const About = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
             {/* Card 1 */}
-            <div className="bg-white p-6 rounded-2xl shadow-md shadow-red-600/20 border border-gray-300 flex flex-col items-start">
+            <div className="bg-white p-6 rounded-2xl shadow-md shadow-red-600/20 border border-gray-300 border-b-[5px] border-b-red-600 flex flex-col items-start">
               <div className="bg-red-600 w-fit p-3 lg:p-4 rounded-xl shadow-lg shadow-red-600/20 text-white">
                 <BsPeople size={"24px"} />
               </div>
@@ -93,7 +93,7 @@ const About = () => {
             </div>
 
             {/* Card 2 */}
-            <div className="bg-white p-6 rounded-2xl shadow-md shadow-red-600/20 border border-gray-300 flex flex-col items-start">
+            <div className="bg-white p-6 rounded-2xl shadow-md shadow-red-600/20 border border-gray-300 border-b-[5px] border-b-red-600 flex flex-col items-start">
               <div className="bg-red-600 w-fit p-3 lg:p-4 rounded-xl shadow-lg shadow-red-600/20 text-white">
                 <BsPeople size={"24px"} />
               </div>

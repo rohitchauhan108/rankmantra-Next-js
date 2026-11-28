@@ -61,7 +61,7 @@ function SmallRedBuilding() {
 }
 
 export default function RankMantraLandingPage() {
-  const [openFaq, setOpenFaq] = useState([0, 1, 2, 3]);
+  const [openFaq, setOpenFaq] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [typedQuestion, setTypedQuestion] = useState("");
   const [typedAnswer, setTypedAnswer] = useState("");
@@ -904,18 +904,14 @@ export default function RankMantraLandingPage() {
 
             <div className="mt-9 divide-y divide-[#E2D9CE] border-b border-[#E2D9CE]">
               {faqs.map((item, idx) => {
-                const isOpen = openFaq.includes(idx);
+                const isOpen = openFaq === idx;
                 return (
                   <div key={item.question} className="py-5">
                     <button
+                      type="button"
+                      aria-expanded={isOpen}
                       onClick={() =>
-                        setOpenFaq((currentOpenFaqs) =>
-                          isOpen
-                            ? currentOpenFaqs.filter(
-                                (openIndex) => openIndex !== idx,
-                              )
-                            : [...currentOpenFaqs, idx],
-                        )
+                        setOpenFaq(isOpen ? null : idx)
                       }
                       className="w-full flex items-center justify-between text-left gap-4 py-1 cursor-pointer group"
                     >
@@ -930,11 +926,22 @@ export default function RankMantraLandingPage() {
                         )}
                       </span>
                     </button>
-                    {isOpen && (
-                      <p className="mt-3 pr-6 text-[15px] leading-[1.7] text-[#4B5563]">
-                        {item.answer}
-                      </p>
-                    )}
+                    <div
+                      aria-hidden={!isOpen}
+                      className={`grid transition-[grid-template-rows] duration-500 ease-in-out motion-reduce:transition-none ${
+                        isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+                      }`}
+                    >
+                      <div className="min-h-0 overflow-hidden">
+                        <p
+                          className={`mt-3 pr-6 text-[15px] leading-[1.7] text-[#4B5563] transition-opacity duration-300 ease-in-out motion-reduce:transition-none ${
+                            isOpen ? "opacity-100" : "opacity-0"
+                          }`}
+                        >
+                          {item.answer}
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 );
               })}
